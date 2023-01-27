@@ -1,0 +1,58 @@
+.room {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    background-color: $color-primary-bg;
+
+    &__title {
+        text-transform: uppercase;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 700;
+        margin-bottom: 12px;
+        letter-spacing: 0.05em;
+    }
+
+    &__title-description {
+        text-transform: none;
+    }
+
+    &__subtitle {
+        color: #b4b4b4;
+        margin-bottom: 8px;
+        text-transform: none;
+    }
+
+    &__text {
+        color: $color-secondary-text;
+        max-width: 256px;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 1.25;
+        margin-bottom: 32px;
+        letter-spacing: 0.02em;
+    }
+
+    &__btn-thumb {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    }
+
+    &__btn {
+        background-color: $color-primary-text;
+        display: inline-block;
+        border: 2px solid $color-border-button;
+        border-radius: 25px;
+        min-width: 236px;
+        max-width: 258px;
+        padding: 14px 24px;
+        color: $color-brand-text;
+        text-align: center;
+
+        &:hover,
+        &:focus {
+            background-color: $color-secondary-active-button;
+            border: 2px solid $color-brand-text;
+        }
+    }
+}
