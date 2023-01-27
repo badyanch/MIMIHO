@@ -1,1 +1,37 @@
-@import './common';
+@import '~node_modules/modern-normalize/modern-normalize.css';
+@import './base/reset';
+@import './base/font';
+@import './utils/variables';
+@import './utils/placeholder';
+@import './base/common';
+@import './abstracts/mixins';
+
+// main elements
+@import './layout/header';
+@import './layout/footer';
+@import './layout/hero';
+
+// homepage
+@import './components/homepage/homepage-hero';
+@import './components/homepage/homepage-about-restaurant';
+@import './components/homepage/homepage-details-restaurant';
+@import './components/homepage/homepage-about-hotel';
+@import './components/homepage/homepage-details-hotel';
+@import './components/homepage/homepage-contacts';
+
+//  restaurant page
+@import './components/restaurant/restaurant-hero';
+@import './components/restaurant/restaurant-about';
+@import './components/restaurant/restaurant-menu';
+
+// hotel page
+
+@import './components/hotel/hotel-hero';
+@import './components/hotel/hotel-rooms';
+
+// room page
+
+@import './components/room/room-hero';
+@import './components/room/room-amenities';
+
+@import './layout/modals';

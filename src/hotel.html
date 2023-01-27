@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page title</title>
+    <title>Hotel page</title>
     <link
       rel="stylesheet"
       type="text/css"
@@ -14,37 +15,22 @@
       type="text/css"
       href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
     />
-    <link rel="stylesheet" href="./sass/index.scss" />
+    <link rel="stylesheet" href="./sass/main.scss" />
     <script type="module" src="./index.js"></script>
   </head>
   <body>
     <!--  -->
     <include src="./partials/common/header.html"></include>
     <!--  -->
-    <include src="./partials/homepage/homepage-hero.html"></include>
+    <include src="./partials/hotel/hotel-hero.html"></include>
     <!--  -->
-    <include src="./partials/homepage/homepage-about-restaurant.html"></include>
-    <!--  -->
-    <include
-      src="./partials/homepage/homepage-details-restaurant.html"
-    ></include>
-    <!--  -->
-    <include src="./partials/homepage/homepage-about-hotel.html"></include>
-    <!--  -->
-    <include src="./partials/homepage/homepage-details-hotel.html"></include>
-    <!--  -->
-    <include src="./partials/homepage/homepage-details-hotel.html"></include>
-    <!--  -->
-    <include src="./partials/homepage/homepage-contacts.html"></include>
+    <include src="./partials/hotel/hotel-rooms.html"></include>
     <!--  -->
     <include src="./partials/common/footer.html"></include>
-    <!--  -->
-    <include src="./partials/common/modal-book-table.html"></include>
     <!--  -->
     <include src="./partials/common/modal-book-apartment.html"></include>
     <!--  -->
     <include src="./partials/common/modal-apartment-price.html"></include>
-
     <script
       type="text/javascript"
       src="//code.jquery.com/jquery-1.11.0.min.js"
@@ -57,5 +43,6 @@
       type="text/javascript"
       src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
+    <script src="./index.js" type="module"></script>
   </body>
 </html>
