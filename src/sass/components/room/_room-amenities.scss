@@ -109,6 +109,11 @@ gap: 20px;
         color: rgb(255, 255, 255);
         transform: scale(1);
         cursor: pointer;
+
+        @media screen and (min-width: 1024px) {
+               width: 434px;
+               font-size: 24px;
+            }
    }
 
    &__link {
@@ -122,10 +127,18 @@ gap: 20px;
         line-height: 1.25;
         font-size: 16px;
         letter-spacing: 0.02em;
+
+        @media screen and (min-width: 1024px) {
+                font-size: 20px;
+            }
    }
 
-   @media screen and (min-width: 1024px) {
-    justify-content: flex-end;
-    align-items: flex-end;
-   }
+    @media screen and (min-width: 1024px) {
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+}
+
+.amenities__icon {
+    fill: currentColor;
 }
