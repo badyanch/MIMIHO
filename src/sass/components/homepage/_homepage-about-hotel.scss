@@ -3,38 +3,37 @@
 
     padding-top: 14px;
     padding-bottom: 40px;
-    background-image: url('../images/pexels-kheng-tang-mobile.jpg');
-    background-repeat: no-repeat;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/pexels-kheng-tang-mobile.jpg');
+    background-color: rgba(0, 0, 0, 0.7);
+    // background-image: url('../images/pexels-kheng-tang-mobile.jpg');
     background-size: cover;
-
+    background-position: 50% 50%;
+    
     // media mobile
     
     @media (min-deavice-pixel-ratio: 2) and (max-width: 1023px),
     (min-resolution: 192dpi) {
-         background-image: url('../images/pexels-kheng-tang-mobile@2x.jpg');
+         background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/pexels-kheng-tang-mobile@2x.jpg');
     }
   
     // media tablet
 
-    
     @media screen and (min-width: 1024px) {
-        background-image: url('../images/pexels-kheng-tang-tablet.jpg');
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/pexels-kheng-tang-tablet.jpg');
     }
     @media  (min-deavice-pixel-ratio: 2) and(min-width: 1024px),
     (min-resolution: 192dpi) {
-        background-image: url('../images/pexels-kheng-tang-tablet@2x.jpg');
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/pexels-kheng-tang-tablet@2x.jpg');
     }
     
     // desktop
 
-    
-    
     @media screen and (min-width: 1280px) {
-        background-image: url('../images/pexels-kheng-tang-desktop.jpg');
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/pexels-kheng-tang-desktop.jpg');
     }
     @media  (min-deavice-pixel-ratio: 2) and (min-width: 1280px),
     (min-resolution: 192dpi) {
-        background-image: url('../images/pexels-kheng-tang-desktop@2x.jpg');
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/pexels-kheng-tang-desktop@2x.jpg');
     }
 // text thumb
 
@@ -105,6 +104,12 @@
     text-align: center;
     letter-spacing: 0.02em;
     color: #F3C653;
+
+&:hover,&:focus{
+    background: #FFFFFF;
+    border: 2px solid #F3C653;
+}
+
 }
 
 &__button-thumb{
@@ -115,11 +120,25 @@
     gap: 16px;
 }
 
+
+
+}
 // carousel
 
-&__carousel-thumb{
+.carousel {
+
+&--thumb {
     padding-top: 48px;
     padding-bottom: 32px;
+
+}
+
+&__icons {
+    fill: #FFFFFF;
+    width: 30px;
+    height: 16px;
+    
+
 }
 
 }

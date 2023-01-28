@@ -18,9 +18,55 @@
               amet sint. Velit officia consequat duis enim velit mollit.
             </p>
           </div>
-          <div class="homepage-about-hotel__carousel-thumb">
+          <div class="carousel carousel--thumb slick-header">
             <img src="./images/room-homepage-mobile.jpg" alt="" />
+
+            <picture>
+              <sourse
+                media="(max-width:1023px)"
+                srceset="./images/room-homepage-mobile.jpg 1x,
+              ./images/room-homepage-mobile@2x.jpg 2x"
+              ></sourse>
+              <sourse
+                media="(min-width:1280px)"
+                srceset="./images/room-homepage-desktop.jpg 1x,
+              ./images/room-homepage-desktop@2x.jpg 2x"
+              ></sourse>
+              <sourse
+                media="(min-width:1020px)"
+                srceset="./images/room-homepage-tablet.jpg 1x,
+              ./images/room-homepage-tablet@2x.jpg 2x"
+              ></sourse>
+            </picture>
+            <picture>
+              <sourse
+                media="(max-width:1023px)"
+                srceset="./images/pexels-ulgi-mobile.jpg 1x,
+              ./images/pexels-ulgi-mobile@2x.jpg 2x"
+              ></sourse>
+              <sourse
+                media="(min-width:1280px)"
+                srceset="./images/pexels-ulgi-desktop.jpg 1x,
+              ./images/pexels-ulgi-desktop@2x.jpg 2x"
+              ></sourse>
+              <sourse
+                media="(min-width:1020px)"
+                srceset="./images/pexels-ulgi-tablet.jpg 1x,
+              ./images/pexels-ulgi-tablet@2x.jpg 2x"
+              ></sourse>
+            </picture>
+            <picture>
+              <sourse></sourse>
+              <sourse></sourse>
+              <sourse></sourse>
+            </picture>
           </div>
+          <!-- <svg class="carousel__icons">
+            <use href="./images/icons.svg#icon-32arrow-left"></use>
+          </svg>
+          <svg class="carousel__icons">
+            <use href="./images/icons.svg#icon-32arrow-right"></use>
+          </svg> -->
           <div class="homepage-about-hotel__flex-thumb">
             <div class="homepage-about-hotel__slider"></div>
             <div class="homepage-about-hotel__button-thumb">
@@ -33,5 +79,38 @@
         </div>
       </div>
     </section>
+
+    <script>
+      $('.slick-header').slick({
+        dots: false,
+        prevArrow:
+          '<button type="button" class="slick-header-prev"> <svg class="slick-arrow slick-header-prev-icon" width="32" height="32" viewBox="0 0 32 32" fill="none" mlns="http://www.w3.org/2000/svg"><path d="M31 15.49h-26.16l6.019-6.061-1.419-1.429-8.44 8.5 8.44 8.5 1.419-1.429-6.019-6.061h26.16v-2.021z"></path></svg></button>',
+        nextArrow:
+          '<button type="button" class="slick-header-next"><svg class="slick-arrow slick-header-next-icon" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22.559 8l-1.419 1.429 6.019 6.061h-26.16v2.021h26.159l-6.018 6.061 1.419 1.429 8.441-8.5-8.441-8.5z"></path></svg></button>',
+        infinite: true,
+        speed: 300,
+        slidesToScroll: 1,
+        adaptiveHeight: true,
+        slidesToShow: 1,
+
+        responsive: [
+          {
+            breakpoint: 1280,
+            settings: {
+              slidesToShow: 1,
+            },
+          },
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 1,
+            },
+          },
+          // You can unslick at a given breakpoint now by adding:
+          // settings: "unslick"
+          // instead of a settings object
+        ],
+      });
+    </script>
   </body>
 </html>
