@@ -63,8 +63,8 @@ $('.slick-details').slick({
 
 $('.room__slick').slick({
     // dots: true,
-    prevArrow: '<button type="button" class="room__slick-prev"><svg class="room__icon-arrow-left" width="32" height="32"><use href="./src/images/icons.svg#icon-32arrow-left"></use></svg></button>',
-    nextArrow: '<button type="button" class="room__slick-next"><svg class="room__icon-arrow-right" width="32" height="32"><use href="./src/images/icons.svg#icon-32arrow-right"></use></button>',
+    prevArrow: '<button type="button" class="room__slick-prev">&xlarr;</button>',
+    nextArrow: '<button type="button" class="room__slick-next">&xrarr;</button>',
     infinite: true,
     speed: 300,
     slidesToScroll: 1,
@@ -79,7 +79,7 @@ $('.room__slick').slick({
         },
       },
       {
-        breakpoint: 768,
+        breakpoint: 1023,
         settings: {
           slidesToShow: 2,
         },
