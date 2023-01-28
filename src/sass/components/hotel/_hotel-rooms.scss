@@ -1,25 +1,54 @@
 .room-lux {
+    @media screen and (min-width: 1024px) {
+        display: flex;
+    }
 }
 .room-lux__subtitle {
     margin-bottom: 8px;
+    font-family: "Times New Roman";
     font-size: 20px;
     line-height: calc(23 / 20);
     color: $color-section-subtitle;
+
+    @media screen and (min-width: 1024px) {
+        margin-bottom: 4px;
+        font-size: 32px;
+        line-height: calc(37 / 32);
+    }
 }
-.mimiho {
+.mimiho-lux {
     font-family: "FilmP3";
     font-size: 40px;
     line-height: calc(43 / 40);
     letter-spacing: 0.3em;
     text-transform: uppercase;
     color: $color-brand-logo;
+
+    @media screen and (min-width: 1024px) {
+        font-size: 64px;
+        line-height: calc(69 / 64);
+    }
 }
 
 .room-lux__mimiho {
     margin-bottom: 32px;
+
+    @media screen and (min-width: 1024px) {
+        margin-bottom: 64px;
+    }
 }
+
+.title-wrap {
+    @media screen and (min-width: 1024px) {
+        display: flex;
+        flex-direction: column;
+        max-width: 439px;
+    }
+}
+
 .room-lux__title {
     margin-bottom: 12px;
+    font-family: "Times New Roman";
     font-size: 24px;
     line-height: calc(28 / 24);
     letter-spacing: 0.05em;
@@ -27,25 +56,51 @@
     &--upper {
         text-transform: uppercase;
     }
+
+    @media screen and (min-width: 1024px) {
+        margin-bottom: 16px;
+        font-size: 30px;
+        line-height: calc(34 / 30);
+    }
 }
 .room-lux__text {
+    margin-bottom: 32px;
     font-size: 12px;
+    font-weight: 600;
     line-height: calc(15 / 12);
     letter-spacing: 0.02em;
     color: $color-secondary-text;
-}
-.lux-picture {
-    margin: 32px 0;
+
+    @media screen and (min-width: 1024px) {
+        font-size: 16px;
+        line-height: calc(20 / 16);
+    }
 }
 
-.lux-picture__image {
-    background-color: $color-overlay;
-    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
-    border-radius: 2px;
+.room-lux-picture {
+    display: flex;
+    justify-content: end;
+    margin: 32px 0;
+
+    &__image {
+        background-color: $color-overlay;
+        box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+        border-radius: 2px;
+    }
+
+    @media screen and (min-width: 1024px) {
+        margin: 0;
+        transform: translateY(-18%);
+    }
 }
 
 .room-lux-gallery {
-    transform: translateX(-34%);
+    transform: translateX(-33.3333%);
+
+    @media screen and (min-width: 1024px) {
+        margin-top: -48px;
+        transform: translateY(0);
+    }
 }
 .swiper {
 }
@@ -54,18 +109,23 @@
     gap: 16px;
     @extend %list;
 }
-.swiper-wrapper {
-}
+
 .room-lux__item {
+    background: $color-overlay;
+    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+    @media screen and (min-width: 1024px) {
+        width: 194px;
+    }
 }
-.swiper-slide {
-}
-.swiper-inner {
-}
+
 .swiper-btns {
     display: flex;
     gap: 32px;
     margin: 20px 0;
+
+    @media screen and (min-width: 1024px) {
+        justify-content: end;
+    }
 }
 .swiper-btn {
     padding: 0;
@@ -84,4 +144,22 @@
     gap: 16px;
     justify-content: center;
     align-items: center;
+
+    @media screen and (min-width: 1024px) {
+        justify-content: start;
+        align-items: center;
+        margin-left: auto;
+    }
+}
+
+.gallery-btns-wrap {
+    @media screen and (min-width: 1024px) {
+        display: flex;
+    }
+}
+
+.section-room-tablet {
+    @media screen and (min-width: 1024px) {
+        padding-bottom: 0;
+    }
 }
