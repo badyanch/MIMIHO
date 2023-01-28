@@ -45,7 +45,7 @@
     }
     &__img{
         margin-left: auto;
-        margin-bottom: 12px;
+        margin-bottom: 32px;
         box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
             border-radius: 2px;
     }
@@ -75,20 +75,31 @@
         }
     }
     &__slide-menu {
+        transform: translateX(-40%);
         position: relative;
         padding: 0;
         margin: 0;
         margin-bottom: 72px;
+        
+    }
+    &__slide-img {
+        box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+        border-radius: 2px;
     }
     &__slide-item {
         margin-right: 12px;
+        
     }
     &__slick-prev {
         position: absolute;
+        bottom: -40;
+        right: 60%;
     }
     &__slick-next {
         position: absolute;
-
+        bottom: -40;
+        right: 45%;
     }
+
     
 }
