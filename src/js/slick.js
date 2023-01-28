@@ -61,6 +61,35 @@ $('.slick-details').slick({
   //   responsive: none,
 });
 
+$('.room__slick').slick({
+    // dots: true,
+    prevArrow: '<button type="button" class="room__slick-prev"><svg class="room__icon-arrow-left" width="32" height="32"><use href="./src/images/icons.svg#icon-32arrow-left"></use></svg></button>',
+    nextArrow: '<button type="button" class="room__slick-next"><svg class="room__icon-arrow-right" width="32" height="32"><use href="./src/images/icons.svg#icon-32arrow-right"></use></button>',
+    infinite: true,
+    speed: 300,
+    slidesToScroll: 1,
+    adaptiveHeight: true,
+    slidesToShow: 3,
+
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      // You can unslick at a given breakpoint now by adding:
+      // settings: "unslick"
+      // instead of a settings object
+    ],
+  });
+
 // $('.responsive').slick({
 //     // dots: true,
 //     prevArrow: '<button type="button" class="my-slick-prev">&xlarr;</button>',
@@ -89,3 +118,4 @@ $('.slick-details').slick({
 //       // instead of a settings object
 //     ],
 //   });
+
