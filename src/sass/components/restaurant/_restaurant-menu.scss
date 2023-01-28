@@ -22,6 +22,9 @@
 }
 .menu {
   margin-bottom: 32px;
+  @media (min-width: 1024px) {
+    margin-bottom: 41;
+  }
 }
 .menu__title {
   font-family: 'Times New Roman';
@@ -35,6 +38,7 @@
 .menu-list {
   @extend %list;
   margin-bottom: 16px;
+
   &__item {
     display: flex;
     margin-bottom: 8px;
@@ -121,9 +125,11 @@
 .btn-thumb {
   display: flex;
   justify-content: center;
+  @media (min-width: 1024px) {
+    justify-content: end;
+  }
 }
 .restaurant__btn {
-  margin: 0 auto;
   color: #f3c653;
   background-color: #000;
   border: 2px solid #fff;
@@ -144,5 +150,28 @@
   &:active {
     background: #ffffff;
     border: 2px solid #f3c653;
+  }
+}
+
+.menu__columns {
+  display: block;
+  margin-bottom: -16px;
+  @media (min-width: 1024px) {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+  }
+  &--right {
+    @media (min-width: 1024px) {
+      min-width: 411px;
+      margin-bottom: -16px;
+    }
+  }
+  &--left {
+    @media (min-width: 1024px) {
+      min-width: 411px;
+      margin-left: 89px;
+      margin-bottom: -16px;
+    }
   }
 }
