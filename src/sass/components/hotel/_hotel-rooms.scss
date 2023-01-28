@@ -1,1 +1,63 @@
+.room-lux {
+}
+.room-lux__subtitle {
+    margin-bottom: 8px;
+    font-size: 20px;
+    line-height: calc(23 / 20);
+    color: $color-section-subtitle;
+}
+.mimiho {
+    font-family: "FilmP3";
+    font-size: 40px;
+    line-height: calc(43 / 40);
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: $color-brand-logo;
+}
 
+.room-lux__mimiho {
+    margin-bottom: 32px;
+}
+.room-lux__title {
+    font-size: 24px;
+    line-height: calc(28 / 24);
+    letter-spacing: 0.05em;
+
+    &--upper {
+        text-transform: uppercase;
+    }
+}
+.room-lux__text {
+    font-size: 12px;
+    line-height: calc(15 / 12);
+    letter-spacing: 0.02em;
+    color: $color-secondary-text;
+}
+.room-lux__picture {
+}
+.room-lux-gallery {
+}
+.swiper {
+}
+.room-lux__list {
+}
+.swiper-wrapper {
+}
+.room-lux__item {
+}
+.swiper-slide {
+}
+.swiper-inner {
+}
+.swiper-btns {
+}
+.swiper-btn {
+}
+.swiper-button-prev {
+}
+.swiper-btns__icon {
+}
+.swiper-button-next {
+}
+.room__btn {
+}
