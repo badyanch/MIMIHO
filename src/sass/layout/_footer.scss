@@ -1,6 +1,7 @@
 .container--footer {
   background-color: $color-black-bg;
   min-width: 100%;
+  margin: 0 auto;
 }
 
 .footer-box {
@@ -10,7 +11,7 @@
   height: 240px;
 
   @media screen and (min-width: 1024px) {
-    justify-content: normal;
+    // justify-content: normal;
     height: 304px;
   }
 }
@@ -44,8 +45,14 @@
 .footer-nav {
   @media screen and (min-width: 1024px) {
     display: flex;
-    margin-left: 163px;
+    // margin-left: 163px;
+    margin-right: 122px;
     gap: 137px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-right: 186px;
+    gap: 199px;
   }
 
   &__list {
@@ -82,30 +89,44 @@
 
   &__link {
     display: flex;
-    border: 0.5px solid $color-icon;
-    padding: 10px 15px 10px 12px;
+
     fill: $color-icon;
+
+    @media screen and (min-width: 1024px) {
+      border: 0.5px solid $color-icon;
+      padding: 10px 15px 10px 12px;
+    }
   }
 
   &__text {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: calc(20px / 16px);
-    letter-spacing: 0.02em;
-    color: $color-icon;
+    display: none;
+    @media screen and (min-width: 1024px) {
+      display: flex;
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: calc(20px / 16px);
+      letter-spacing: 0.02em;
+      color: $color-icon;
+    }
   }
 
   &__telegram {
-    margin-left: 19.5px;
+    @media screen and (min-width: 1024px) {
+      margin-left: 19.5px;
+    }
   }
 
   &__facebook {
-    margin-left: 17px;
+    @media screen and (min-width: 1024px) {
+      margin-left: 17px;
+    }
   }
 
   &__instagram {
-    margin-left: 12px;
+    @media screen and (min-width: 1024px) {
+      margin-left: 12px;
+    }
   }
 }

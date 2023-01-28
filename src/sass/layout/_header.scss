@@ -121,9 +121,23 @@
     fill: $color-brand-text;
   }
 
-  &__link {
+  &__text {
     display: none;
+    @media screen and (min-width: 1024px) {
+      display: flex;
+      align-items: center;
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: calc(17px / 14px);
+      letter-spacing: 0.02em;
 
+      // color: $color-main-logo;
+    }
+  }
+
+  &__link {
     @media screen and (min-width: 1024px) {
       display: flex;
       align-items: center;
