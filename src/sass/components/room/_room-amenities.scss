@@ -2,11 +2,17 @@
     padding-top: 32px;
     padding-bottom: 32px;
     background-color: $color-primary-bg-room;
+    width: 100%;
 
     @media screen and (min-width: 1024px) {
         padding-top: 48px;
             padding-bottom: 40px;
     }
+
+         @media screen and (min-width: 1280px) {
+             padding-top: 48px;
+             padding-bottom: 48px;
+         }
 }
 
 .advantages {
@@ -31,6 +37,7 @@
           }
 
     &__description {
+        max-width: 757px;
         color: $color-secondary-text;
             font-family: Montserrat, sans-serif;
             font-weight: 700;
@@ -119,6 +126,6 @@ gap: 20px;
 
    @media screen and (min-width: 1024px) {
     justify-content: flex-end;
-    align-self: flex-end;
+    align-items: flex-end;
    }
 }
