@@ -7,13 +7,34 @@
     background-repeat: no-repeat;
     background-size: cover;
 
+    // media mobile
+    
+    @media (min-deavice-pixel-ratio: 2) and (max-width: 1023px),
+    (min-resolution: 192dpi) {
+         background-image: url('../images/pexels-kheng-tang-mobile@2x.jpg');
+    }
+  
+    // media tablet
 
+    
+    @media screen and (min-width: 1024px) {
+        background-image: url('../images/pexels-kheng-tang-tablet.jpg');
+    }
+    @media  (min-deavice-pixel-ratio: 2) and(min-width: 1024px),
+    (min-resolution: 192dpi) {
+        background-image: url('../images/pexels-kheng-tang-tablet@2x.jpg');
+    }
+    
+    // desktop
 
-    // media 
-
-    @media (min-deavice-pixel-ratio: 2) and (min-width: 1024px),
-    (min-resolution: 192dpi){
-        background-image: url('../images/pexels-kheng-tang-mobile@2x.jpg');
+    
+    
+    @media screen and (min-width: 1280px) {
+        background-image: url('../images/pexels-kheng-tang-desktop.jpg');
+    }
+    @media  (min-deavice-pixel-ratio: 2) and (min-width: 1280px),
+    (min-resolution: 192dpi) {
+        background-image: url('../images/pexels-kheng-tang-desktop@2x.jpg');
     }
 // text thumb
 
@@ -34,6 +55,12 @@
     letter-spacing: 0.3em;
     text-transform: uppercase;
     color: #fff;
+
+    @media screen and (min-width: 1024px) {
+        line-height: 1.078;
+        font-size: 64px;
+    }
+
 }
 &__title{
     margin-bottom: 20px;
@@ -42,6 +69,12 @@
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #FFFFFF;
+
+    @media screen and (min-width: 1024px) {
+        line-height: 1.208;
+        font-size: 24px;
+    }
+
 }
 
 &__description{
@@ -50,6 +83,12 @@
     line-height: 1.25;
     letter-spacing: 0.02em;
     color: #BABABA;
+
+    @media screen and (min-width: 1024px) {
+        line-height: 1.208;
+        font-size: 16px;
+    }
+
 }
 
 &__button{
