@@ -19,6 +19,7 @@
     margin-bottom: 32px;
 }
 .room-lux__title {
+    margin-bottom: 12px;
     font-size: 24px;
     line-height: calc(28 / 24);
     letter-spacing: 0.05em;
@@ -33,13 +34,25 @@
     letter-spacing: 0.02em;
     color: $color-secondary-text;
 }
-.room-lux__picture {
+.lux-picture {
+    margin: 32px 0;
 }
+
+.lux-picture__image {
+    background-color: $color-overlay;
+    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 2px;
+}
+
 .room-lux-gallery {
+    transform: translateX(-34%);
 }
 .swiper {
 }
 .room-lux__list {
+    display: flex;
+    gap: 16px;
+    @extend %list;
 }
 .swiper-wrapper {
 }
@@ -50,8 +63,14 @@
 .swiper-inner {
 }
 .swiper-btns {
+    display: flex;
+    gap: 32px;
+    margin: 20px 0;
 }
 .swiper-btn {
+    padding: 0;
+    background-color: transparent;
+    border: none;
 }
 .swiper-button-prev {
 }
@@ -59,5 +78,10 @@
 }
 .swiper-button-next {
 }
-.room__btn {
+.btns-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
 }
