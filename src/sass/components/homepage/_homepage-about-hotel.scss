@@ -1,0 +1,86 @@
+.homepage-about-hotel{
+    position: relative;
+
+    padding-top: 14px;
+    padding-bottom: 40px;
+    background-image: url('../images/pexels-kheng-tang-mobile.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+
+    // media 
+
+    @media (min-deavice-pixel-ratio: 2) and (min-width: 1024px),
+    (min-resolution: 192dpi){
+        background-image: url('../images/pexels-kheng-tang-mobile@2x.jpg');
+    }
+// text thumb
+
+&__text-thumb{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+}
+
+&__logo{
+    margin-bottom: 12px;
+
+    font-family: 'FilmP3' , sans-serif;
+    font-size: 40px;
+    line-height: 1.075;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: #fff;
+}
+&__title{
+    margin-bottom: 20px;
+
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+}
+
+&__description{
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    color: #BABABA;
+}
+
+&__button{
+    width: 236px;
+    padding: 14px 0;
+
+    background: rgba(0, 0, 0, 0.4);
+    border: 2px solid #FFFFFF;
+    border-radius: 25px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.25;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #F3C653;
+}
+
+&__button-thumb{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 16px;
+}
+
+// carousel
+
+&__carousel-thumb{
+    padding-top: 48px;
+    padding-bottom: 32px;
+}
+
+}
