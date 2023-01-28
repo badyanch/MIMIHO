@@ -1,5 +1,6 @@
 .header {
   position: absolute;
+  z-index: 999;
   left: 15px;
   top: 16px;
   right: 15px;
@@ -41,7 +42,7 @@
   }
 }
 
-.nav {
+.header-nav {
   display: flex;
   align-items: center;
   margin: 0;
@@ -93,12 +94,16 @@
 
 .header-social {
   display: none;
-
   @media screen and (min-width: 1280px) {
     display: flex;
     gap: 22px;
-    fill: $color-icon;
-    cursor: pointer;
+  }
+
+  &__link {
+    @media screen and (min-width: 1280px) {
+      fill: $color-icon;
+      cursor: pointer;
+    }
   }
 }
 
