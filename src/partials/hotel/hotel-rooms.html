@@ -3,7 +3,7 @@
     <div class="room-lux">
       <p class="room-lux__subtitle">Amet minim mollit non</p>
       <h2 class="mimiho">Mimiho</h2>
-      <h3 class="room-lux__title">двомісний номер люкс</h3>
+      <h3 class="room-lux__title">Двомісний номер люкс</h3>
       <p class="room-lux__text">
         Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
         sint. Velit officia consequat duis enim velit mollit. Exercitation
@@ -60,11 +60,21 @@
         </ul>
       </div>
       <div class="swiper-btns">
-        <button type="button" class="swiper-btn swiper-button-prev"></button>
-        <button type="button" class="swiper-btn swiper-button-next"></button>
+        <button type="button" class="swiper-btn swiper-button-prev">
+          <svg class="swiper-btns__icon" width="32px" height="32px">
+            <use href="./images/icons.svg#icon-arrow-left"></use>
+          </svg>
+        </button>
+        <button type="button" class="swiper-btn swiper-button-next">
+          <svg class="swiper-btns__icon" width="32px" height="32px">
+            <use href="./images/icons.svg#icon-arrow-right"></use>
+          </svg>
+        </button>
       </div>
-      <button type="button"></button>
-      <button type="button"></button>
+      <button class="room__btn" type="button" href="#">Детальніше</button>
+      <button class="room__btn" type="button" js-modal-open>
+        Переглянути ціни
+      </button>
     </div>
   </div>
 </div>
