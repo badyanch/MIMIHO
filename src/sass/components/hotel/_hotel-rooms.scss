@@ -16,7 +16,7 @@
         line-height: calc(37 / 32);
     }
 }
-.mimiho-lux {
+.room-lux__logo {
     font-family: "FilmP3";
     font-size: 40px;
     line-height: calc(43 / 40);
@@ -30,7 +30,7 @@
     }
 }
 
-.room-lux__mimiho {
+.logo-lux {
     margin-bottom: 32px;
 
     @media screen and (min-width: 1024px) {
@@ -42,6 +42,7 @@
     @media screen and (min-width: 1024px) {
         display: flex;
         flex-direction: column;
+        margin-bottom: 176px;
         max-width: 439px;
     }
 }
@@ -89,8 +90,11 @@
     }
 
     @media screen and (min-width: 1024px) {
+        position: absolute;
+        top: 0;
+        right: 112px;
         margin: 0;
-        transform: translateY(-18%);
+        transform: translateY(-32px);
     }
 }
 
@@ -98,7 +102,6 @@
     transform: translateX(-33.3333%);
 
     @media screen and (min-width: 1024px) {
-        margin-top: -48px;
         transform: translateY(0);
     }
 }
@@ -125,6 +128,8 @@
 
     @media screen and (min-width: 1024px) {
         justify-content: end;
+        margin-top: 32px;
+        margin-bottom: 0;
     }
 }
 .swiper-btn {
