@@ -113,29 +113,36 @@
 }
 
 .room-lux-gallery {
+    width: 404px;
     transform: translateX(-33.3333%);
 
     @media screen and (min-width: 1024px) {
+        width: 428px;
         transform: translateY(0);
+    }
+
+    @media screen and (min-width: 1280px) {
+        width: 548px;
     }
 }
 .swiper {
 }
 .room-lux__list {
     display: flex;
-    gap: 16px;
+    // gap: 16px;
     @extend %list;
 }
 
 .room-lux__item {
-    background: $color-overlay;
+    width: 194px !important;
+    // background: $color-overlay;
     box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
     @media screen and (min-width: 1024px) {
-        width: 194px;
+        width: 194px !important;
     }
 
     @media screen and (min-width: 1280px) {
-        width: 254px;
+        width: 254px !important;
     }
 }
 
@@ -148,6 +155,11 @@
         justify-content: end;
         margin-top: 32px;
         margin-bottom: 0;
+    }
+
+    &__icon:hover,
+    &__icon:focus {
+        fill: $color-link-hover;
     }
 }
 .swiper-btn {
@@ -186,3 +198,23 @@
         padding-bottom: 0;
     }
 }
+
+// .slider-section {
+//     .swiper-slide {
+//         display: flex;
+//         align-items: center;
+//         justify-content: center;
+//         // min-height: 184px;
+//         color: #fff;
+//         font-size: 32px;
+//         background-color: red;
+//         transition: ease-in-out 0.5s;
+
+//         &.swiper-slide-prev {
+//             // краще виставляти у %
+//             // зараз 17.3%  дорівнює 200px
+//             width: 200px !important;
+//             // width: 17.3% !important;
+//         }
+//     }
+// }

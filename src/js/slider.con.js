@@ -14,13 +14,13 @@ function swiperSlider() {
       let swiper = new Swiper(slider.querySelector('.swiper'), {
         speed: 1500,
         // автоплей
-        //centeredSlides: true,
+        // centeredSlides: false,
         // autoplay: {
-        //     delay: 3000,
+        // delay: 3000,
         //     disableOnInteraction: false,
         // },
-        slidesPerView: 3, // кількість слайдерів для показу
-        spaceBetween: 20, // відстань між слайдерами
+        slidesPerView: 2, // кількість слайдерів для показу
+        spaceBetween: 16, // відстань між слайдерами
 
         // крапки пагінації
         pagination: {
@@ -60,17 +60,17 @@ function swiperSlider() {
         breakpoints: {
           // when window width is >= 320px
           320: {
-            slidesPerView: 1,
-            spaceBetween: 20,
+            slidesPerView:2,
+            spaceBetween: 16,
           },
           // when window width is >= 768px
-          768: {
+          1024: {
             slidesPerView: 2,
-            spaceBetween: 30,
+            spaceBetween: 40,
           },
           // when window width is >= 1200px
-          1200: {
-            slidesPerView: 3,
+          1280: {
+            slidesPerView: 2,
             spaceBetween: 40,
           },
         },
