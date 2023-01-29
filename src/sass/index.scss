@@ -1,4 +1,6 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
+@import '../../node_modules/swiper/swiper.min.css';
+@import '../../node_modules/nice-select2/src/scss/nice-select2.scss';
 @import './base/reset';
 @import './base/font';
 @import './utils/variables';
@@ -29,7 +31,7 @@
 @import './components/hotel/hotel-hero';
 @import './components/hotel/hotel-rooms';
 @import './components/hotel/hotel-room-sect-3';
-@import './components/hotel/hotel-task-6';
+@import './components/hotel/hotel-task-5';
 // room page
 
 @import './components/room/room-hero';
