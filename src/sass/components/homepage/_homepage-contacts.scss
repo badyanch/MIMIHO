@@ -1,7 +1,16 @@
 .contacts {
     height: 550px;
-    width: 100%;
     background-color: $color-primary-bg;
+
+@media screen and (min-width: 1024px) {
+height: 521px;
+}
+
+@media screen and (min-width: 1280px) {
+    height: 550px;
+}
+    
+ 
 
 &__header {
             display: none;
@@ -62,7 +71,7 @@
 
     font-size: 20px;
     line-height: 24px;
-    margin-bottom: 52px;
+    margin-bottom: 40px;
 
 
 }
@@ -72,17 +81,19 @@
 
 &__list {
 
-    padding-bottom: 32px;
+    // padding-bottom: 32px;
     padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
 
 @media screen and (min-width: 1024px) {
     
-    padding-bottom: 40px;
+    // display: block;
 }
 
 @media screen and (min-width: 1280px) {
     
-    padding-bottom: 74px;
+    // padding-bottom: 74px;
 }
 
 }
@@ -99,7 +110,16 @@
     padding-left: 0;
     margin-bottom: 32px;
 
+    @media screen and (min-width: 1024px) {
+        display: block;
 
+    }
+
+@media screen and (min-width: 1280px) {
+    margin-bottom: 24px;
+}
+
+    
 }
 
 
@@ -113,12 +133,26 @@
     letter-spacing: 0.02em;
     color: $color-disable-link;
 
+    @media screen and (min-width: 1024px) {
+
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 20px;
+            color: $color-secondary-text;
+            margin-bottom: 8px;
+    }
+
+        @media screen and (min-width: 1280px) {
+            font-style: normal;
+                font-size: 20px;
+                line-height: 24px;
+        }
+
 }
 
 &__link-restouran {
 
     box-sizing: border-box;
-    position: absolute;
     display: flex;
     justify-content: center;
     width: 144px;
@@ -126,20 +160,34 @@
     background-color: $color-border-button;
     border: 0.5px solid $color-secondary-button-text;
     border-radius: 2px;
-    margin-left: 32%;
+    margin-left: 22px;
+    padding-right: 8px;
+
+    @media screen and (min-width: 1024px) {
+        margin-left: 0;
+        justify-content: flex-start;
+    }
 }
 
 &__link-hotel {
 
     box-sizing: border-box;
-    position: absolute;
     display: flex;
     width: 260px;
     height: 40px;
     background-color: $color-border-button;
     border: 0.5px solid $color-secondary-button-text;
     border-radius: 2px;
-    margin-left: 32%;
+    margin-left: 54px;
+    padding-right: 8px;
+
+        @media screen and (min-width: 1024px) {
+                margin-left: 0;
+                margin-bottom: 48px;
+                
+            }
+
+
     
 
 }
@@ -147,18 +195,21 @@
 &__hotel-tel {
     display: flex;
     align-items: center;
-    padding-left: 14px;
-    padding-right: 8px;
+    padding: 0;
+    // gap: 12px;
 }
 
 &__link-tel {
     list-style: none;
     text-decoration: none;
-    margin-right: 12px;
+    
 
-    &:not(:last-child) {
-    margin-right: 12px;
-    }
+   
+
+
+    // &:not(:last-child) {
+    // margin-right: 0;
+    // }
 
 }
 
@@ -166,14 +217,22 @@
 
 &__icon {
     fill: $color-icon;
+        margin-left: 8px;
+            margin-right: 14px;
 
 }
 
+&__maps-icon {
+    fill: $color-icon;
+}
+
+
 &__tel {
+
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 17px;
     display: flex;
     align-items: center;
@@ -182,11 +241,58 @@
     text-decoration: none;
 
 
+
+
+}
+
+&__maps {
+    display: block;
+    margin-top: 0;
+}
+
+&__maps-box {
+padding-bottom: 32px;
+
+
+}
+
+&__maps-link {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.01em;
+    color: $color-brand-logo;
+    text-decoration: none;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 260px;
+    height: 76px;
+    background-color: $color-border-button;
+    border: 0.5px solid $color-secondary-button-text;
+    border-radius: 2px;
+    margin-left: 124px;
+    margin-bottom: 32px;
+    padding-right: 33px;
+    padding-left: 44px;
+
+@media screen and (min-width: 1024px) {
+justify-content: flex-start;
+margin-left: 0;
 }
 
 
 
+    @media screen and (min-width: 1280px) {
+    
+            color: $color-link-homepage;
+            
+        }
 
+}
 
 &__box-reustoran {
     position: 50%;
@@ -207,43 +313,39 @@
 
 
 
-
-
-
-
-&__box-maps {
-    display: flex;
-}
-
-&__link-maps {
-
-    box-sizing: border-box;
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 260px;
-    height: 76px;
-    background-color: $color-border-button;
-    border: 0.5px solid $color-secondary-button-text;
-    border-radius: 2px;
-    margin-left: 32%;
-}
-
-
-
 &__maps-images {
+    
     box-sizing: border-box;
-    position: absolute;
     width: 384px;
     height: 220px;
-    border: 1px solid #BABABA;
+    border: 1px solid $color-border-maps;
     box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
     border-radius: 2px;
+
+
+@media screen and (min-width: 1024px) {
+    width: 535px;
+        height: 412px;
+        margin-left: 427px;
+       
+        
+}
+
+@media screen and (min-width: 1280px) {
+    width: 634px;
+    height: 412px;
+    margin-left: 108px;
+}
+
 }
 
 
-
+&__cotainer {
+    display: inline;
+    justify-content: space-around;
+    gap: 101px;
+    
+}
 
 }
 
