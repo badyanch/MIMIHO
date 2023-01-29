@@ -4,9 +4,9 @@ function customSelect() {
   if (customSelects.length > 0) {
     customSelects.forEach(select => {
       NiceSelect.bind(select, {
-        searchable: true, // false
+        searchable: false, // false
         placeholder: 'select',
-        searchtext: 'zoek',
+        searchtext: 'search',
         selectedtext: 'geselecteerd',
       });
     });
