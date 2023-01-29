@@ -38,8 +38,6 @@
     }
   }
   &__container {
-    // position: relative;
-    // margin-top: -50px;
     padding: 483px 15px 14px;
 
     @media screen and (min-width: 1028px) {
@@ -61,7 +59,7 @@
     text-transform: uppercase;
     color: $color-slider-button;
     margin-bottom: 14px;
-    // !Потрібно марджін задати
+
     @media screen and (min-width: 1024px) {
       margin-bottom: 24px;
       font-size: 36px;
@@ -93,21 +91,23 @@
     @media screen and (min-width: 1024px) {
       font-size: 16px;
       line-height: 1.2;
-      margin-bottom: 24px;
+      margin-bottom: 0;
       width: 400px;
       height: 83px;
-    }
-    @media screen and (min-width: 1280px) {
-      margin-bottom: 48px;
     }
   }
 
   &__contact-wrap {
+    display: flex;
+    align-items: center;
+    gap: 72px;
+
     @media screen and (min-width: 1024px) {
-      display: flex;
       gap: 137px;
       justify-content: space-between;
-      margin-bottom: 25px;
+      align-items: flex-end;
+
+      // margin-bottom: 25px;
     }
     @media screen and (min-width: 1280px) {
       gap: 253px;
@@ -123,9 +123,16 @@
     border: 1px solid rgba(243, 198, 83, 0.7);
     border-radius: 2px;
     @media screen and (min-width: 1024px) {
+      top: 0;
+      right: 0;
       position: static;
       width: 285px;
       height: 56px;
+      bottom: 22px;
+      left: 47px;
+    }
+    @media screen and (min-width: 1280px) {
+      display: none;
     }
   }
   &__address-link {
@@ -163,9 +170,7 @@
     gap: 70px;
 
     @media screen and (min-width: 1024px) {
- 
     }
-    
   }
 
   &__button {
@@ -183,6 +188,13 @@
     text-align: center;
     width: 232px;
     height: 48px;
+
+    @media screen and (min-width: 1024px) {
+      margin-bottom: 40px;
+    }
+    @media screen and (min-width: 1280px) {
+      margin-bottom: 0;
+    }
 
     &:hover,
     &:focus {
@@ -212,4 +224,32 @@
     width: 24px;
     height: 24px;
   }
+}
+
+// .button-icon-flex {
+//   display: flex;
+//   gap: 72px;
+//   align-items: center;
+//   @media screen and (min-width: 1024px) {
+//     align-items: flex-end;
+//     gap: 264px;
+//     justify-content: flex-end;
+//     margin-bottom: 17px;
+//   }
+// }
+.test {
+  display: flex;
+  align-items: center;
+  gap: 41px;
+}
+.test1 {
+  @media screen and (min-width: 1280px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.text-container {
+  display: block;
 }
