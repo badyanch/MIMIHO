@@ -1,0 +1,154 @@
+.header {
+  position: absolute;
+  z-index: 999;
+  left: 15px;
+  top: 16px;
+  right: 15px;
+
+  @media screen and (min-width: 1024px) {
+    left: 47px;
+    top: 24px;
+    right: 55px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    left: 85px;
+    top: 24px;
+    right: 88px;
+  }
+
+  &__box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    font-family: 'FilmP3';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: calc(39px / 36px);
+    letter-spacing: 0.3em;
+
+    // color: $color-main-logo;
+
+    @media screen and (min-width: 1014px) {
+      font-size: 40px;
+      line-height: calc(43px / 40px);
+    }
+  }
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  gap: 20px;
+
+  @media screen and (min-width: 1024px) {
+    gap: 80px;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    @media screen and (min-width: 1024px) {
+      gap: 46px;
+    }
+  }
+
+  &__item {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(20px / 16px);
+    letter-spacing: 0.02em;
+    color: $color-brand-text;
+
+    @media screen and (min-width: 1024px) {
+      font-size: 20px;
+      line-height: calc(24px / 20px);
+    }
+  }
+
+  &__icon {
+    fill: $color-icon;
+  }
+
+  &__phone {
+    display: none;
+
+    @media screen and (min-width: 1024px) {
+      display: flex;
+      // color: $color-main-logo;
+    }
+  }
+}
+
+.header-social {
+  display: none;
+  @media screen and (min-width: 1280px) {
+    display: flex;
+    gap: 22px;
+  }
+
+  &__link {
+    @media screen and (min-width: 1280px) {
+      fill: $color-icon;
+      cursor: pointer;
+    }
+  }
+}
+
+.header-phone {
+  display: flex;
+  align-items: center;
+
+  @media screen and (min-width: 1024px) {
+    border: 1px solid $color-brand-text;
+    padding: 10px 14px 10px 14px;
+    border-radius: 2px;
+  }
+
+  &__icon {
+    fill: $color-brand-text;
+  }
+
+  &__text {
+    display: none;
+    @media screen and (min-width: 1024px) {
+      display: flex;
+      align-items: center;
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: calc(17px / 14px);
+      letter-spacing: 0.02em;
+
+      // color: $color-main-logo;
+    }
+  }
+
+  &__link {
+    @media screen and (min-width: 1024px) {
+      display: flex;
+      align-items: center;
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: calc(17px / 14px);
+      letter-spacing: 0.02em;
+
+      // color: $color-main-logo;
+    }
+  }
+}
