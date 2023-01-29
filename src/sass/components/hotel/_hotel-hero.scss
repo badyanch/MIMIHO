@@ -1,4 +1,4 @@
-.hero {
+.hero-hotel {
   position: relative;
   background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
     url('../images/room-homepage-mobile.jpg');
@@ -71,16 +71,12 @@
     letter-spacing: 0.3em;
     text-transform: uppercase;
     color: $color-slider-button;
-    margin-bottom: 24px;
+    margin-bottom: 32px;
 
     @media screen and (min-width: 1024px) {
       font-size: 128px;
-      margin-bottom: 16px;
     }
-    @media screen and (min-width: 1280px) {
-      font-size: 128px;
-      margin-bottom: 32px;
-    }
+
     &--spacing {
       letter-spacing: 0;
     }
@@ -94,34 +90,15 @@
     line-height: 1.25;
     letter-spacing: 0.02em;
     color: $color-slider-button;
-    margin-bottom: 40px;
+    margin-bottom: 178px;
 
     @media screen and (min-width: 1024px) {
       font-size: 20px;
       line-height: 1.2;
-      margin-bottom: 56px;
+      margin-bottom: 218px;
     }
     @media screen and (min-width: 1280px) {
-      margin-bottom: 64px;
-    }
-  }
-
-  &__slogan {
-    text-transform: uppercase;
-    text-align: center;
-    font-family: 'Times New Roman';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 1.15;
-    letter-spacing: 0.05em;
-    color: $color-slider-button;
-    margin-bottom: 113px;
-
-    @media screen and (min-width: 1024px) {
-      font-size: 36px;
-      line-height: 1.13;
-      margin-bottom: 137px;
+      margin-bottom: 242px;
     }
   }
 
@@ -169,12 +146,6 @@
     }
   }
   &__address-icon {
-    width: 20px;
-    height: 20px;
-    @media screen and (min-width: 1024px) {
-      width: 24px;
-      height: 24px;
-    }
     fill: $color-brand-text;
 
     &:hover,
@@ -250,9 +221,13 @@
       display: none;
     }
   }
+}
 
-  .hero__icon-item {
-  }
-  .hero__icon-link {
+ .hero-location {
+  width: 20px;
+  height: 20px;
+  @media screen and (min-width: 1024px) {
+    width: 24px;
+    height: 24px;
   }
 }

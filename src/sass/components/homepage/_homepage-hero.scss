@@ -169,12 +169,6 @@
     }
   }
   &__address-icon {
-    width: 20px;
-    height: 20px;
-    @media screen and (min-width: 1024px) {
-      width: 24px;
-      height: 24px;
-    }
     fill: $color-brand-text;
 
     &:hover,
@@ -182,6 +176,7 @@
       fill: $color-secondary-active-button;
     }
   }
+
   &__button-wrap {
     display: flex;
     flex-direction: column;
@@ -250,9 +245,12 @@
       display: none;
     }
   }
-
-  .hero__icon-item {
-  }
-  .hero__icon-link {
+}
+.hero-location {
+  width: 20px;
+  height: 20px;
+  @media screen and (min-width: 1024px) {
+    width: 24px;
+    height: 24px;
   }
 }
