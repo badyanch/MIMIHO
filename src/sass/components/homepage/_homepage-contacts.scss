@@ -3,6 +3,10 @@
     width: 100%;
     background-color: $color-primary-bg;
 
+&__header {
+            display: none;
+        }
+
 
 
 &__name {
@@ -14,7 +18,26 @@
     letter-spacing: 0.3em;
     text-align: left;
     color: $color-brand-logo;
-   margin-bottom: 12px; 
+    padding-top: 36px;
+    margin-bottom: 12px; 
+
+@media screen and (min-width: 1024px) {
+
+    font-family: FilmP3;
+    font-size: 64px;
+    line-height: 69px;
+    letter-spacing: 0.3em;
+    text-align: left;
+    padding-top: 56px;
+    margin-bottom: 8px;
+}
+
+@media screen and (min-width: 1280px) {
+
+    text-align: left;
+    padding-top: 56px;
+    margin-bottom: 16px;
+}
 }
 
 
@@ -26,24 +49,143 @@
     letter-spacing: 0.02em;
     text-align: left;
     color: $color-secondary-text;
+    margin-bottom: 24px;
+
+@media screen and (min-width: 1024px) {
+    margin-bottom: 40px;
+
+
+}
+    
+@media screen and (min-width: 1280px) {
+    
+
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 52px;
+
 
 }
 
-&__header {
-    display: none;
 }
+
+
+&__list {
+
+    padding-bottom: 32px;
+    padding-left: 0;
+
+@media screen and (min-width: 1024px) {
+    
+    padding-bottom: 40px;
+}
+
+@media screen and (min-width: 1280px) {
+    
+    padding-bottom: 74px;
+}
+
+}
+
+
 
 
 &__link {
 
-font-family: 'Montserrat';
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding-left: 0;
+    margin-bottom: 32px;
+
+
+}
+
+
+&__title{
+
+    font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
     line-height: 24px;
     letter-spacing: 0.02em;
     color: $color-disable-link;
+
 }
+
+&__link-restouran {
+
+    box-sizing: border-box;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 144px;
+    height: 40px;
+    background-color: $color-border-button;
+    border: 0.5px solid $color-secondary-button-text;
+    border-radius: 2px;
+    margin-left: 32%;
+}
+
+&__link-hotel {
+
+    box-sizing: border-box;
+    position: absolute;
+    display: flex;
+    width: 260px;
+    height: 40px;
+    background-color: $color-border-button;
+    border: 0.5px solid $color-secondary-button-text;
+    border-radius: 2px;
+    margin-left: 32%;
+    
+
+}
+
+&__hotel-tel {
+    display: flex;
+    align-items: center;
+    padding-left: 14px;
+    padding-right: 8px;
+}
+
+&__link-tel {
+    list-style: none;
+    text-decoration: none;
+    margin-right: 12px;
+
+    &:not(:last-child) {
+    margin-right: 12px;
+    }
+
+}
+
+
+
+&__icon {
+    fill: $color-icon;
+
+}
+
+&__tel {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.02em;
+    color: $color-brand-logo;
+    text-decoration: none;
+
+
+}
+
+
+
 
 
 &__box-reustoran {
@@ -61,58 +203,13 @@ font-family: 'Montserrat';
     margin-bottom: 16px;
 }
 
-&__border-restouran {
-                                                                                                                                                                                                   
-    box-sizing: border-box;
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    width: 144px;
-    height: 40px;
-    background-color: $color-border-button;
-    border: 0.5px solid $color-secondary-button-text;
-    border-radius: 2px;
-    margin-left: 50%;
-}
-
-&__border-hotel {
-        
-    box-sizing: border-box;
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    width: 260px;
-    height: 40px;
-    background-color: $color-border-button;
-    border: 0.5px solid $color-secondary-button-text;
-    border-radius: 2px;
-    margin-left: 50%;
-
-}
 
 
 
-&__icon {
-    fill: $color-icon;
-    padding: auto;
-    margin-right: 14px;
-}
 
-&__tel {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
-    display: flex;
-    align-items: center;
-    letter-spacing: 0.02em;
-    color: $color-brand-logo;
-    margin-left: 0;
-    padding: auto;
-    text-decoration: none;
-    
-}
+
+
+
 
 &__box-maps {
     display: flex;
@@ -130,14 +227,10 @@ font-family: 'Montserrat';
     background-color: $color-border-button;
     border: 0.5px solid $color-secondary-button-text;
     border-radius: 2px;
-    margin-bottom: 32px;
-    margin-left: 50%;
+    margin-left: 32%;
 }
 
-&__maps {
 
-    
-}
 
 &__maps-images {
     box-sizing: border-box;
@@ -149,26 +242,9 @@ font-family: 'Montserrat';
     border-radius: 2px;
 }
 
-&__tel-hotel {
+
+
 
 }
 
-&__title {
-
-list-style: none;
-text-decoration: none;
-    font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 20px;
-        letter-spacing: 0.01em;
-        color: $color-brand-logo;
-        padding-left: 0;
-        margin-bottom: 16px;
-        padding: 8px 33px 7px 44px;
-
-}
-
-}
 
