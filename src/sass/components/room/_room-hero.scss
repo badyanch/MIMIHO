@@ -106,8 +106,6 @@
       gap: 137px;
       justify-content: space-between;
       align-items: flex-end;
-
-      // margin-bottom: 25px;
     }
     @media screen and (min-width: 1280px) {
       gap: 253px;
@@ -226,23 +224,12 @@
   }
 }
 
-// .button-icon-flex {
-//   display: flex;
-//   gap: 72px;
-//   align-items: center;
-//   @media screen and (min-width: 1024px) {
-//     align-items: flex-end;
-//     gap: 264px;
-//     justify-content: flex-end;
-//     margin-bottom: 17px;
-//   }
-// }
-.test {
+.flex-adress-icon {
   display: flex;
   align-items: center;
   gap: 41px;
 }
-.test1 {
+.flex-container {
   @media screen and (min-width: 1280px) {
     display: flex;
     align-items: center;
