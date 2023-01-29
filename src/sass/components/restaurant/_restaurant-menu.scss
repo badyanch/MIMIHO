@@ -19,31 +19,43 @@
   @media (max-width: 413px) {
     font-size: 29px;
   }
-}
-.menu {
-  margin-bottom: 32px;
   @media (min-width: 1024px) {
-    margin-bottom: 41;
+    margin-bottom: 40px;
   }
 }
+
 .menu__title {
   font-family: 'Times New Roman';
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
-  line-height: 23px;
+  line-height: 1.5;
   color: $color-primary-text;
   margin-bottom: 16px;
+  @media (min-width: 1024px) {
+    margin-bottom: 20px;
+  }
+  @media (min-width: 1280px) {
+    font-size: 24px;
+  }
 }
 .menu-list {
   @extend %list;
   margin-bottom: 16px;
-
+  @media (min-width: 1024px) {
+    margin-bottom: 20px;
+  }
   &__item {
     display: flex;
     margin-bottom: 8px;
     &:last-child {
       margin-bottom: -8px;
+    }
+    @media (min-width: 1280px) {
+      margin-bottom: 12px;
+      &:last-child {
+        margin-bottom: -12px;
+      }
     }
   }
 
@@ -66,9 +78,12 @@
     font-family: 'Montserrat';
     font-weight: 500;
     font-size: 14px;
-    line-height: 17px;
+    line-height: 1.2;
     letter-spacing: 0.02em;
     color: $color-primary-text;
+    @media (min-width: 1280px) {
+      font-size: 16px;
+    }
   }
   &__description {
     font-family: 'Montserrat';
@@ -122,6 +137,9 @@
     @media (max-width: 413px) {
       font-size: 12px;
     }
+    @media (min-width: 1280px) {
+      font-size: 16px;
+    }
   }
 }
 .menu-list__dish--centered {
@@ -163,11 +181,13 @@
 
 .menu__columns {
   display: block;
-  margin-bottom: -16px;
+  margin-bottom: 32px;
+
   @media (min-width: 1024px) {
     display: flex;
     align-items: baseline;
     justify-content: center;
+    margin-bottom: 41;
   }
   @media (min-width: 1280px) {
     display: flex;
@@ -176,17 +196,18 @@
   &--right {
     @media (min-width: 1024px) {
       min-width: 411px;
-      margin-bottom: -16px;
+      margin-bottom: -20px;
     }
   }
   &--left {
+    margin-bottom: -16px;
     @media (min-width: 1024px) {
       min-width: 411px;
       margin-left: 89px;
-      margin-bottom: -16px;
     }
     @media (min-width: 1280px) {
       margin-left: 0;
+      margin-bottom: -20px;
     }
   }
 }
