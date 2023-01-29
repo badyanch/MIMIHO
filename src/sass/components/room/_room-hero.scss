@@ -1,0 +1,242 @@
+.hero-room {
+  position: relative;
+  background-image: url('../images/room-number-mobile.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  max-width: 414px;
+  min-height: 740px;
+  padding: 0;
+  margin: 0 auto;
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url('../images/room-number-mobile2@2x.jpg');
+  }
+  @media screen and (min-width: 1024px) {
+    max-width: 1024px;
+    min-height: 720px;
+    background-image: url('../images/room-number-tablet.jpg');
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/room-number-tablet@2x.jpg');
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    max-width: 1280px;
+
+    background-image: url('../images/room-number-desktop.jpg');
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/room-number-desktop2@2x.jpg');
+    }
+  }
+  &__container {
+    padding: 483px 15px 14px;
+
+    @media screen and (min-width: 1028px) {
+      padding: 468px 47px 22px;
+    }
+    @media screen and (min-width: 1280px) {
+      padding: 524px 85px 48px;
+    }
+  }
+  &__title {
+    width: 325px;
+    height: 64px;
+    font-family: 'Times New Roman';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.14;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: $color-slider-button;
+    margin-bottom: 14px;
+
+    @media screen and (min-width: 1024px) {
+      margin-bottom: 24px;
+      font-size: 36px;
+      line-height: 1.13;
+      width: 509px;
+      height: 41px;
+    }
+
+    &--lowercase {
+      text-transform: lowercase;
+    }
+
+    &--spacing {
+      letter-spacing: 0;
+    }
+  }
+  &__subtitle {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.25x;
+    letter-spacing: 0.02em;
+    color: $color-slider-button;
+    margin-bottom: 17px;
+    width: 325px;
+    height: 61px;
+
+    @media screen and (min-width: 1024px) {
+      font-size: 16px;
+      line-height: 1.2;
+      margin-bottom: 0;
+      width: 400px;
+      height: 83px;
+    }
+  }
+
+  &__contact-wrap {
+    display: flex;
+    align-items: center;
+    gap: 72px;
+
+    @media screen and (min-width: 1024px) {
+      gap: 137px;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+    @media screen and (min-width: 1280px) {
+      gap: 253px;
+    }
+  }
+  &__address {
+    top: 55px;
+    right: 15px;
+    position: absolute;
+    width: 210px;
+    height: 47px;
+    padding: 6px;
+    border: 1px solid rgba(243, 198, 83, 0.7);
+    border-radius: 2px;
+    @media screen and (min-width: 1024px) {
+      top: 0;
+      right: 0;
+      position: static;
+      width: 285px;
+      height: 56px;
+      bottom: 22px;
+      left: 47px;
+    }
+    @media screen and (min-width: 1280px) {
+      display: none;
+    }
+  }
+  &__address-link {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.25;
+    letter-spacing: 0.01em;
+    color: $color-hero-location;
+
+    @media screen and (min-width: 1024px) {
+      font-size: 16px;
+    }
+  }
+
+  &__address-icon {
+    fill: $color-brand-text;
+
+    &:hover,
+    &:focus {
+      fill: $color-secondary-active-button;
+    }
+  }
+
+  &__button-wrap {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+
+    @media screen and (min-width: 1024px) {
+    }
+  }
+
+  &__button {
+    cursor: pointer;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    color: $color-secondary-button-text;
+    background: rgba(0, 0, 0, 0.4);
+    border: 2px solid $color-border-button;
+    border-radius: 25px;
+    text-align: center;
+    width: 232px;
+    height: 48px;
+
+    @media screen and (min-width: 1024px) {
+      margin-bottom: 40px;
+    }
+    @media screen and (min-width: 1280px) {
+      margin-bottom: 0;
+    }
+
+    &:hover,
+    &:focus {
+      background: $color-secondary-active-button;
+    }
+  }
+
+  &__icon-list {
+    flex-direction: column;
+    display: flex;
+    gap: 8px;
+
+    @media screen and (min-width: 1024px) {
+      flex-direction: row;
+      gap: 20px;
+    }
+    @media screen and (min-width: 1280px) {
+      display: none;
+    }
+  }
+}
+
+.hero-location {
+  width: 20px;
+  height: 20px;
+  @media screen and (min-width: 1024px) {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.flex-adress-icon {
+  display: flex;
+  align-items: center;
+  gap: 41px;
+}
+.flex-container {
+  @media screen and (min-width: 1280px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.text-container {
+  display: block;
+}
