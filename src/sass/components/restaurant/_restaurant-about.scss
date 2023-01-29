@@ -1,8 +1,50 @@
 .restaurant {
     padding-top: 16px;
     padding-bottom: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
     width: 100%;
     background-color: $color-primary-bg;
+
+}
+.restaurant__subtitle {
+    font-size: 20px;
+    line-height: 1.15;
+    color: #B4B4B4;
+    margin-bottom: 12px;
+}
+
+.restauranat__logo {
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    font-family: 'FilmP3';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.07;
+    letter-spacing: 0.3em;
+}
+
+.restaurant__text {
+   font-size: 12px; 
+   line-height: 1.25;
+   font-weight: 600;
+   letter-spacing: 0.02em;
+   color: $color-secondary-text;
+   
+   max-width: 258px;
+   margin-bottom: 28px;
+ 
+}
+
+.restaurant__text-brown {
+    font-size: 12px;
+    line-height: 1.25;
+    font-weight: 600;
+   letter-spacing: 0.02em;
+   color: #C79002;
+
+   max-width: 163px;
 
 }
 
