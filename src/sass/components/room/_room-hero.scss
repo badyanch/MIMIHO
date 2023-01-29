@@ -50,6 +50,8 @@
     }
   }
   &__title {
+    width: 325px;
+    height: 64px;
     font-family: 'Times New Roman';
     font-style: normal;
     font-weight: 700;
@@ -59,11 +61,13 @@
     text-transform: uppercase;
     color: $color-slider-button;
     margin-bottom: 14px;
-
+    // !Потрібно марджін задати
     @media screen and (min-width: 1024px) {
       margin-bottom: 24px;
       font-size: 36px;
       line-height: 1.13;
+      width: 509px;
+      height: 41px;
     }
 
     &--lowercase {
@@ -83,14 +87,18 @@
     letter-spacing: 0.02em;
     color: $color-slider-button;
     margin-bottom: 17px;
+    width: 325px;
+    height: 61px;
 
     @media screen and (min-width: 1024px) {
-      font-size: 20px;
+      font-size: 16px;
       line-height: 1.2;
-      margin-bottom: 56px;
+      margin-bottom: 24px;
+      width: 400px;
+      height: 83px;
     }
     @media screen and (min-width: 1280px) {
-      margin-bottom: 64px;
+      margin-bottom: 48px;
     }
   }
 
@@ -137,6 +145,7 @@
       font-size: 16px;
     }
   }
+
   &__address-icon {
     fill: $color-brand-text;
 
@@ -145,21 +154,18 @@
       fill: $color-secondary-active-button;
     }
   }
+
   &__button-wrap {
     display: flex;
-    flex-direction: column;
+    flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
-    gap: 24px;
+    gap: 70px;
 
     @media screen and (min-width: 1024px) {
-      flex-direction: row;
-      gap: 40px;
-      justify-content: flex-end;
+ 
     }
-    @media screen and (min-width: 1280px) {
-      gap: 60px;
-    }
+    
   }
 
   &__button {
@@ -185,9 +191,14 @@
   }
 
   &__icon-list {
+    flex-direction: column;
     display: flex;
-    gap: 20px;
+    gap: 8px;
 
+    @media screen and (min-width: 1024px) {
+      flex-direction: row;
+      gap: 20px;
+    }
     @media screen and (min-width: 1280px) {
       display: none;
     }
