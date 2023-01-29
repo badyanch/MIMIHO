@@ -137,8 +137,28 @@
     fill: #FFFFFF;
     width: 30px;
     height: 16px;
-    
+}
 
+&__container{
+    z-index: 1;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    list-style: none;
+    position: relative;
+    overflow: hidden;
+}
+
+&__img-thumb{
+    list-style: none;
+}
+
+&__slide{
+        justify-content: center;
+            align-items: center;
+            font-size: 32px;
+            transition: all .5s ease-in-out;
+            display: flex;
 }
 
 }
