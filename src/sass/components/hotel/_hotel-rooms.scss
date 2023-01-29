@@ -2,6 +2,11 @@
     @media screen and (min-width: 1024px) {
         position: relative;
         display: flex;
+        gap: 42px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        gap: 48px;
     }
 }
 .room-lux__subtitle {
@@ -41,7 +46,7 @@
     @media screen and (min-width: 1024px) {
         display: flex;
         flex-direction: column;
-        margin-bottom: 176px;
+        // margin-bottom: 176px;
         max-width: 439px;
     }
 
@@ -101,47 +106,43 @@
     }
 
     @media screen and (min-width: 1024px) {
-        position: absolute;
-        top: 0;
-        right: 0;
         margin: 0;
-        transform: translate(-18%, -18%);
+        transform: translateY(-94px);
     }
 
     @media screen and (min-width: 1280px) {
-        right: 0;
-        transform: translate(-21%, -18%);
+        transform: translateY(-105px);
     }
 }
 
 .room-lux-gallery {
+    width: 404px;
+    background-color: $color-primary-bg;
     transform: translateX(-33.3333%);
 
     @media screen and (min-width: 1024px) {
+        width: 428px;
         transform: translateY(0);
-    }
-}
-.swiper {
-}
-.room-lux__list {
-    display: flex;
-    gap: 16px;
-    @extend %list;
-
-    @media screen and (min-width: 1024px) {
-        gap: 40px;
-    }
-}
-
-.room-lux__item {
-    background: $color-overlay;
-    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
-    @media screen and (min-width: 1024px) {
-        width: 194px;
     }
 
     @media screen and (min-width: 1280px) {
-        width: 254px;
+        width: 548px;
+    }
+}
+
+.room-lux__list {
+    display: flex;
+    @extend %list;
+}
+
+.room-lux__item {
+    min-width: 194px !important;
+    @media screen and (min-width: 1024px) {
+        width: 194px !important;
+    }
+
+    @media screen and (min-width: 1280px) {
+        width: 254px !important;
     }
 }
 
@@ -155,18 +156,18 @@
         margin-top: 32px;
         margin-bottom: 0;
     }
+
+    &__icon:hover,
+    &__icon:focus {
+        fill: $color-link-hover;
+    }
 }
 .swiper-btn {
     padding: 0;
     background-color: transparent;
     border: none;
 }
-.swiper-button-prev {
-}
-.swiper-btns__icon {
-}
-.swiper-button-next {
-}
+
 .btns-wrap {
     display: flex;
     flex-direction: column;
@@ -177,13 +178,19 @@
     @media screen and (min-width: 1024px) {
         justify-content: center;
         align-items: center;
+        margin-top: 41px;
         margin-left: auto;
+    }
+
+    @media screen and (min-width: 1280px) {
+        margin-top: 72px;
     }
 }
 
 .gallery-btns-wrap {
     @media screen and (min-width: 1024px) {
         display: flex;
+        margin-top: -46px;
     }
 }
 
