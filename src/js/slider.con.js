@@ -79,6 +79,88 @@ function swiperSlider() {
       });
     });
   }
+
+const aboutHotel = document.querySelectorAll('[data-slider="hotel-slider"]');
+
+  
+  //const heroSlider = document.querySelectorAll('[data-slider="hero-slider"]');
+  if (aboutHotel) {
+    aboutHotel.forEach(slider => {
+      // кнопки вперед та назад
+      let arrowLeft = slider.querySelector('.swiper-button-prev');
+      let arrowRight = slider.querySelector('.swiper-button-next');
+
+      //коментуємо чи видаляемо якщо не потрібно
+      let pagination = slider.querySelector('.swiper-pagination');
+      //коментуємо чи видаляемо якщо не потрібно
+
+      let swiper = new Swiper(slider.querySelector('.swiper'), {
+        speed: 1500,
+        // автоплей
+        centeredSlides: false,
+        autoplay: {
+        delay: 3000,
+            disableOnInteraction: false,
+        },
+        slidesPerView: 2, // кількість слайдерів для показу
+        spaceBetween: 20, // відстань між слайдерами
+
+        // крапки пагінації
+        pagination: {
+          el: pagination,
+          clickable: true,
+          renderBullet: function (index, className) {
+            return '<li class="' + className + '"></li>';
+          },
+        },
+        // кнопки навігації
+        navigation: {
+          nextEl: arrowRight,
+          prevEl: arrowLeft,
+        },
+
+        // додаємо додатковий клас
+        // можна використовувати для додаткових анімацій
+        on: {
+          transitionStart: function () {
+            let previousIndex = this.previousIndex;
+            let previousSlide =
+              slider.getElementsByClassName('swiper-slide-homepage')[previousIndex];
+            if (previousSlide) {
+              setTimeout(function () {
+                previousSlide.classList.remove('is-play');
+              }, 1000);
+            }
+          },
+          transitionEnd: function () {
+            let activeIndex = this.activeIndex;
+            let activeSlide =
+              slider.getElementsByClassName('swiper-slide-homepage')[activeIndex];
+            activeSlide.classList.add('is-play');
+          },
+        },
+        // адаптив
+        breakpoints: {
+          // when window width is >= 320px
+          320: {
+            slidesPerView:2,
+            spaceBetween: 16,
+          },
+          // when window width is >= 768px
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 40,
+          },
+          // when window width is >= 1200px
+          1280: {
+            slidesPerView: 3,
+            spaceBetween: 40,
+          },
+        },
+      });
+    });
+  }
+
   // if (heroSlider) {
   //     heroSlider.forEach(slider => {
   //         //
@@ -146,10 +228,13 @@ function swiperSlider() {
   //         });
   //     });
   // }
-const aboutHotel = document.querySelectorAll('[data-slider="carousel-hotel"]');
 
-   if (aboutHotel) {
-    aboutHotel.forEach(slider => {
+  const homepageHotel = document.querySelectorAll('[data-slider="team-slider"]');
+
+  
+  //const heroSlider = document.querySelectorAll('[data-slider="hero-slider"]');
+  if (homepageHotel) {
+    homepageHotel.forEach(slider => {
       // кнопки вперед та назад
       let arrowLeft = slider.querySelector('.swiper-button-prev');
       let arrowRight = slider.querySelector('.swiper-button-next');
@@ -161,13 +246,13 @@ const aboutHotel = document.querySelectorAll('[data-slider="carousel-hotel"]');
       let swiper = new Swiper(slider.querySelector('.swiper'), {
         speed: 1500,
         // автоплей
-        //centeredSlides: true,
-        // autoplay: {
-        //     delay: 3000,
-        //     disableOnInteraction: false,
-        // },
-        slidesPerView: 3, // кількість слайдерів для показу
-        spaceBetween: 20, // відстань між слайдерами
+        centeredSlides: false,
+        autoplay: {
+        delay: 3000,
+            disableOnInteraction: false,
+        },
+        slidesPerView: 2, // кількість слайдерів для показу
+        spaceBetween: 16, // відстань між слайдерами
 
         // крапки пагінації
         pagination: {
@@ -207,17 +292,17 @@ const aboutHotel = document.querySelectorAll('[data-slider="carousel-hotel"]');
         breakpoints: {
           // when window width is >= 320px
           320: {
-            slidesPerView: 1,
-            spaceBetween: 20,
+            slidesPerView:2,
+            spaceBetween: 16,
           },
           // when window width is >= 768px
-          768: {
+          1024: {
             slidesPerView: 2,
-            spaceBetween: 30,
+            spaceBetween: 40,
           },
           // when window width is >= 1200px
-          1200: {
-            slidesPerView: 3,
+          1280: {
+            slidesPerView: 2,
             spaceBetween: 40,
           },
         },
