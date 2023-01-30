@@ -107,8 +107,14 @@ gap: 20px;
         border: 1px solid rgb(243, 198, 83);
         background-color: rgb(0, 0, 0);
         color: rgb(255, 255, 255);
-        transform: scale(1);
+        transition: color, background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
         cursor: pointer;
+
+        &:hover,
+        &:focus {
+            color: rgb(0, 0, 0);
+                background-color: rgb(243, 198, 83);
+        }
 
         @media screen and (min-width: 1024px) {
                width: 434px;
@@ -127,6 +133,12 @@ gap: 20px;
         line-height: 1.25;
         font-size: 16px;
         letter-spacing: 0.02em;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover,
+        &:focus {
+            color: #F3C653;
+        }
 
         @media screen and (min-width: 1024px) {
                 font-size: 20px;
