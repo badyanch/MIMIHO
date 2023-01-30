@@ -4,7 +4,7 @@
   background-color: $color-primary-bg;
   margin: 0 auto;
 
-  @media (min-width: 1024px) {
+  @media screen and (min-width: 1024px) {
     background-color: $color-secondary-bg;
   }
 }
@@ -16,16 +16,16 @@
   line-height: 1.15;
   color: $color-primary-text;
   text-transform: uppercase;
-  @media (max-width: 413px) {
+  @media screen and (max-width: 413px) {
     font-size: 29px;
   }
-  @media (min-width: 1024px) {
+  @media screen and (min-width: 1024px) {
     margin-bottom: 41px;
   }
 }
 .menu {
   margin-bottom: 32px;
-  @media (min-width: 1024px) {
+  @media screen and (min-width: 1024px) {
     margin-bottom: 41px;
   }
 }
@@ -37,14 +37,14 @@
   line-height: 1.5;
   color: $color-primary-text;
   margin-bottom: 16px;
-  @media (min-width: 1024px) {
+  @media screen and (min-width: 1024px) {
     margin-bottom: 20px;
   }
 }
 .menu-list {
   @extend %list;
   margin-bottom: 16px;
-  @media (min-width: 1024px) {
+  @media screen and (min-width: 1024px) {
     margin-bottom: 20px;
   }
 
@@ -60,12 +60,12 @@
     width: 221px;
     margin-right: auto;
 
-    @media (max-width: 413px) {
+    @media screen and (max-width: 413px) {
       width: 221px;
       margin-right: 32px;
     }
 
-    @media (min-width: 1280px) {
+    @media screen and (min-width: 1280px) {
       width: 260px;
       margin-right: 60px;
     }
@@ -93,7 +93,7 @@
     justify-content: space-between;
     width: 131px;
 
-    @media (max-width: 413px) {
+    @media screen and (max-width: 413px) {
       display: flex;
       flex-wrap: wrap;
       flex-direction: column;
@@ -101,7 +101,7 @@
       max-width: 80px;
       margin-left: auto;
     }
-    @media (min-width: 1280px) {
+    @media screen and (min-width: 1280px) {
       width: 168px;
     }
   }
@@ -113,7 +113,7 @@
     line-height: 1.2;
     letter-spacing: 0.02em;
 
-    @media (max-width: 413px) {
+    @media screen and (max-width: 413px) {
       font-size: 12px;
       margin-bottom: 8px;
     }
@@ -128,13 +128,13 @@
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: $color-primary-text;
-    @media (max-width: 413px) {
+    @media screen and (max-width: 413px) {
       font-size: 12px;
     }
   }
 }
 .menu-list__dish--centered {
-  @media (max-width: 413px) {
+  @media screen and (max-width: 413px) {
     align-items: center;
     display: flex;
   }
@@ -142,7 +142,7 @@
 .btn-thumb {
   display: flex;
   justify-content: center;
-  @media (min-width: 1024px) {
+  @media screen and (min-width: 1024px) {
     justify-content: end;
   }
 }
@@ -173,26 +173,26 @@
 .menu__columns {
   display: block;
 
-  @media (min-width: 1024px) {
+  @media screen and (min-width: 1024px) {
     display: flex;
     align-items: baseline;
     justify-content: center;
   }
-  @media (min-width: 1280px) {
+  @media screen and (min-width: 1280px) {
     display: flex;
     justify-content: space-between;
   }
   &--right {
-    @media (min-width: 1024px) {
+    @media screen and (min-width: 1024px) {
       min-width: 411px;
     }
   }
   &--left {
-    @media (min-width: 1024px) {
+    @media screen and (min-width: 1024px) {
       min-width: 411px;
       margin-left: 89px;
     }
-    @media (min-width: 1280px) {
+    @media screen and (min-width: 1280px) {
       margin-left: 0;
     }
   }
