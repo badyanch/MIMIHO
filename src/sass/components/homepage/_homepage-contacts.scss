@@ -175,13 +175,13 @@ height: 521px;
 
     box-sizing: border-box;
     display: flex;
-    width: 260px;
     height: 40px;
     background-color: $color-border-button;
     border: 0.5px solid $color-secondary-button-text;
     border-radius: 2px;
     margin-left: 54px;
-    padding-right: 8px;
+   
+    // padding-right: 8px;
 
         @media screen and (min-width: 1024px) {
                 margin-left: 0;
@@ -198,7 +198,13 @@ height: 521px;
     display: flex;
     align-items: center;
     padding: 0;
-    // gap: 12px;
+    gap: 12px;
+    min-width: 260px;
+
+    @media screen and (min-width: 1024px) {
+        gap: 16px;
+            min-width: 264px;
+    }
 }
 
 &__link-tel {
@@ -345,12 +351,22 @@ margin-left: 0;
 
 }
 
-
 &__cotainer {
-    // display: inline;
+
+    @media screen and (min-width: 1024px) {
+    display: flex;
+    align-items: center;
     // justify-content: space-around;
-    // gap: 101px;
+    gap: 101px;
+    }
     
+}
+
+&__desktop {
+
+@media screen and (min-width: 1024px) {
+    flex-direction: row;
+}
 }
 
 }
