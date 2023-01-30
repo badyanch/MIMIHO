@@ -37,6 +37,11 @@
     }
 // text thumb
 
+&____bg-layout{
+    padding-top: 40px;
+    padding-bottom: 24px;
+}
+
 &__text-thumb{
     @media screen and (min-width: 1024px) {
     }
@@ -139,7 +144,7 @@
 }
 &__flex-thumb
 {
-    margin-bottom: 40px+30px+24px;
+    // margin-bottom: 40px+30px+24px;
 }
 }
 // slider
@@ -149,7 +154,17 @@
 $slider-bottom-padding: 40px;
 
 
-.swiper-slide-homepage{
+ .about-hotel-slider {
+     overflow: hidden;
+     padding-top: 48px;
+     padding-bottom: 32px;
+
+     @media screen and (min-width: 1024px) {
+         padding-top: 40px;
+         padding-bottom: 40px;
+     }
+ }
+.about-hotel-slider__swiper{
     
     width: 274px !important;
     
@@ -158,7 +173,7 @@ $slider-bottom-padding: 40px;
         }
 }
 
- .swiper-wrapper-hotel{
+ .about-hotel-slider__wrapper{
     list-style: none;
     padding: 0;
     margin: 0;
@@ -166,7 +181,7 @@ $slider-bottom-padding: 40px;
 
  }
 
- .swiper-wrapper img{
+ .about-hotel-slider__wrapper img{
    width: 274px;
    height: 270px;
     @media screen and (min-width: 1024px) {
@@ -175,16 +190,7 @@ $slider-bottom-padding: 40px;
         }
  }
 
-.slider-section{
-    margin-top: 48px;
-    @media screen and (min-width: 1024px) {
-            width: 73%;
-            margin-top: 40px;
-        }
-    
-}
-
- .swiper-hotel-button
+ .about-hotel-slider__button
  {
     // margin-bottom: 32px;
     margin-top: 16px;
@@ -202,7 +208,7 @@ $slider-bottom-padding: 40px;
  }
 
 
- .swiper-hotel-btn{
+ .about-hotel-slider__btn{
     cursor: pointer;
     background-color: transparent;
     border: none;
@@ -213,7 +219,7 @@ $slider-bottom-padding: 40px;
     }
  }
 
- .swiper-holet-icons{
+ .about-hotel-slider__icons{
     width: 30px;
     height: 30px;
 
@@ -221,15 +227,7 @@ $slider-bottom-padding: 40px;
 
 
 
- .swiper-hotel{
-    overflow: hidden;
-    padding-top: 48px;
-        padding-bottom: 32px;
-        @media screen and (min-width: 1024px) {
-                padding-top: 40px;
-                padding-bottom: 40px;
-            }
- }
+
 
 //  .swiper-slide-next{
 //     @media screen and (min-width: 1024px) {
