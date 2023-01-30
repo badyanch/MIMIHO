@@ -1,0 +1,72 @@
+<div class="js-backdrop-modal backdrop">
+  <div class="modal modal1" data-modal="1">
+    <button class="close-button js-modal-close" type="button">
+      <svg width="24" height="24">
+        <use href="./images/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+
+    <form action="" name="form-table">
+      <h1 class="form-table__title">забронювати столик</h1>
+      <div class="form-table__box">
+        <div class="test">
+          <div class="input-box">
+            <div class="form-table__input">
+              <input
+                class="form-table__field"
+                type="text"
+                placeholder="Ваше ім'я"
+                id="name"
+              />
+              <label class="form-table__text" for="name"
+                >На кого забронювати столик?</label
+              >
+            </div>
+            <div class="form-table__input">
+              <input
+                class="form-table__field"
+                type="tel"
+                placeholder="+38 (___) ___-__-__"
+                id="tel"
+              />
+              <label class="form-table__text" for="tel">Номер телефону</label>
+            </div>
+          </div>
+          <div class="input-box">
+            <div class="form-table__input">
+              <select
+                class="form-table__field js-select"
+                type="number"
+                placeholder="2"
+                id="num"
+              >
+                <option value="">2</option>
+                <option value="">3</option>
+              </select>
+              <label class="form-table__text" for="num"
+                >Столик на яку кількість осіб?</label
+              >
+            </div>
+            <div class="form-table__input">
+              <select
+                class="form-table__field js-select"
+                name=""
+                id="date"
+                aria-placeholder="Сьогодні"
+              >
+                <option class="" value="">Сьогодні</option>
+                <option class="" value="">Завтра</option>
+              </select>
+              <label class="form-table__text" for="date"
+                >На яку дату бронювати?</label
+              >
+            </div>
+          </div>
+        </div>
+        <button class="form-table__button" type="submit">
+          оформити бронювання
+        </button>
+      </div>
+    </form>
+  </div>
+</div>

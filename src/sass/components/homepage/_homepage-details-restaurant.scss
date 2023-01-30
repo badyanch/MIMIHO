@@ -1,0 +1,210 @@
+.details-restaurant {
+  position: relative;
+  max-width: 414px;
+  padding-top: 24px;
+  padding-bottom: 40px;
+  margin: 0 auto;
+  background-size: cover;
+  background-position: center center;
+  background-image: linear-gradient(
+      to right,
+      $primary-dark-rgb,
+      $primary-dark-rgb
+    ),
+    url(../images/pexels-kheng-mobile.jpg);
+  &__title {
+    font-family: 'FilmP3';
+    font-size: 40px;
+    line-height: 1.075;
+    color: #ffffff;
+    margin-left: auto;
+    margin-right: 130px;
+    margin-bottom: 12px;
+    width: 127px;
+    letter-spacing: 0.3em;
+  }
+  &__subtitle {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.2;
+    color: #ffffff;
+    margin-left: auto;
+    margin-right: 130px;
+    margin-bottom: 20px;
+    width: 127px;
+    letter-spacing: 0.02em;
+  }
+  &__text {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.25;
+    color: #bababa;
+    width: 256px;
+    margin-left: auto;
+    margin-bottom: 48px;
+  }
+
+&__swiper-list{list-style: none;
+gap: 20px;}
+
+ &__swiper-slide{width: 274px!important;}
+ &__swiper-slide-next {width: 162px!important;}
+  &__list {  
+    list-style: none;
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+  }
+  &__button {
+    position: relative;
+    width: 236px;
+    height: 48px;
+    background: rgba(0, 0, 0, 0.4);
+    border: 2px solid #ffffff;
+    border-radius: 25px;
+    gap: 16px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.25;
+    color: $color-secondary-button-text;
+    padding: 14px 24px;
+    &:hover {
+      cursor: pointer;
+      background-color: #ffffff;
+    }
+    &:focus {
+      background-color: #ffffff;
+    }
+  }
+  &__link {
+    position: absolute;
+    left: 2px;
+    transform: translateY(-50%);
+    padding: 14px 31px;
+    color: $color-secondary-button-text;
+    text-decoration: none;
+    display: inline-block;
+  }
+}
+@media (min-resolution: 2dppx) {
+  .details-restaurant {
+    background-image: linear-gradient(
+        to right,
+        $primary-dark-rgb,
+        $primary-dark-rgb
+      )
+      url(../images/pexels-kheng-mobile@2x.jpg);
+  }
+}
+.swiper-buttons {
+  display: flex;
+  gap: 32px;
+  margin: 20px 0;
+fill: #ffffff; 
+  &__icon:hover,
+  &__icon:focus {
+      fill: $color-link-hover;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .details-restaurant {
+    max-width: 1024px;
+    padding-top: 48px;
+    padding-bottom: 94px;
+    background-image: linear-gradient(
+      to right,
+      $primary-dark-rgb,
+      $primary-dark-rgb
+    ),
+    url(../images/pexels-kheng-tablet.jpg);
+    &__title {
+      font-size: 64px;
+      margin-left: 231px;
+      margin-right: 0;
+      margin-bottom: 16px;
+      width: 202px;
+    }
+    &__subtitle {
+      font-size: 24px;
+      margin-left: 231px;
+      margin-right: 0;
+      margin-bottom: 8px;
+      width: 126px;
+    }
+    &__text {
+      font-size: 16px;
+      width: 610px;
+      margin-left: 231px;
+      margin-bottom: 198px;
+    }
+    &__list {width: 236px;
+      margin-left: 0;
+    }
+  }
+  @media (min-resolution: 2dppx) {
+    .details-restaurant {
+      background-image: linear-gradient(
+          to right,
+          $primary-dark-rgb,
+          $primary-dark-rgb
+        )
+        url(../images/pexels-kheng-tablet@2x.jpg);
+    }
+}
+.details-restaurant__swiper{position: absolute;
+  left: 312px;
+  top:254px;
+max-width: 662px;
+height: 326px;
+}
+.swiper-buttons{position: absolute;
+  z-index: 9;
+left:0;
+bottom:0;
+transform: translateY(50%);}}
+@media screen and (min-width: 1280px) {
+  .details-restaurant {
+    max-width: 1280px;
+    background-image: linear-gradient(
+      to right,
+      $primary-dark-rgb,
+      $primary-dark-rgb
+    ),
+    url(../images/pexels-kheng-desktop.jpg);
+    &__title {
+      margin-left: 253px;
+    }
+    &__subtitle {
+      margin-left: 253px;
+    }
+    &__text {
+      margin-left: 253px;
+      margin-bottom: 200px;
+    }
+    &__list {width: 236px;
+    }}
+    @media (min-resolution: 2dppx) {
+      .details-restaurant {
+        background-image: linear-gradient(
+            to right,
+            $primary-dark-rgb,
+            $primary-dark-rgb
+          )
+          url(../images/pexels-kheng-desktop@2x.jpg);
+      }
+  }
+  .details-restaurant__swiper{position: absolute;
+    left: 353px;
+    top:254px;
+  max-width: 875px;
+  height: 326px;
+  }}
+
+  

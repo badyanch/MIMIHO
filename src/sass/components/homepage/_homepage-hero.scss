@@ -1,0 +1,256 @@
+.hero {
+  position: relative;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    url('../images/homepage-mobile.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  max-width: 414px;
+  min-height: 740px;
+  padding: 0;
+  margin: 0 auto;
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url('../images/homepage-mobile@2x.jpg');
+  }
+  @media screen and (min-width: 1024px) {
+    max-width: 1024px;
+    min-height: 720px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url('../images/homepage-tablet.jpg');
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
+        ),
+        url('../images/homepage-tablet@2x.jpg');
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    max-width: 1280px;
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url('../images/homepage-desktop.jpg');
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
+        ),
+        url('../images/homepage-desktop@2x.jpg');
+    }
+  }
+  &__container {
+    // position: relative;
+    // margin-top: -50px;
+    padding: 181px 15px 20px;
+
+    @media screen and (min-width: 1028px) {
+      padding: 188px 47px 15px;
+    }
+    @media screen and (min-width: 1280px) {
+      padding: 164px 85px 64px;
+    }
+  }
+  &__title {
+    font-family: 'FilmP3', sans-serif;
+    font-style: normal;
+    text-align: center;
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 1.07;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: $color-slider-button;
+    margin-bottom: 24px;
+
+    @media screen and (min-width: 1024px) {
+      font-size: 128px;
+      margin-bottom: 16px;
+    }
+    @media screen and (min-width: 1280px) {
+      font-size: 128px;
+      margin-bottom: 32px;
+    }
+    &--spacing {
+      letter-spacing: 0;
+    }
+  }
+  &__subtitle {
+    text-align: center;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    color: $color-slider-button;
+    margin-bottom: 40px;
+
+    @media screen and (min-width: 1024px) {
+      font-size: 20px;
+      line-height: 1.2;
+      margin-bottom: 56px;
+    }
+    @media screen and (min-width: 1280px) {
+      margin-bottom: 64px;
+    }
+  }
+
+  &__slogan {
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Times New Roman';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.15;
+    letter-spacing: 0.05em;
+    color: $color-slider-button;
+    margin-bottom: 113px;
+
+    @media screen and (min-width: 1024px) {
+      font-size: 36px;
+      line-height: 1.13;
+      margin-bottom: 137px;
+    }
+  }
+
+  &__contact-wrap {
+    @media screen and (min-width: 1024px) {
+      display: flex;
+      gap: 137px;
+      justify-content: space-between;
+      margin-bottom: 25px;
+    }
+    @media screen and (min-width: 1280px) {
+      gap: 253px;
+    }
+  }
+  &__address {
+    top: 55px;
+    right: 15px;
+    position: absolute;
+    width: 210px;
+    height: 47px;
+    padding: 6px;
+    border: 1px solid rgba(243, 198, 83, 0.7);
+    border-radius: 2px;
+    @media screen and (min-width: 1024px) {
+      position: static;
+      width: 285px;
+      height: 56px;
+    }
+  }
+  &__address-link {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.25;
+    letter-spacing: 0.01em;
+    color: $color-hero-location;
+
+    @media screen and (min-width: 1024px) {
+      font-size: 16px;
+    }
+  }
+  &__address-icon {
+    fill: $color-brand-text;
+
+    &:hover,
+    &:focus {
+      fill: $color-secondary-active-button;
+    }
+  }
+
+  &__button-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+
+    @media screen and (min-width: 1024px) {
+      flex-direction: row;
+      gap: 40px;
+      justify-content: flex-end;
+    }
+    @media screen and (min-width: 1280px) {
+      gap: 60px;
+    }
+  }
+
+  &__button {
+    cursor: pointer;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    color: $color-secondary-button-text;
+    background: rgba(0, 0, 0, 0.4);
+    border: 2px solid $color-border-button;
+    border-radius: 25px;
+    text-align: center;
+
+    &--first {
+      width: 236px;
+      height: 48px;
+
+      @media screen and (min-width: 1280px) {
+        width: 258px;
+      }
+    }
+
+    &--second {
+      margin-bottom: 58px;
+      height: 48px;
+      width: 232px;
+
+      @media screen and (min-width: 1024px) {
+        margin-bottom: 0;
+      }
+
+      @media screen and (min-width: 1280px) {
+        width: 254px;
+      }
+    }
+
+    &:hover,
+    &:focus {
+      background: $color-secondary-active-button;
+    }
+  }
+
+  &__icon-list {
+    display: flex;
+    gap: 20px;
+
+    @media screen and (min-width: 1280px) {
+      display: none;
+    }
+  }
+}
+.hero-location {
+  width: 20px;
+  height: 20px;
+  @media screen and (min-width: 1024px) {
+    width: 24px;
+    height: 24px;
+  }
+}
