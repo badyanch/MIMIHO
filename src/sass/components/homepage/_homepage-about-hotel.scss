@@ -1,8 +1,8 @@
 .homepage-about-hotel{
     position: relative;
 
-    padding-top: 14px;
-    padding-bottom: 40px;
+    padding-top: 48px;
+        padding-bottom: 40px;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/pexels-kheng-tang-mobile.jpg');
     background-color: rgba(0, 0, 0, 0.7);
     // background-image: url('../images/pexels-kheng-tang-mobile.jpg');
@@ -38,8 +38,7 @@
 // text thumb
 
 &____bg-layout{
-    padding-top: 40px;
-    padding-bottom: 24px;
+   
 }
 
 &__text-thumb{
@@ -144,14 +143,16 @@
 }
 &__flex-thumb
 {
-    // margin-bottom: 40px+30px+24px;
+    
+    @media screen and (min-width: 1024px) {
+        margin-bottom: 30px+24px;
+        }
 }
 }
+
+
 // slider
 
-// variables
-
-$slider-bottom-padding: 40px;
 
 
  .about-hotel-slider {
@@ -161,7 +162,7 @@ $slider-bottom-padding: 40px;
 
      @media screen and (min-width: 1024px) {
          padding-top: 40px;
-         padding-bottom: 40px;
+         padding-bottom: 0;
      }
  }
 .about-hotel-slider__swiper{

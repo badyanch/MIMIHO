@@ -154,7 +154,7 @@ const aboutHotel = document.querySelectorAll('[data-slider="hotel-slider"]');
           // when window width is >= 1200px
           1280: {
             slidesPerView: 3,
-            spaceBetween: 40,
+            spaceBetween: 86,
           },
         },
       });
