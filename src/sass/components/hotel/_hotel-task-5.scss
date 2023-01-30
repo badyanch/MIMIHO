@@ -181,15 +181,17 @@
 .swiper-menu {
   width: 404px;
   background-color: $color-secondary-bg;
-  transform: translateX(45%);
+  transform: translateX(-45%);
 
   @media screen and (min-width: 1024px) {
     width: 428px;
     transform: translateY(0);
+    transform: translateX(45%);
   }
 
   @media screen and (min-width: 1280px) {
     width: 548px;
+  
   }
 
   &__list {
@@ -214,10 +216,11 @@
   display: flex;
   gap: 33px;
   margin: 20px 0;
-  justify-content: flex-end;
+  // justify-content: flex-end;
+margin-bottom: 0;
 
   @media screen and (min-width: 1024px) {
-    margin-top: 47px;
+    margin-top: 32px;
     justify-content: flex-start;
   }
 

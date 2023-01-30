@@ -185,6 +185,176 @@
             </button>
             <button type="button" class="room__swiper-btn swiper-button-next">
               <svg class="room__btn-icon" width="32px" height="32px">
+      <div class="gallery-btns-wrap">
+        <div class="gallery-wrap">
+          <div class="room-lux-gallery swiper">
+            <ul class="room-lux__list swiper-wrapper">
+              <li class="room-lux__item swiper-slide">
+                <div class="swiper-inner">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/bathroom-desktop.jpg    1x,
+                        ./images/bathroom-desktop@2x.jpg 2x
+                      "
+                      media="(min-width:
+                  1280px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/bathroom-tablet.jpg    1x,
+                        ./images/bathroom-tablet@2x.jpg 2x
+                      "
+                      media="(min-width: 415px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/bathroom-mobile.jpg    1x,
+                        ./images/bathroom-mobile@2x.jpg 2x
+                      "
+                      media="(max-width: 414px)"
+                    />
+                    <img
+                      src="./images/bathroom-mobile.jpg"
+                      alt="Номер з двомісним ліжком"
+                    />
+                  </picture>
+                </div>
+              </li>
+              <li class="room-lux__item swiper-slide">
+                <div class="swiper-inner">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/cup-desktop.jpg    1x,
+                        ./images/cup-desktop@2x.jpg 2x
+                      "
+                      media="(min-width: 1280px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/cup-tablet.jpg    1x,
+                        ./images/cup-tablet@2x.jpg 2x
+                      "
+                      media="(min-width: 1024px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/cup-mobile.jpg    1x,
+                        ./images/cup-mobile@2x.jpg 2x
+                      "
+                      media="(max-width: 414px)"
+                    />
+                    <img
+                      src="./images/cup-mobile.jpg"
+                      alt="Номер з двомісним ліжком"
+                    />
+                  </picture>
+                </div>
+              </li>
+              <li class="room-lux__item swiper-slide">
+                <div class="swiper-inner">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/slaider1-desktop.jpg    1x,
+                        ./images/slaider1-desktop@2x.jpg 2x
+                      "
+                      media="(min-width: 1280px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/slaider1-tablet.jpg    1x,
+                        ./images/slaider1-tablet@2x.jpg 2x
+                      "
+                      media="(min-width: 1024px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/slaider1-mobile.jpg    1x,
+                        ./images/slaider1-mobile@2x.jpg 2x
+                      "
+                      media="(max-width: 414px)"
+                    />
+                    <img
+                      src="./images/slaider1-mobile.jpg"
+                      alt="Номер з двомісним ліжком"
+                    />
+                  </picture>
+                </div>
+              </li>
+              <li class="room-lux__item swiper-slide">
+                <div class="swiper-inner">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/slaider2-desktop.jpg    1x,
+                        ./images/slaider2-desktop@2x.jpg 2x
+                      "
+                      media="(min-width: 1280px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/slaider2-tablet.jpg    1x,
+                        ./images/slaider2-tablet@2x.jpg 2x
+                      "
+                      media="(min-width: 1024px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/slaider2-mobile.jpg    1x,
+                        ./images/slaider2-mobile@2x.jpg 2x
+                      "
+                      media="(max-width: 414px)"
+                    />
+                    <img
+                      src="./images/slaider2-mobile.jpg"
+                      alt="Номер з двомісним ліжком"
+                    />
+                  </picture>
+                </div>
+              </li>
+              <li class="room-lux__item swiper-slide">
+                <div class="swiper-inner">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/slaider3-desktop.jpg    1x,
+                        ./images/slaider3-desktop@2x.jpg 2x
+                      "
+                      media="(min-width: 1280px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/slaider3-tablet.jpg    1x,
+                        ./images/slaider3-tablet@2x.jpg 2x
+                      "
+                      media="(min-width: 1024px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/slaider3-mobile.jpg    1x,
+                        ./images/slaider3-mobile@2x.jpg 2x
+                      "
+                      media="(max-width: 414px)"
+                    />
+                    <img
+                      src="./images/slaider3-mobile.jpg"
+                      alt="Номер з двомісним ліжком"
+                    />
+                  </picture>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="swiper-btns">
+            <button type="button" class="swiper-btn swiper-button-prev">
+              <svg class="swiper-btns__icon" width="32px" height="32px">
+                <use href="./images/icons.svg#icon-arrow-left"></use>
+              </svg>
+            </button>
+            <button type="button" class="swiper-btn swiper-button-next">
+              <svg class="swiper-btns__icon" width="32px" height="32px">
                 <use href="./images/icons.svg#icon-arrow-right"></use>
               </svg>
             </button>
@@ -193,9 +363,12 @@
 
         <div class="room__btn-thumb">
           <a href="/src/room.html" class="room__btn">Детальніше</a>
+
           <button type="button" class="room__btn js-open-modal" data-modal="3">
             Переглянути ціни
           </button>
+
+          <button type="button" class="room__btn">Переглянути ціни</button>
         </div>
       </div>
     </div>
