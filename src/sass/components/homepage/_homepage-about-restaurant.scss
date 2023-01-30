@@ -1,11 +1,16 @@
 .first-about-restaurant {
 
-    @media screen and (min-width: 414px) {}
 
-    @media screen and (min-width: 1024px) {}
+    @media screen and (min-width: 1024px) {
+        display: flex;
+        align-items: center;
+        gap: 26px;
+    }
 
     @media screen and (min-width: 1280px) {
-        // display: flex;
+        display: flex;
+        gap: 37px;
+        align-items: center;
     }
 }
 
@@ -23,7 +28,7 @@
     }
 
     @media screen and (min-width: 1024px) {
-        margin-top: 120px;
+        margin-top: 0;
         font-size: 32px;
     }
 
@@ -79,16 +84,15 @@
 
 .first-about-restaurant__img {
     margin-top: 28px;
-    transform: translateX(57%);
+    margin-left: auto;
 
     @media screen and (min-width: 1024px) {
         margin-top: 0;
-        transform: translate(110%, -73%);
-        margin-left: 26px;
+        transform: translateY(-32px);
     }  
     @media screen and (min-width: 1280px) {
         margin-left: 37px;
-        transform: translate(113%, -65%);
+            transform: translateY(-33px);
     }
     
 }
@@ -96,21 +100,24 @@
 .second-about-restaurant {
     display: flex;
     align-items: center;
-    @media screen and (min-width: 414px) {
-
-    }
+    
+     gap: 20px;
+    
 
     @media screen and (min-width: 1024px) {
-        transform: translateY(-82%);
+gap: 48px;
+transform: translateY(-50px);
     }
 
     @media screen and (min-width: 1280px) {
-        transform: translateY(-78%);
+     gap: 32px;
+     transform: translateY(-90px);
     }
 
 }
 .second-about-restaurant__img {
     margin-top: 32px;
+    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
     
     @media screen and (min-width:1024px) {
         margin-top: 0;
@@ -121,7 +128,6 @@
         font-size: 12px;
         line-height: 1.25;
         width: 163px;
-        margin-left: 16px;
         
         letter-spacing: 0.02em;
         
@@ -132,7 +138,7 @@
     @media screen and (min-width: 1024px) {
         font-size: 16px;
         width: 312px;
-        margin-left: 48px;
+        margin-left: 0px;
     }
 
     @media screen and (min-width: 1280px) {
