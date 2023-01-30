@@ -37,6 +37,11 @@
     }
 // text thumb
 
+&____bg-layout{
+    padding-top: 40px;
+    padding-bottom: 24px;
+}
+
 &__text-thumb{
     @media screen and (min-width: 1024px) {
     }
@@ -139,7 +144,7 @@
 }
 &__flex-thumb
 {
-    margin-bottom: 40px+30px+24px;
+    // margin-bottom: 40px+30px+24px;
 }
 }
 // slider
