@@ -7,7 +7,7 @@
     <title>Document</title>
   </head>
   <body>
-    <section class="homepage-about-hotel">
+    <section class="homepage-about-hotel" data-slider="hotel-slider">
       <div class="container">
         <div class="homepage-about-hotel__bg-layout">
           <div class="homepage-about-hotel__text-thumb">
@@ -19,87 +19,182 @@
             </p>
           </div>
           <div class="homepage-about-hotel__slider-btn-thumb">
-            <section class="section slider-section" data-slider="hotel-slider">
-              <div class="container">
-                <div class="swiper">
-                  <ul class="swiper-wrapper">
-                    <li class="swiper-slide-homepage">
-                      <picturee>
-                        <source
-                          media="(max-width: 1023px)"
-                          srcset="
-                            ./images/room-homepage-mobile.jpg    1x,
-                            ./images/room-homepage-mobile@2x.jpg 2x
-                          "
-                        />
-                        <source
-                          media="(min-width: 1280px)"
-                          srcset="
-                            ./images/room-homepage-desktop.jpg    1x,
-                            ./images/room-homepage-desktop@2x.jpg 2x
-                          "
-                        />
-                        <source
-                          media="(min-width: 1024px)"
-                          srcset="
-                            ./images/room-homepage-tablet.jpg    1x,
-                            ./images/room-homepage-tablet@2x.jpg 2x
-                          "
-                        />
-                        <img
-                          width="274"
-                          src="./images/room-homepage-mobile.jpg"
-                          alt=""
-                        />
-                      </picturee>
-                    </li>
-                    <li class="swiper-slide-homepage">
-                      <img
-                        width="274"
-                        src="./images/slaider5-mobile.jpg"
-                        alt=""
-                      />
-                    </li>
-                    <li class="swiper-slide-homepage">
-                      <img
-                        width="274"
-                        src="./images/slaider14-mobile.jpg"
-                        alt=""
-                      />
-                    </li>
-                    <li class="swiper-slide-homepage">
-                      <img
-                        width="274"
-                        src="./images/slaider11-mobile.jpg"
-                        alt=""
-                      />
-                    </li>
-                    <li class="swiper-slide-homepage">
-                      <img
-                        width="274px"
-                        src="./images/slaider8-mobile.jpg"
-                        alt=""
-                      />
-                    </li>
-                    <!-- <li class="swiper-slide-homepage">
+            <div class="swiper-hotel">
+              <ul class="swiper-wrapper swiper-wrapper-hotel">
+                <li class="swiper-slide swiper-slide-homepage">
+                  <picture>
+                    <source
+                      media="(min-width: 1280px)"
+                      srcset="
+                        ./images/room-homepage-desktop.jpg    1x,
+                        ./images/room-homepage-desktop@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 1024px)"
+                      srcset="
+                        ./images/room-homepage-tablet.jpg    1x,
+                        ./images/room-homepage-tablet@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(max-width: 1023px)"
+                      srcset="
+                        ./images/room-homepage-mobile.jpg    1x,
+                        ./images/room-homepage-mobile@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      width="274"
+                      src="./images/room-homepage-mobile.jpg"
+                      alt=""
+                    />
+                  </picture>
+                </li>
+                <li class="swiper-slide swiper-slide-homepage">
+                  <picture>
+                    <source
+                      media="(min-width: 1280px)"
+                      srcset="
+                        ./images/slaider5-desktop.jpg    1x,
+                        ./images/slaider5-desktop@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 1024px)"
+                      srcset="
+                        ./images/slaider5-tablet.jpg    1x,
+                        ./images/slaider5-tablet@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(max-width: 1023px)"
+                      srcset="
+                        ./images/slaider5-mobile.jpg    1x,
+                        ./images/slaider5-mobile@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      width="274"
+                      src="./images/slaider5-mobile.jpg"
+                      alt=""
+                    />
+                  </picture>
+                </li>
+                <li class="swiper-slide swiper-slide-homepage">
+                  <picture>
+                    <source
+                      media="(min-width: 1280px)"
+                      srcset="
+                        ./images/slaider14-desktop.jpg    1x,
+                        ./images/slaider14-desktop@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 1024px)"
+                      srcset="
+                        ./images/slaider14-tablet.jpg    1x,
+                        ./images/slaider14-tablet@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(max-width: 1023px)"
+                      srcset="
+                        ./images/slaider14-mobile.jpg    1x,
+                        ./images/slaider14-mobile@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      width="274"
+                      src="./images/slaider14-mobile.jpg"
+                      alt=""
+                    />
+                  </picture>
+                </li>
+                <li class="swiper-slide swiper-slide-homepage">
+                  <picture>
+                    <source
+                      media="(min-width: 1280px)"
+                      srcset="
+                        ./images/slaider11-desktop.jpg    1x,
+                        ./images/slaider11-desktop@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 1024px)"
+                      srcset="
+                        ./images/slaider11-tablet.jpg    1x,
+                        ./images/slaider11-tablet@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(max-width: 1023px)"
+                      srcset="
+                        ./images/slaider11-mobile.jpg    1x,
+                        ./images/slaider11-mobile@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      width="274"
+                      src="./images/slaider11-mobile.jpg"
+                      alt=""
+                    />
+                  </picture>
+                </li>
+                <li class="swiper-slide swiper-slide-homepage">
+                  <picture>
+                    <source
+                      media="(min-width: 1280px)"
+                      srcset="
+                        ./images/slaider8-desktop.jpg    1x,
+                        ./images/slaider8-desktop@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 1024px)"
+                      srcset="
+                        ./images/slaider8-tablet.jpg    1x,
+                        ./images/slaider8-tablet@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(max-width: 1023px)"
+                      srcset="
+                        ./images/slaider8-mobile.jpg    1x,
+                        ./images/slaider8-mobile@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      width="274px"
+                      src="./images/slaider8-mobile.jpg"
+                      alt=""
+                    />
+                  </picture>
+                </li>
+                <!-- <li class="swiper-slide swiper-slide-homepage">
                       <img height="270" src="./images/pexels-ulgi-mobile.jpg" alt="">
-                  </li> -->
-                  </ul>
-                  <div class="swiper-button">
-                    <button type="button" class="swiper-btn swiper-button-prev">
-                      <svg class="swiper-icons">
-                        <use href="./images/icons.svg#icon-32arrow-left"></use>
-                      </svg>
-                    </button>
-                    <button type="button" class="swiper-btn swiper-button-next">
-                      <svg class="swiper-icons">
-                        <use href="./images/icons.svg#icon-32arrow-right"></use>
-                      </svg>
-                    </button>
-                  </div>
-                </div>
+                  </li>  -->
+              </ul>
+              <div class="swiper-hotel-button">
+                <button
+                  type="button"
+                  class="swiper-hotel-btn swiper-button-prev"
+                >
+                  <svg class="swiper-holet-icons">
+                    <use href="./images/icons.svg#icon-32arrow-left"></use>
+                  </svg>
+                </button>
+                <button
+                  type="button"
+                  class="swiper-hotel-btn swiper-button-next"
+                >
+                  <svg class="swiper-holet-icons">
+                    <use href="./images/icons.svg#icon-32arrow-right"></use>
+                  </svg>
+                </button>
               </div>
-            </section>
+            </div>
+            <!-- </section> -->
 
             <div class="homepage-about-hotel__flex-thumb">
               <div class="homepage-about-hotel__slider"></div>
@@ -114,5 +209,7 @@
         </div>
       </div>
     </section>
+
+    <script src="./js/slider.con.js"></script>
   </body>
 </html>

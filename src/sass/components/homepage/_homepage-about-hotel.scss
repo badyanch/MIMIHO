@@ -38,7 +38,10 @@
 // text thumb
 
 &__text-thumb{
-    width: 65%;
+    @media screen and (min-width: 1024px) {
+    }
+    margin-right: 27%;
+    // width: 65%;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -118,45 +121,130 @@
     justify-content: center;
     flex-direction: column;
     gap: 16px;
+   
 }
 
 // media container 
 
 &__slider-btn-thumb{
+   
+
     @media screen and (min-width: 1024px) {
             display: flex;
+            flex-direction: row;
             align-items: flex-end;
+            justify-content: space-between;
+            gap: 32px;
         }
 }
-
+&__flex-thumb
+{
+    margin-bottom: 40px+30px+24px;
+}
 }
 // slider
 
+// variables
+
+$slider-bottom-padding: 40px;
+
+
 .swiper-slide-homepage{
-    background-color: aqua;
+    
+    width: 274px !important;
+    
+        @media screen and (min-width: 1024px) {
+            width: 270px !important;
+        }
 }
 
- .swiper-wrapper{
+ .swiper-wrapper-hotel{
     list-style: none;
+    padding: 0;
+    margin: 0;
+    min-height: 270px;
+
  }
 
+ .swiper-wrapper img{
+   width: 274px;
+   height: 270px;
+    @media screen and (min-width: 1024px) {
+            height: 270px;
+            width: 270px;
+        }
+ }
 
+.slider-section{
+    margin-top: 48px;
+    @media screen and (min-width: 1024px) {
+            width: 73%;
+            margin-top: 40px;
+        }
+    
+}
 
- .swiper-button
+ .swiper-hotel-button
  {
+    // margin-bottom: 32px;
+    margin-top: 16px;
+
     display: flex;
     z-index: 10;
     fill: white;
     gap: 32px;
     justify-content: flex-end;
-    margin-bottom: 32px;
+
+    @media screen and (min-width: 1024px) {
+        margin-top: 24px;
+    }
+
  }
 
- .swiper-btns{
-    display: flex;
+
+ .swiper-hotel-btn{
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    height: 30px;
+    &:hover,&:focus{
+        fill: #F3C653;
+    }
  }
 
- .swiper-icons{
+ .swiper-holet-icons{
     width: 30px;
     height: 30px;
+
  }
+
+
+
+ .swiper-hotel{
+    overflow: hidden;
+    padding-top: 48px;
+        padding-bottom: 32px;
+        @media screen and (min-width: 1024px) {
+                padding-top: 40px;
+                padding-bottom: 40px;
+            }
+ }
+
+//  .swiper-slide-next{
+//     @media screen and (min-width: 1024px) {
+//             width: 162px !important;
+//         }
+    
+//  }
+
+
+//  .swiper-slide-active{
+//     @media screen and (min-width: 1024px) {
+//             width: 162px !important;
+//         }
+
+//     @media screen and (min-width: 1280px) {
+//         width: 270px !important;
+//     }
+//  }

@@ -94,14 +94,14 @@ const aboutHotel = document.querySelectorAll('[data-slider="hotel-slider"]');
       let pagination = slider.querySelector('.swiper-pagination');
       //коментуємо чи видаляемо якщо не потрібно
 
-      let swiper = new Swiper(slider.querySelector('.swiper'), {
+      let swiper = new Swiper(slider.querySelector('.swiper-hotel'), {
         speed: 1500,
         // автоплей
-        centeredSlides: false,
-        autoplay: {
-        delay: 3000,
-            disableOnInteraction: false,
-        },
+        // centeredSlides: false,
+        // autoplay: {
+        // delay: 3000,
+        //     disableOnInteraction: false,
+        // },
         slidesPerView: 2, // кількість слайдерів для показу
         spaceBetween: 20, // відстань між слайдерами
 
@@ -149,7 +149,7 @@ const aboutHotel = document.querySelectorAll('[data-slider="hotel-slider"]');
           // when window width is >= 768px
           1024: {
             slidesPerView: 3,
-            spaceBetween: 40,
+            spaceBetween: 34,
           },
           // when window width is >= 1200px
           1280: {
