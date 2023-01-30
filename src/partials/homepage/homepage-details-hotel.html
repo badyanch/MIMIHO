@@ -1,44 +1,51 @@
-<section class="about about-hotel">
+<section class="about about-hotel" data-slider="team-slider">
   <div class="container">
     <div class="about__photo--text1">
       <div class="about__main">
-        <h3 class="about__subtitle">Ammet minim mollit non</h3>
-        <h2 class="about__logo">Mimiho</h2>
-        <p class="about__text">
-          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-          sint. Velit officia consequat duis enim velit mollit. Exercitation
-          veniam consequat sunt nostrud amet.
-        </p>
+        <div class="about__texting">
+          <h3 class="about__subtitle">Ammet minim mollit non</h3>
+          <h2 class="about__logo">Mimiho</h2>
+          <p class="about__text">
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+            sint. Velit officia consequat duis enim velit mollit. Exercitation
+            veniam consequat sunt nostrud amet.
+          </p>
+        </div>
+        <picture class="about__photo--picture1">
+          <source
+            srcset="
+              /src/images/modern-studio-desktop.jpg    1x,
+              /src/images/modern-studio-desktop@2x.jpg 2x
+            "
+            media="(min-width: 1280px)"
+          />
+          <source
+            srcset="
+              /src/images/modern-studio-tablet.jpg    1x,
+              /src/images/modern-studio-tablet@2x.jpg 2x
+            "
+            media="(min-width: 1024px)"
+          />
+          <source
+            srcset="
+              /src/images/modern-studio-mobile.jpg    1x,
+              /src/images/modern-studio-mobile@2x.jpg 2x
+            "
+            media="(max-width: 1023px)"
+          />
+          <img
+            src="/src/images/modern-studio-mobile.jpg"
+            alt="Номер в сучасному стилі з білим двомісним ліжком"
+          />
+        </picture>
       </div>
-      <picture class="about__photo--picture1">
-        <source
-          srcset="
-            /src/images/modern-studio-desktop.jpg    1x,
-            /src/images/modern-studio-desktop@2x.jpg 2x
-          "
-          media="(min-width: 1280px)"
-        />
-        <source
-          srcset="
-            /src/images/modern-studio-tablet.jpg   1x,
-            /src/images/modern-studio-tablet@2x.jpg 2x
-          "
-          media="(min-width: 1024px)"
-        />
-        <source
-          srcset="
-            /src/images/modern-studio-mobile.jpg   1x,
-            /src/images/modern-studio-mobile@2x.jpg 2x
-          "
-          media="(max-width: 1023px)"
-        />
-        <img
-          src="/src/images/modern-studio-mobile.jpg"
-          alt="Номер в сучасному стилі з білим двомісним ліжком"
-        />
-      </picture>
     </div>
     <div class="about__photo--text2">
+         <p class="about__text--akcent">
+        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+        sint. Velit officia consequat duis enim velit mollit. Exercitation
+        veniam consequat sunt nostrud amet.
+      </p>
       <picture class="about__photo--picture2">
         <source
           srcset="
@@ -49,14 +56,14 @@
         />
         <source
           srcset="
-            /src/images/hotel-tablet.jpg   1x,
+            /src/images/hotel-tablet.jpg    1x,
             /src/images/hotel-tablet@2x.jpg 2x
           "
           media="(min-width: 1024px)"
         />
         <source
           srcset="
-            /src/images/hotel-mobile.jpg   1x,
+            /src/images/hotel-mobile.jpg    1x,
             /src/images/hotel-mobile@2x.jpg 2x
           "
           media="(max-width: 1023px)"
@@ -66,75 +73,5 @@
           alt="кімната в бежевих тонах з диваном, двома кріслами та камином"
         />
       </picture>
-      <p class="about__text--akcent">
-        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-        sint. Velit officia consequat duis enim velit mollit. Exercitation
-        veniam consequat sunt nostrud amet.
-      </p>
     </div>
-    <div class="homepage-hotel-slider">
-      <div class="homepage-hotel-slider__item">
-        <picture>
-          <source
-            srcset="
-              /src/images/bed-decoration-desktop.jpg    1x,
-              /src/images/bed-decoration-desktop@2x.jpg 2x
-            "
-            media="(min-width: 1280px)"
-          />
-          <source
-            srcset="
-              /src/images/bed-decoration-tablet.jpg   1x,
-              /src/images/bed-decoration-tablet@2x.jpg 2x
-            "
-            media="(min-width: 1024px)"
-          />
-          <source
-            srcset="
-              /src/images/bed-decoration-mobile.jpg   1x,
-              /src/images/bed-decoration-mobile@2x.jpg 2x
-            "
-            media="(max-width: 1023px)"
-          />
-          <img
-            class="homepage-hotel-slider__img"
-            src="/src/images/bed-decoration-mobile.jpg"
-            alt="Білі рушники на ліжку"
-            width="194px"
-          />
-        </picture>
-      </div>
-      <div class="homepage-hotel-slider__item">
-        <picture>
-          <source
-            srcset="
-              /src/images/registration-desktop.jpg    1x,
-              /src/images/registration-desktop@2x.jpg 2x
-            "
-            media="(min-width: 1280px)"
-          />
-          <source
-            srcset="
-              /src/images/registration-tablet.jpg   1x,
-              /src/images/registration-tablet@2x.jpg 2x
-            "
-            media="(min-width: 1024px)"
-          />
-          <source
-            srcset="
-              /src/images/registration-mobile.jpg   1x,
-              /src/images/registration-mobile@2x.jpg 2x
-            "
-            media="(max-width: 1023px)"
-          />
-          <img
-            class="homepage-hotel-slider__img"
-            src="/src/images/registration-mobile.jpg"
-            alt="Дві жінки на рецепції посміхаються"
-            width="194px"
-          />
-        </picture>
-      </div>
-    </div>
-  </div>
 </section>
