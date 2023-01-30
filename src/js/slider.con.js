@@ -94,7 +94,7 @@ const aboutHotel = document.querySelectorAll('[data-slider="hotel-slider"]');
       let pagination = slider.querySelector('.swiper-pagination');
       //коментуємо чи видаляемо якщо не потрібно
 
-      let swiper = new Swiper(slider.querySelector('.swiper-hotel'), {
+      let swiper = new Swiper(slider.querySelector('.about-hotel-slider'), {
         speed: 1500,
         // автоплей
         // centeredSlides: false,
