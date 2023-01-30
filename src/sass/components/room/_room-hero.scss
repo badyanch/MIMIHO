@@ -74,13 +74,13 @@
     }
   }
   &__container {
-    padding: 483px 15px 14px;
+    padding: 104px 15px 14px;
 
     @media screen and (min-width: 1028px) {
-      padding: 468px 47px 22px;
+      padding: 88px 47px 22px;
     }
     @media screen and (min-width: 1280px) {
-      padding: 524px 85px 48px;
+      padding: 72px 85px 48px;
     }
   }
   &__title {
@@ -151,7 +151,7 @@
     top: 55px;
     right: 15px;
     position: absolute;
-    width: 210px;
+    width: 211px;
     height: 47px;
     padding: 6px;
     border: 1px solid rgba(243, 198, 83, 0.7);
@@ -275,4 +275,18 @@
 
 .text-container {
   display: block;
+}
+.swiper-btns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  fill: $color-secondary-active-button;
+  padding-top: 350px;
+
+  @media screen and (min-width: 1024) {
+    padding-top: 340px;
+  }
+  @media screen and (min-width: 1280) {
+    padding-top: 412px;
+  }
 }
