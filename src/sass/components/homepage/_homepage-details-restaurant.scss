@@ -48,10 +48,11 @@
   }
 
 &__swiper-list{list-style: none;
+  padding: 0;
 gap: 20px;}
 
- &__swiper-slide{width: 274px!important;}
- &__swiper-slide-next {width: 162px!important;}
+
+ &__swiper-slide{width: 270px!important;}
   &__list {  
     list-style: none;
     display: flex;
@@ -162,7 +163,7 @@ fill: #ffffff;
   left: 312px;
   top:254px;
 max-width: 662px;
-height: 326px;
+height: 350px;
 }
 .swiper-buttons{position: absolute;
   z-index: 9;
@@ -204,7 +205,6 @@ transform: translateY(50%);}}
     left: 353px;
     top:254px;
   max-width: 875px;
-  height: 326px;
   }}
 
   
