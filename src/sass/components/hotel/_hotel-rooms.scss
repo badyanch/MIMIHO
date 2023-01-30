@@ -156,16 +156,21 @@
         margin-top: 32px;
         margin-bottom: 0;
     }
-
+    &__icon {
+        transition: fill 250ms $timing-function;
+    }
     &__icon:hover,
     &__icon:focus {
         fill: $color-link-hover;
     }
+    
 }
 .swiper-btn {
     padding: 0;
     background-color: transparent;
     border: none;
+    transition: fill 250ms $timing-function;
+    
 }
 
 .btns-wrap {
@@ -176,7 +181,7 @@
     align-items: center;
 
     @media screen and (min-width: 1024px) {
-        justify-content: center;
+        justify-content: start;
         align-items: center;
         margin-top: 41px;
         margin-left: auto;
@@ -191,6 +196,7 @@
     @media screen and (min-width: 1024px) {
         display: flex;
         margin-top: -46px;
+        align-items: center;
     }
 }
 
@@ -198,4 +204,9 @@
     @media screen and (min-width: 1024px) {
         padding-bottom: 0;
     }
+}
+
+.room__link {
+    color: $color-brand-text;
+    text-decoration: none;
 }

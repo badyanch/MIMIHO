@@ -1,6 +1,10 @@
+.container-box {
+  position: relative;
+}
+
 .header {
   position: absolute;
-  z-index: 999;
+  z-index: 40;
   left: 15px;
   top: 16px;
   right: 15px;
@@ -33,7 +37,7 @@
     line-height: calc(39px / 36px);
     letter-spacing: 0.3em;
 
-    // color: $color-main-logo;
+    color: $color-main-logo;
 
     @media screen and (min-width: 1014px) {
       font-size: 40px;
@@ -87,7 +91,7 @@
 
     @media screen and (min-width: 1024px) {
       display: flex;
-      // color: $color-main-logo;
+      color: $color-main-logo;
     }
   }
 }
@@ -148,7 +152,7 @@
       line-height: calc(17px / 14px);
       letter-spacing: 0.02em;
 
-      // color: $color-main-logo;
+      color: $color-main-logo;
     }
   }
 }

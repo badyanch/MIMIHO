@@ -1,172 +1,238 @@
-.triplroom{
+.triplroom {
+  width: 100%;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  background-color: $color-secondary-bg;
+  @media screen and (min-width: 1024px) {
+    padding-top: 64px;
+    padding-bottom: 40px;
+    position: relative;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-top: 72px;
+    padding-bottom: 47px;
     
-    width: 100%;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    background-color: $color-secondary-bg;
-    @media screen and (min-width: 1024px) {
-        padding-top: 64px;
-        padding-bottom: 104px;
-    }
-    @media screen and (min-width: 1280px) {
-        padding-top: 72px;
-        padding-bottom: 112px;
-    }
+  }
 }
-
 
 .triplroom-block {
-
-
-@media screen and (min-width: 1024px) {
-        justify-content: flex-end;
-        gap:45px;
-        flex-direction: row-reverse;
-        display: flex;
-    }
+  @media screen and (min-width: 1024px) {
+    position: relative;
+    justify-content: flex-end;
+    gap: 45px;
+    flex-direction: row-reverse;
+    display: flex;
+    margin-bottom: 48px;
+  }
   @media screen and (min-width: 1280px) {
-
-         }
+  }
 }
-.triplroom-image{
+.triplroom-image {
+  
+  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+  margin-bottom: 32px;
 
-margin-left: 55px;
-box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
-border-radius: 2px;
-
-@media screen and (min-width: 1024px) {
-margin-top:  -99px;
-margin-bottom: 48px;
+  @media screen and (min-width: 1024px) {
+    margin-top: -99px;
+    margin-bottom: 48px;
+    margin-left: 58px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-top: -104px;
+    margin-left: 98px;
+  }
 }
-@media screen and (min-width: 1280px) {
-    margin-top:-104px;
+.triplroom-description {
+  flex-direction: column;
 
-}
-
-}
-.triplroom-description{
-// display: flex;
-flex-direction: column;
-    
-&__subtitle {
-        margin-bottom: 8px;
-        font-family: 'Times New Roman';
-        font-size: 20px;
-        line-height: 1.15;
-        color: #b4b4b4;
-        text-align: end;
-        @media screen and (min-width: 1024px) {
-            font-size: 32px;
-            line-height: 37px;
-            }  
-    }
-
-    &__logo{
-        margin-bottom: 32px;
-        color: $color-brand-logo;
-        font-family: 'FilmP3';
-        font-weight: 700;
-        font-size: 32px;
-        line-height: 1.16;
-        letter-spacing: 0.3em;
-        text-transform: uppercase;
-        text-align: right;
-
-        @media screen and (min-width: 1024px) {
-            font-size: 64px;
-            line-height: 1.07;
-            }  
-        
+  &__subtitle {
+    margin-bottom: 8px;
+    font-family: 'Times New Roman';
+    font-size: 20px;
+    line-height: 1.15;
+    color: #b4b4b4;
+    text-align: end;
+    @media screen and (min-width: 1024px) {
+      font-size: 32px;
+      line-height: 37px;
     }
     
-    &__title {
-        margin-bottom: 12px;
-        font-family: 'Times New Roman';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 24px;
-        line-height: 1.14;
-        letter-spacing: 0.05em;
-        text-transform: uppercase;
-        @media screen and (min-width: 1024px) {
-            font-size: 30px;
-            line-height: 1.33;
-            }
-            @media screen and (min-width: 1280px) {
-                font-size: 36px;
-                line-height: 1.14;
-            }
+  }
 
-        
+  &__logo {
+    margin-bottom: 32px;
+    color: $color-brand-logo;
+    font-family: 'FilmP3';
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.16;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    text-align: right;
+
+    @media screen and (min-width: 1024px) {
+      font-size: 64px;
+      line-height: 1.07;
+      margin-bottom: 62px;
     }
-    
-
-    &__text {
-        display: inline-block;
-        color: $color-secondary-text;
-        max-width: 242px;
-        font-weight: 600;
-        font-size: 12px;
-        line-height: 1.25;
-        margin-bottom: 32px;
-        
-        @media screen and (min-width: 1024px) {
-            font-weight: 700;
-            max-width: 400px;
-            font-size: 16px;
-             line-height: 1.25;
-            letter-spacing: 0.02em;
-            }
-            @media screen and (min-width: 1280px) {
-
-            }
-        
+    @media screen and (min-width: 1280px) {
+      margin-bottom: 72px;
     }
-}
-    
-    .triplroom-box {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 16px;
-    
-
-    &__button {
-        background-color: $color-primary-text;
-        display: inline-block;
-        border: 2px solid $color-border-button;
-        border-radius: 25px;
-        min-width: 236px;
-        max-width: 258px;
-        padding: 14px 24px;
-        color: $color-brand-text;
-        text-align: center;
-
-    }
-}
-
-.swiper{
+  }
+  &__center{
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    
+}
+&__upr{
+    text-transform: uppercase;
+    font-family: 'FilmP3';
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.16;
+    letter-spacing: 0;
     @media screen and (min-width: 1024px) {
-        align-items: center;
-        flex-direction: row-reverse;
-        justify-content: space-between;
-      
+        font-size: 64px;
+        line-height: 1.07;
+        }  
+}
+  &__title {
+    margin-bottom: 12px;
+    font-family: 'Times New Roman';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.14;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    @media screen and (min-width: 1024px) {
+      font-size: 30px;
+      line-height: 1.33;
     }
-    &__menu{
+    @media screen and (min-width: 1280px) {
+      font-size: 36px;
+      line-height: 1.14;
+    }
+  }
 
-        @media screen and (min-width: 1024px) {
-       width: 546px;
-        position: relative;
-        }
-    }
-    &__slide{
-margin-left: 40px;
+  &__text {
+    display: inline-block;
+    color: $color-secondary-text;
+    max-width: 242px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.25;
+    margin-bottom: 32px;
 
+    @media screen and (min-width: 1024px) {
+      font-weight: 700;
+      max-width: 400px;
+      font-size: 16px;
+      line-height: 1.25;
+      letter-spacing: 0.02em;
     }
-    &__img{
+    @media screen and (min-width: 1280px) {
+    }
+  }
+}
+
+.triplroom-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+
+  &__button {
+    background-color: $color-primary-text;
+    display: inline-block;
+    border: 2px solid $color-border-button;
+    border-radius: 25px;
+    min-width: 236px;
+    max-width: 258px;
+    padding: 14px 24px;
+    color: $color-brand-text;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+   
+    &:hover,
+    &:focus {
+      border: 2px solid $color-brand-text;
+      background-color: $color-secondary-active-button;
         
     }
+  }
+}
 
+.swiper-gallery {
+  display: flex;
+  flex-direction: column;
+  @media screen and (min-width: 1024px) {
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  
+  }
+}
+
+.swiper-menu {
+  width: 404px;
+  background-color: $color-secondary-bg;
+  transform: translateX(-45%);
+
+  @media screen and (min-width: 1024px) {
+    width: 428px;
+    transform: translateY(0);
+    transform: translateX(45%);
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 548px;
+  
+  }
+
+  &__list {
+    display: flex;
+    @extend %list;
+  }
+
+  .swiper-menu__item {
+    min-width: 194px !important;
+    @media screen and (min-width: 1024px) {
+      width: 194px !important;
+      transition: ease-in-out 0.5s;
+    }
+
+    @media screen and (min-width: 1280px) {
+      width: 254px !important;
+    }
+  }
+}
+
+.swiper-button {
+  display: flex;
+  gap: 33px;
+  margin: 20px 0;
+  // justify-content: flex-end;
+margin-bottom: 0;
+
+  @media screen and (min-width: 1024px) {
+    margin-top: 32px;
+    justify-content: flex-start;
+  }
+
+  &__icon:hover,
+  &__icon:focus {
+    fill: $color-link-hover;
+  }
+}
+
+.swiper-btn {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }

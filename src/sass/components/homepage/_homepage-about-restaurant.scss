@@ -1,0 +1,154 @@
+.first-about-restaurant {
+
+    @media screen and (min-width: 414px) {}
+
+    @media screen and (min-width: 1024px) {}
+
+    @media screen and (min-width: 1280px) {
+        // display: flex;
+    }
+}
+
+.first-about-restaurant__subtitle {
+
+    font-family: 'Times New Roman';
+    font-size: 20px;
+    line-height: 1.15;
+
+    margin-top: 16px;
+    color: $color-subtitle;
+
+    @media screen and (min-width: 414px) {
+        
+    }
+
+    @media screen and (min-width: 1024px) {
+        margin-top: 120px;
+        font-size: 32px;
+    }
+
+    @media screen and (min-width: 1280px) {}
+}
+
+.first-about-restaurant__title {
+
+    font-family: 'FilmP3';
+    font-weight: 700;
+    font-size: 40px;        
+    line-height: 1.07;
+    text-transform: uppercase;
+    margin-top: 12px;
+
+    letter-spacing: 0.3em;
+
+    color: $color-brand-logo;
+
+    @media screen and (min-width: 414px) {
+
+    }
+
+    @media screen and (min-width: 1024px) {
+        font-size: 64px;
+        margin-top: 4px;
+    }
+
+    @media screen and (min-width: 1280px) {}
+}
+
+.first-about-restaurant__text {
+        
+        font-size: 12px;
+        line-height: 1.25;
+        letter-spacing: 0.02em;
+        margin-top: 12px;
+        width: 258px;
+        
+        color: $color-secondary-text;
+
+    @media screen and (min-width: 1024px) {
+        font-size: 16px;
+        width: 439px;
+        margin-top: 24px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        width: 518px;
+    }
+
+}
+
+.first-about-restaurant__img {
+    margin-top: 28px;
+    transform: translateX(57%);
+
+    @media screen and (min-width: 1024px) {
+        margin-top: 0;
+        transform: translate(110%, -73%);
+        margin-left: 26px;
+    }  
+    @media screen and (min-width: 1280px) {
+        margin-left: 37px;
+        transform: translate(113%, -65%);
+    }
+    
+}
+
+.second-about-restaurant {
+    display: flex;
+    align-items: center;
+    @media screen and (min-width: 414px) {
+
+    }
+
+    @media screen and (min-width: 1024px) {
+        transform: translateY(-82%);
+    }
+
+    @media screen and (min-width: 1280px) {
+        transform: translateY(-78%);
+    }
+
+}
+.second-about-restaurant__img {
+    margin-top: 32px;
+    
+    @media screen and (min-width:1024px) {
+        margin-top: 0;
+    }
+}
+.second-about-restaurant__text {
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 1.25;
+        width: 163px;
+        margin-left: 16px;
+        
+        letter-spacing: 0.02em;
+        
+        color: $color-additional-text;
+
+    @media screen and (min-width: 414px) {}
+
+    @media screen and (min-width: 1024px) {
+        font-size: 16px;
+        width: 312px;
+        margin-left: 48px;
+    }
+
+    @media screen and (min-width: 1280px) {
+    font-size: 16px;
+}
+
+}
+
+// .restaurant-list {
+//     display: flex;
+// }
+// .restaurant-list__item {
+//     margin-left: 25px;
+
+//     &:first-child{
+//         margin-left: auto;
+//     }
+// }
+
