@@ -154,14 +154,16 @@ height: 521px;
 
     box-sizing: border-box;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     width: 144px;
     height: 40px;
     background-color: $color-border-button;
     border: 0.5px solid $color-secondary-button-text;
     border-radius: 2px;
+    // gap: 8px;
     margin-left: 22px;
-    padding-right: 8px;
+
+    // padding-right: 8px;
 
     @media screen and (min-width: 1024px) {
         margin-left: 0;
@@ -217,13 +219,15 @@ height: 521px;
 
 &__icon {
     fill: $color-icon;
-        margin-left: 8px;
-            margin-right: 14px;
+        // padding-left: 8px;
+            // margin-right: 14px;
 
 }
 
 &__maps-icon {
     fill: $color-icon;
+        // padding-left: 8px;
+            // margin-right: 10px;
 }
 
 
@@ -232,17 +236,16 @@ height: 521px;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 17px;
     display: flex;
+    justify-content: flex-start;
     align-items: center;
     letter-spacing: 0.02em;
     color: $color-brand-logo;
     text-decoration: none;
-
-
-
-
+    gap: 8px;
+    padding-left: 8px;
 }
 
 &__maps {
@@ -267,7 +270,7 @@ padding-bottom: 32px;
     text-decoration: none;
     box-sizing: border-box;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     width: 260px;
     height: 76px;
@@ -277,9 +280,11 @@ padding-bottom: 32px;
     margin-left: 124px;
     margin-bottom: 32px;
     padding-right: 33px;
-    padding-left: 44px;
+    padding-left: 10px;
+    gap:10px;
 
-@media screen and (min-width: 1024px) {
+    
+    @media screen and (min-width: 1024px) {
 justify-content: flex-start;
 margin-left: 0;
 }
@@ -291,6 +296,7 @@ margin-left: 0;
             color: $color-link-homepage;
             
         }
+    
 
 }
 
@@ -326,7 +332,7 @@ margin-left: 0;
 @media screen and (min-width: 1024px) {
     width: 535px;
         height: 412px;
-        margin-left: 427px;
+        // margin-left: 427px;
        
         
 }
@@ -334,16 +340,16 @@ margin-left: 0;
 @media screen and (min-width: 1280px) {
     width: 634px;
     height: 412px;
-    margin-left: 108px;
+    // margin-left: 108px;
 }
 
 }
 
 
 &__cotainer {
-    display: inline;
-    justify-content: space-around;
-    gap: 101px;
+    // display: inline;
+    // justify-content: space-around;
+    // gap: 101px;
     
 }
 
