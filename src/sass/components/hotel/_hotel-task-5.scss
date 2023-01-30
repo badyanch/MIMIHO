@@ -215,9 +215,10 @@
   gap: 33px;
   margin: 20px 0;
   justify-content: flex-end;
+margin-bottom: 0;
 
   @media screen and (min-width: 1024px) {
-    margin-top: 47px;
+    margin-top: 32px;
     justify-content: flex-start;
   }
 
