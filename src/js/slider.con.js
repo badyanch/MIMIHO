@@ -1,4 +1,8 @@
 function swiperSlider() {
+
+
+  // клас який потрібно брати і налаштовувати під себе
+
   const teamMain = document.querySelectorAll('[data-slider="team-slider"]');
 
   
@@ -79,6 +83,9 @@ function swiperSlider() {
       });
     });
   }
+
+
+  // homepage-about-hotel
 
  const aboutHotel = document.querySelectorAll('[data-slider="hotel-slider"]');
 
@@ -231,6 +238,8 @@ function swiperSlider() {
 
 
 
+  // restaurant about
+
   const restaurantAbout = document.querySelectorAll('[data-slider="restaurantAbout"]');
 
   
@@ -315,12 +324,10 @@ function swiperSlider() {
 
 
 
-  const homepageHotel = document.querySelectorAll('[data-slider="team-slider"]');
+
 
   
-  //const heroSlider = document.querySelectorAll('[data-slider="hero-slider"]');
-  // if (restaurantAbout) {
-  //   restaurantAbout.forEach(slider => {
+// homepage restaurant
 
   const detailsrestaurant = document.querySelectorAll('[data-slider="detailsrestaurant"]');
 
@@ -340,11 +347,11 @@ function swiperSlider() {
       let swiper = new Swiper(slider.querySelector('.swiper'), {
         speed: 1500,
         // автоплей
-        centeredSlides: false,
-        autoplay: {
-        delay: 3000,
-            disableOnInteraction: false,
-        },
+        // centeredSlides: false,
+        // autoplay: {
+        // delay: 3000,
+        //     disableOnInteraction: false,
+        // },
         slidesPerView: 2, // кількість слайдерів для показу
         spaceBetween: 16, // відстань між слайдерами
 
@@ -394,12 +401,12 @@ function swiperSlider() {
           // when window width is >= 768px
           1024: {
             slidesPerView: 2,
-            spaceBetween: 40,
+            spaceBetween: 34,
           },
           // when window width is >= 1200px
           1280: {
             slidesPerView: 2,
-            spaceBetween: 40,
+            spaceBetween: 86,
           },
         },
       });
