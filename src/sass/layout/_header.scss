@@ -39,6 +39,11 @@
 
     color: $color-main-logo;
 
+    @media screen and (max-width: 414px) {
+      font-size: 30px;
+      line-height: calc(33px / 30px);
+    }
+
     @media screen and (min-width: 1014px) {
       font-size: 40px;
       line-height: calc(43px / 40px);
@@ -53,6 +58,10 @@
   padding: 0;
   gap: 20px;
 
+  @media screen and (max-width: 414px) {
+    gap: 0;
+  }
+
   @media screen and (min-width: 1024px) {
     gap: 80px;
   }
@@ -61,6 +70,10 @@
     display: flex;
     align-items: center;
     gap: 12px;
+
+    @media screen and (max-width: 414px) {
+      gap: 0;
+    }
 
     @media screen and (min-width: 1024px) {
       gap: 46px;
@@ -75,6 +88,11 @@
     line-height: calc(20px / 16px);
     letter-spacing: 0.02em;
     color: $color-brand-text;
+
+    @media screen and (max-width: 414px) {
+      font-size: 14px;
+      line-height: calc(18px / 14px);
+    }
 
     @media screen and (min-width: 1024px) {
       font-size: 20px;
