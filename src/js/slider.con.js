@@ -310,12 +310,21 @@ const aboutHotel = document.querySelectorAll('[data-slider="hotel-slider"]');
     });
   }
 
+
    const restaurantAbout = document.querySelectorAll('[data-slider="restaurantAbout"]');
 
   
   //const heroSlider = document.querySelectorAll('[data-slider="hero-slider"]');
   if (restaurantAbout) {
     restaurantAbout.forEach(slider => {
+
+  const detailsrestaurant = document.querySelectorAll('[data-slider="detailsrestaurant"]');
+
+  
+  //const heroSlider = document.querySelectorAll('[data-slider="hero-slider"]');
+  if (detailsrestaurant) {
+    detailsrestaurant.forEach(slider => {
+
       // кнопки вперед та назад
       let arrowLeft = slider.querySelector('.swiper-button-prev');
       let arrowRight = slider.querySelector('.swiper-button-next');
@@ -374,7 +383,9 @@ const aboutHotel = document.querySelectorAll('[data-slider="hotel-slider"]');
           // when window width is >= 320px
           320: {
             slidesPerView:2,
+
             spaceBetween: 24,
+
           },
           // when window width is >= 768px
           1024: {
@@ -393,3 +404,4 @@ const aboutHotel = document.querySelectorAll('[data-slider="hotel-slider"]');
 
 }
 window.addEventListener('load', swiperSlider, false);
+

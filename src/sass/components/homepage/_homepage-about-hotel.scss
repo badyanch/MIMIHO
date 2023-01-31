@@ -44,10 +44,6 @@
     }
 // text thumb
 
-&____bg-layout{
-   
-}
-
 &__text-thumb{
     @media screen and (min-width: 1024px) {
     }
@@ -108,7 +104,7 @@
     width: 236px;
     padding: 14px 0;
 
-    background: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.4);
     border: 2px solid #FFFFFF;
     border-radius: 25px;
 
@@ -118,6 +114,7 @@
     text-align: center;
     letter-spacing: 0.02em;
     color: #F3C653;
+    transition: color, background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 &:hover,&:focus{
     background: #FFFFFF;
