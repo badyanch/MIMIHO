@@ -52,8 +52,8 @@
 gap: 20px;}
 
 
- &__swiper-slide{width: 270px!important;}
-//  .swiper-slide-next{width: 162px !important;}
+
+
   &__list {  
     list-style: none;
     display: flex;
@@ -164,7 +164,7 @@ fill: #ffffff;
 .details-restaurant__swiper{position: absolute;
   left: 312px;
   top:254px;
-max-width: 662px;
+width: 662px;
 height: 350px;
 }
 .swiper-buttons{position: absolute;
