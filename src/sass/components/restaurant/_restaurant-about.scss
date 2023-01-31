@@ -176,7 +176,7 @@
         transform: translateX(0);
         // justify-content: flex-end;
         margin-top: -60px;
-        width: 42%;
+        width: 50%;
         margin-right: 0;
     }
 
@@ -235,8 +235,6 @@
     display: flex;
 
     background-color:transparent;
-
-    min-width: 98px;
     background-color: $color-primary-bg;
 
     border: none;
