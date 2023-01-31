@@ -96,6 +96,7 @@ function swiperSlider() {
   if (aboutHotel) {
     aboutHotel.forEach(slider => {
       // кнопки вперед та назад
+       // кнопки вперед та назад
       let arrowLeft = slider.querySelector('.swiper-button-prev');
       let arrowRight = slider.querySelector('.swiper-button-next');
 
@@ -103,26 +104,17 @@ function swiperSlider() {
       let pagination = slider.querySelector('.swiper-pagination');
       //коментуємо чи видаляемо якщо не потрібно
 
-      let swiper = new Swiper(slider.querySelector('.about-hotel-slider'), {
-        //  slidesPerView: 'auto',
-          // loop: true,
+      let swiper = new Swiper(slider.querySelector('.swiper'), {
         speed: 1500,
-        // loop: true,
         // автоплей
-        // centeredSlides: false,
-        // autoplay: {
-        // delay: 3000,
-        //     disableOnInteraction: false,
-            
-        // },
-        
-        // centeredSlides: true,
-// loop: true,
-// loopedSlides: slidesNum,
+        centeredSlides: false,
+        autoplay: {
+        delay: 3000,
+            disableOnInteraction: false,
+        },
         slidesPerView: 2, // кількість слайдерів для показу
-        spaceBetween: 20, // відстань між слайдерами
-
-        // loopAdditionalSlides: 20,
+        spaceBetween: 16, // відстань між слайдерами
+        loop: true,
         // крапки пагінації
         pagination: {
           el: pagination,
@@ -143,7 +135,7 @@ function swiperSlider() {
           transitionStart: function () {
             let previousIndex = this.previousIndex;
             let previousSlide =
-              slider.getElementsByClassName('swiper-slide-homepage')[previousIndex];
+              slider.getElementsByClassName('swiper-slide')[previousIndex];
             if (previousSlide) {
               setTimeout(function () {
                 previousSlide.classList.remove('is-play');
@@ -153,7 +145,7 @@ function swiperSlider() {
           transitionEnd: function () {
             let activeIndex = this.activeIndex;
             let activeSlide =
-              slider.getElementsByClassName('swiper-slide-homepage')[activeIndex];
+              slider.getElementsByClassName('swiper-slide')[activeIndex];
             activeSlide.classList.add('is-play');
           },
         },
@@ -366,7 +358,7 @@ function swiperSlider() {
         },
         slidesPerView: 2, // кількість слайдерів для показу
         spaceBetween: 16, // відстань між слайдерами
-        loop: true,
+        // loop: true,
         // крапки пагінації
         pagination: {
           el: pagination,
