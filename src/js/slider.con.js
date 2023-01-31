@@ -1,4 +1,8 @@
 function swiperSlider() {
+
+
+  // клас який потрібно брати і налаштовувати під себе
+
   const teamMain = document.querySelectorAll('[data-slider="team-slider"]');
 
   
@@ -79,6 +83,9 @@ function swiperSlider() {
       });
     });
   }
+
+
+  // homepage-about-hotel
 
  const aboutHotel = document.querySelectorAll('[data-slider="hotel-slider"]');
 
@@ -229,12 +236,16 @@ function swiperSlider() {
   //     });
   // }
 
-  const homepageHotel = document.querySelectorAll('[data-slider="team-slider"]');
+
+
+  // restaurant about
+
+  const restaurantAbout = document.querySelectorAll('[data-slider="restaurantAbout"]');
 
   
   //const heroSlider = document.querySelectorAll('[data-slider="hero-slider"]');
-  if (homepageHotel) {
-    homepageHotel.forEach(slider => {
+  if (restaurantAbout) {
+    restaurantAbout.forEach(slider => {
       // кнопки вперед та назад
       let arrowLeft = slider.querySelector('.swiper-button-prev');
       let arrowRight = slider.querySelector('.swiper-button-next');
@@ -246,11 +257,11 @@ function swiperSlider() {
       let swiper = new Swiper(slider.querySelector('.swiper'), {
         speed: 1500,
         // автоплей
-        centeredSlides: false,
-        autoplay: {
-        delay: 3000,
-            disableOnInteraction: false,
-        },
+        // centeredSlides: false,
+        // autoplay: {
+        // delay: 3000,
+        //     disableOnInteraction: false,
+        // },
         slidesPerView: 2, // кількість слайдерів для показу
         spaceBetween: 16, // відстань між слайдерами
 
@@ -293,7 +304,7 @@ function swiperSlider() {
           // when window width is >= 320px
           320: {
             slidesPerView:2,
-            spaceBetween: 16,
+            spaceBetween: 24,
           },
           // when window width is >= 768px
           1024: {
@@ -311,18 +322,18 @@ function swiperSlider() {
   }
 
 
-   const restaurantAbout = document.querySelectorAll('[data-slider="restaurantAbout"]');
+
+
+
 
   
-  //const heroSlider = document.querySelectorAll('[data-slider="hero-slider"]');
-  // if (restaurantAbout) {
-  //   restaurantAbout.forEach(slider => {
+// homepage restaurant
 
   const detailsrestaurant = document.querySelectorAll('[data-slider="detailsrestaurant"]');
 
   
   //const heroSlider = document.querySelectorAll('[data-slider="hero-slider"]');
-  if (detailsrestaurant) {
+    if (detailsrestaurant) {
     detailsrestaurant.forEach(slider => {
 
       // кнопки вперед та назад
@@ -390,17 +401,19 @@ function swiperSlider() {
           // when window width is >= 768px
           1024: {
             slidesPerView: 2,
-            spaceBetween: 40,
+            spaceBetween: 34,
           },
           // when window width is >= 1200px
           1280: {
             slidesPerView: 2,
-            spaceBetween: 40,
+            spaceBetween: 86,
           },
         },
       });
     });
   }
+
+   
 
 }
 window.addEventListener('load', swiperSlider, false);
