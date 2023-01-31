@@ -27,6 +27,8 @@ function swiperSlider() {
         },
         slidesPerView: 2, // кількість слайдерів для показу
         spaceBetween: 16, // відстань між слайдерами
+        loop: true,
+        
 
         // крапки пагінації
         pagination: {
@@ -107,18 +109,20 @@ function swiperSlider() {
         speed: 1500,
         // loop: true,
         // автоплей
-        centeredSlides: false,
-        autoplay: {
-        delay: 3000,
-            disableOnInteraction: false,
+        // centeredSlides: false,
+        // autoplay: {
+        // delay: 3000,
+        //     disableOnInteraction: false,
             
-        },
+        // },
+        
         // centeredSlides: true,
 // loop: true,
 // loopedSlides: slidesNum,
         slidesPerView: 2, // кількість слайдерів для показу
         spaceBetween: 20, // відстань між слайдерами
 
+        // loopAdditionalSlides: 20,
         // крапки пагінації
         pagination: {
           el: pagination,
@@ -272,7 +276,7 @@ function swiperSlider() {
         },
         slidesPerView: 2, // кількість слайдерів для показу
         spaceBetween: 16, // відстань між слайдерами
-
+        loop: true,
         // крапки пагінації
         pagination: {
           el: pagination,
@@ -362,7 +366,7 @@ function swiperSlider() {
         },
         slidesPerView: 2, // кількість слайдерів для показу
         spaceBetween: 16, // відстань між слайдерами
-
+        loop: true,
         // крапки пагінації
         pagination: {
           el: pagination,
