@@ -324,7 +324,7 @@ const aboutHotel = document.querySelectorAll('[data-slider="hotel-slider"]');
       let pagination = slider.querySelector('.swiper-pagination');
       //коментуємо чи видаляемо якщо не потрібно
 
-      let swiper = new Swiper(slider.querySelector('.restaurant-about__swiper'), {
+      let swiper = new Swiper(slider.querySelector('.swiper'), {
         speed: 1500,
         // автоплей
         // centeredSlides: false,
@@ -355,7 +355,7 @@ const aboutHotel = document.querySelectorAll('[data-slider="hotel-slider"]');
           transitionStart: function () {
             let previousIndex = this.previousIndex;
             let previousSlide =
-              slider.getElementsByClassName('restaurant-about__swiper-inner')[previousIndex];
+              slider.getElementsByClassName('swiper-slide')[previousIndex];
             if (previousSlide) {
               setTimeout(function () {
                 previousSlide.classList.remove('is-play');
@@ -365,7 +365,7 @@ const aboutHotel = document.querySelectorAll('[data-slider="hotel-slider"]');
           transitionEnd: function () {
             let activeIndex = this.activeIndex;
             let activeSlide =
-              slider.getElementsByClassName('restaurant-about__swiper-inner')[activeIndex];
+              slider.getElementsByClassName('swiper-slide')[activeIndex];
             activeSlide.classList.add('is-play');
           },
         },
@@ -374,7 +374,7 @@ const aboutHotel = document.querySelectorAll('[data-slider="hotel-slider"]');
           // when window width is >= 320px
           320: {
             slidesPerView:2,
-            spaceBetween: 16,
+            spaceBetween: 24,
           },
           // when window width is >= 768px
           1024: {
