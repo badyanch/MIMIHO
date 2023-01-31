@@ -163,14 +163,12 @@
     &__icon:focus {
         fill: $color-link-hover;
     }
-    
 }
 .swiper-btn {
     padding: 0;
     background-color: transparent;
     border: none;
     transition: fill 250ms $timing-function;
-    
 }
 
 .btns-wrap {
@@ -183,12 +181,12 @@
     @media screen and (min-width: 1024px) {
         justify-content: start;
         align-items: center;
-        margin-top: 41px;
+        margin-bottom: 35px;
         margin-left: auto;
     }
 
     @media screen and (min-width: 1280px) {
-        margin-top: 72px;
+        // margin-top: 72px;
     }
 }
 
