@@ -52,8 +52,11 @@
 gap: 20px;}
 
 
- &__swiper-slide{width: 270px!important;}
-//  .swiper-slide-next{width: 162px !important;}
+
+ &__swiper-slide{
+  width: 270px!important;
+}
+
   &__list {  
     list-style: none;
     display: flex;
