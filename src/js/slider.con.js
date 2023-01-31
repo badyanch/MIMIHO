@@ -102,13 +102,20 @@ function swiperSlider() {
       //коментуємо чи видаляемо якщо не потрібно
 
       let swiper = new Swiper(slider.querySelector('.about-hotel-slider'), {
+        //  slidesPerView: 'auto',
+          // loop: true,
         speed: 1500,
+        // loop: true,
         // автоплей
-        // centeredSlides: false,
-        // autoplay: {
-        // delay: 3000,
-        //     disableOnInteraction: false,
-        // },
+        centeredSlides: false,
+        autoplay: {
+        delay: 3000,
+            disableOnInteraction: false,
+            
+        },
+        // centeredSlides: true,
+// loop: true,
+// loopedSlides: slidesNum,
         slidesPerView: 2, // кількість слайдерів для показу
         spaceBetween: 20, // відстань між слайдерами
 
@@ -152,6 +159,7 @@ function swiperSlider() {
           320: {
             slidesPerView:2,
             spaceBetween: 16,
+            // loop: true,
           },
           // when window width is >= 768px
           1024: {
@@ -257,11 +265,11 @@ function swiperSlider() {
       let swiper = new Swiper(slider.querySelector('.swiper'), {
         speed: 1500,
         // автоплей
-        // centeredSlides: false,
-        // autoplay: {
-        // delay: 3000,
-        //     disableOnInteraction: false,
-        // },
+        centeredSlides: false,
+        autoplay: {
+        delay: 3000,
+            disableOnInteraction: false,
+        },
         slidesPerView: 2, // кількість слайдерів для показу
         spaceBetween: 16, // відстань між слайдерами
 
@@ -347,11 +355,11 @@ function swiperSlider() {
       let swiper = new Swiper(slider.querySelector('.swiper'), {
         speed: 1500,
         // автоплей
-        // centeredSlides: false,
-        // autoplay: {
-        // delay: 3000,
-        //     disableOnInteraction: false,
-        // },
+        centeredSlides: false,
+        autoplay: {
+        delay: 3000,
+            disableOnInteraction: false,
+        },
         slidesPerView: 2, // кількість слайдерів для показу
         spaceBetween: 16, // відстань між слайдерами
 
