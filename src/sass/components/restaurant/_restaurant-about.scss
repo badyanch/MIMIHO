@@ -98,7 +98,7 @@
 }
 
 .restaurant__image-cook {
-    width: 244px;
+    max-width: 244px;
     height: 322px;
     margin-left: 140px;
     margin-bottom: 32px;
@@ -107,28 +107,28 @@
     border-radius: 2px;
 
     @media screen and (min-width: 1024px) {
-        width: 400px;
+        max-width: 400px;
         height: 524px;
         box-shadow: 5px 5px 70px 17px #00000040;
         margin-left: 112px;
-        margin-bottom: -300px;
-      transform: translate(110%, -55%);
+        margin-bottom: -350px;
+      transform: translate(110%, -65%);
 
     }
     @media screen and (min-width: 1280px) {
-        width: 460px;
+        max-width: 460px;
         height: 574px; 
         box-shadow: 5px 5px 70px 17px #00000040;
        margin-left: 180px;
-       margin-bottom: -300px;
-       transform: translate(105%, -45%);
+       margin-bottom: -350px;
+       transform: translate(105%, -55%);
     }
     
 }
 
 .restaurant__image-meat {
     
-    width: 200px;
+    max-width: 200px;
     height: 278px;
     box-shadow: 2px 2px 60px 2px #00000040;
     border-radius: 2px;
@@ -136,7 +136,7 @@
     margin-bottom: 32px;
 
     @media screen and (min-width: 1024px) {
-        width: 350px;
+        max-width: 350px;
         height: 500px;
         box-shadow: 5px 5px 70px 17px #00000040;
 
@@ -145,7 +145,7 @@
     }
 
     @media screen and (min-width: 1280px) {
-        width: 460px;
+        max-width: 460px;
         height: 574px; 
         box-shadow: 5px 5px 70px 17px #00000040;
        margin-left: 32px;
@@ -183,6 +183,9 @@
     @media screen and (min-width: 1280px) {
         // margin-bottom: 40px;
         margin-top: -100px;
+
+        //transform: translateY(-60px);
+        
     }
 
 
@@ -199,10 +202,8 @@
                           }
 }
 
+
 }
-
-
-
 
 .restaurant-about__icons {
     width: 32px;
@@ -232,7 +233,12 @@
 .restaurant-about__btn {
    
     display: flex;
+
     background-color:transparent;
+
+    min-width: 98px;
+    background-color: $color-primary-bg;
+
     border: none;
     cursor: pointer;
     fill: #000000;
