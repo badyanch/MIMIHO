@@ -202,6 +202,11 @@
                           }
 }
 
+&--homepage-hotel-gap{
+    margin-left: 0;
+    margin-right: 44px;
+        transform: translateX(-5%);
+}
 
 }
 
@@ -228,6 +233,15 @@
     display: flex;
     justify-content: flex-end;
     gap: 32px;
+
+    &--homepage-hotel-gap{
+        justify-content: start;
+        margin-left: 15px;
+        @media screen and (min-width: 1024px) {
+                
+                margin-left: 0;
+            }
+    }
 }
 
 .restaurant-about__btn {
