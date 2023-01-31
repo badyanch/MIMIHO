@@ -233,7 +233,6 @@
 .restaurant-about__btn {
    
     display: flex;
-
     background-color:transparent;
     background-color: $color-primary-bg;
 
@@ -250,6 +249,9 @@
 
     }
 
+    &:nth-child(2) {
+        padding-right: 35px;
+    }
 }
 .restaurant-about__swiper-wrapper
 {
