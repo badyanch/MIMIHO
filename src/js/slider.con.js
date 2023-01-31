@@ -80,7 +80,7 @@ function swiperSlider() {
     });
   }
 
-const aboutHotel = document.querySelectorAll('[data-slider="hotel-slider"]');
+ const aboutHotel = document.querySelectorAll('[data-slider="hotel-slider"]');
 
   
   //const heroSlider = document.querySelectorAll('[data-slider="hero-slider"]');
@@ -315,8 +315,8 @@ const aboutHotel = document.querySelectorAll('[data-slider="hotel-slider"]');
 
   
   //const heroSlider = document.querySelectorAll('[data-slider="hero-slider"]');
-  if (restaurantAbout) {
-    restaurantAbout.forEach(slider => {
+  // if (restaurantAbout) {
+  //   restaurantAbout.forEach(slider => {
 
   const detailsrestaurant = document.querySelectorAll('[data-slider="detailsrestaurant"]');
 
