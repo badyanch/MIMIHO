@@ -47,14 +47,17 @@
     margin-bottom: 48px;
   }
 
-&__swiper-list{list-style: none;
+&__swiper-list{
+  list-style: none;
   padding: 0;
-gap: 20px;}
+}
 
 
  &__swiper-slide{
   width: 270px!important;
 }
+
+
   &__list {  
     list-style: none;
     display: flex;
@@ -162,11 +165,16 @@ fill: #ffffff;
         url(../images/pexels-kheng-tablet@2x.jpg);
     }
 }
-.details-restaurant__swiper{position: absolute;
+.details-restaurant__swiper{
+  position: absolute;
   left: 312px;
   top:254px;
-max-width: 662px;
-height: 350px;
+  max-width: 662px;
+  height: 350px;
+  @media screen and (min-width: 1280px) {
+    width: 64%;
+    max-width: 1000px;
+  }
 }
 .swiper-buttons{position: absolute;
   z-index: 9;
@@ -207,7 +215,7 @@ transform: translateY(50%);}}
   .details-restaurant__swiper{position: absolute;
     left: 353px;
     top:254px;
-  max-width: 875px;
+  // max-width: 875px;
   }}
 
   

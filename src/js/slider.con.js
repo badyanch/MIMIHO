@@ -107,11 +107,11 @@ function swiperSlider() {
       let swiper = new Swiper(slider.querySelector('.swiper'), {
         speed: 1500,
         // автоплей
-        centeredSlides: false,
-        autoplay: {
-        delay: 3000,
-            disableOnInteraction: false,
-        },
+        // centeredSlides: false,
+        // autoplay: {
+        // delay: 3000,
+        //     disableOnInteraction: false,
+        // },
         slidesPerView: 2, // кількість слайдерів для показу
         spaceBetween: 16, // відстань між слайдерами
         loop: true,
@@ -351,14 +351,14 @@ function swiperSlider() {
       let swiper = new Swiper(slider.querySelector('.swiper'), {
         speed: 1500,
         // автоплей
-        centeredSlides: false,
-        autoplay: {
-        delay: 3000,
-            disableOnInteraction: false,
-        },
+        // centeredSlides: false,
+        // autoplay: {
+        // delay: 3000,
+        //     disableOnInteraction: false,
+        // },
         slidesPerView: 2, // кількість слайдерів для показу
         spaceBetween: 16, // відстань між слайдерами
-        // loop: true,
+        loop: true,
         // крапки пагінації
         pagination: {
           el: pagination,

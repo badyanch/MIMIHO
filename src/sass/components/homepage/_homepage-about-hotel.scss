@@ -193,14 +193,14 @@
 
  }
 
- .about-hotel-slider__wrapper img{
-   width: 274px;
-   height: 270px;
-    @media screen and (min-width: 1024px) {
-            height: 270px;
-            width: 270px;
-        }
- }
+//  .about-hotel-slider__wrapper img{
+//    width: 274px;
+//    height: 270px;
+//     @media screen and (min-width: 1024px) {
+//             height: 270px;
+//             width: 270px;
+//         }
+//  }
 
  .about-hotel-slider__button
  {
@@ -246,5 +246,15 @@
  }
 
 
+.classniy-maket-stavliu-like {
+    margin-right: -47px;
 
+    @media screen and (min-width: 1024px) {
+        margin-right: -38px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        margin-right: -22px;
+    }
+}
 
