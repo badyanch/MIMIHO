@@ -6,14 +6,10 @@
   margin: 0 auto;
   background-size: cover;
   background-position: center center;
-  background-image: linear-gradient(
-      to right,
-      $primary-dark-rgb,
-      $primary-dark-rgb
-    ),
+  background-image: linear-gradient(to right, $primary-dark-rgb, $primary-dark-rgb),
     url(../images/pexels-kheng-mobile.jpg);
   &__title {
-    font-family: 'FilmP3';
+    font-family: "FilmP3";
     font-size: 40px;
     line-height: 1.075;
     color: #ffffff;
@@ -24,7 +20,7 @@
     letter-spacing: 0.3em;
   }
   &__subtitle {
-    font-family: 'Montserrat';
+    font-family: "Montserrat";
     font-weight: 700;
     font-size: 20px;
     line-height: 1.2;
@@ -36,7 +32,7 @@
     letter-spacing: 0.02em;
   }
   &__text {
-    font-family: 'Montserrat';
+    font-family: "Montserrat";
     font-style: normal;
     font-weight: 600;
     font-size: 12px;
@@ -47,20 +43,18 @@
     margin-bottom: 48px;
   }
 
-&__swiper-list{
-  list-style: none;
-  padding: 0;
-}
+  &__swiper-list {
+    position: relative;
+    list-style: none;
+    padding: 0;
+    // transform: translateX(30%);
+  }
 
+  &__swiper-slide {
+    width: 274px !important;
+  }
 
-
-
- &__swiper-slide{
-  width: 270px!important;
-}
-
-
-  &__list {  
+  &__list {
     list-style: none;
     display: flex;
     gap: 16px;
@@ -76,7 +70,7 @@
     border: 2px solid #ffffff;
     border-radius: 25px;
     gap: 16px;
-    font-family: 'Montserrat';
+    font-family: "Montserrat";
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -104,11 +98,7 @@
 }
 @media (min-resolution: 2dppx) {
   .details-restaurant {
-    background-image: linear-gradient(
-        to right,
-        $primary-dark-rgb,
-        $primary-dark-rgb
-      )
+    background-image: linear-gradient(to right, $primary-dark-rgb, $primary-dark-rgb)
       url(../images/pexels-kheng-mobile@2x.jpg);
   }
 }
@@ -116,10 +106,10 @@
   display: flex;
   gap: 32px;
   margin: 20px 0;
-fill: #ffffff; 
+  fill: #ffffff;
   &__icon:hover,
   &__icon:focus {
-      fill: $color-link-hover;
+    fill: $color-link-hover;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -127,12 +117,8 @@ fill: #ffffff;
     max-width: 1024px;
     padding-top: 48px;
     padding-bottom: 94px;
-    background-image: linear-gradient(
-      to right,
-      $primary-dark-rgb,
-      $primary-dark-rgb
-    ),
-    url(../images/pexels-kheng-tablet.jpg);
+    background-image: linear-gradient(to right, $primary-dark-rgb, $primary-dark-rgb),
+      url(../images/pexels-kheng-tablet.jpg);
     &__title {
       font-size: 64px;
       margin-left: 231px;
@@ -153,47 +139,43 @@ fill: #ffffff;
       margin-left: 231px;
       margin-bottom: 198px;
     }
-    &__list {width: 236px;
+    &__list {
+      width: 236px;
       margin-left: 0;
     }
   }
   @media (min-resolution: 2dppx) {
     .details-restaurant {
-      background-image: linear-gradient(
-          to right,
-          $primary-dark-rgb,
-          $primary-dark-rgb
-        )
+      background-image: linear-gradient(to right, $primary-dark-rgb, $primary-dark-rgb)
         url(../images/pexels-kheng-tablet@2x.jpg);
     }
-}
-.details-restaurant__swiper{
-  position: absolute;
-  left: 312px;
-  top:254px;
-
-  max-width: 662px;
-  height: 350px;
-  @media screen and (min-width: 1280px) {
-    width: 64%;
-    max-width: 1000px;
   }
+  .details-restaurant__swiper {
+    position: relative;
+    // left: 312px;
+    // top: 254px;
 
+    width: 568px;
+    // height: 350px;
+    transform: translateX(30%);
+    @media screen and (min-width: 1280px) {
+      width: 64%;
+      max-width: 1000px;
+    }
+  }
 }
-.swiper-buttons{position: absolute;
+.swiper-buttons {
+  position: absolute;
   z-index: 9;
-left:0;
-bottom:0;
-transform: translateY(50%);}}
+  left: 0;
+  bottom: 0;
+  transform: translateY(50%);
+}
 @media screen and (min-width: 1280px) {
   .details-restaurant {
     max-width: 1280px;
-    background-image: linear-gradient(
-      to right,
-      $primary-dark-rgb,
-      $primary-dark-rgb
-    ),
-    url(../images/pexels-kheng-desktop.jpg);
+    background-image: linear-gradient(to right, $primary-dark-rgb, $primary-dark-rgb),
+      url(../images/pexels-kheng-desktop.jpg);
     &__title {
       margin-left: 253px;
     }
@@ -204,22 +186,20 @@ transform: translateY(50%);}}
       margin-left: 253px;
       margin-bottom: 200px;
     }
-    &__list {width: 236px;
-    }}
-    @media (min-resolution: 2dppx) {
-      .details-restaurant {
-        background-image: linear-gradient(
-            to right,
-            $primary-dark-rgb,
-            $primary-dark-rgb
-          )
-          url(../images/pexels-kheng-desktop@2x.jpg);
-      }
+    &__list {
+      width: 236px;
+    }
   }
-  .details-restaurant__swiper{position: absolute;
-    left: 353px;
-    top:254px;
-  // max-width: 875px;
-  }}
-
-  
+  @media (min-resolution: 2dppx) {
+    .details-restaurant {
+      background-image: linear-gradient(to right, $primary-dark-rgb, $primary-dark-rgb)
+        url(../images/pexels-kheng-desktop@2x.jpg);
+    }
+  }
+  // .details-restaurant__swiper {
+  //   position: absolute;
+  //   left: 353px;
+  //   top: 254px;
+  //   // max-width: 875px;
+  // }
+}
