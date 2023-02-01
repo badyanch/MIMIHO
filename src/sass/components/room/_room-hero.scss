@@ -84,7 +84,6 @@
     }
   }
   &__title {
-    width: 325px;
     height: 64px;
     font-family: 'Times New Roman';
     font-style: normal;
@@ -117,12 +116,17 @@
     font-style: normal;
     font-weight: 700;
     font-size: 12px;
-    line-height: 1.25x;
+    line-height: 1.25;
     letter-spacing: 0.02em;
     color: $color-slider-button;
     margin-bottom: 17px;
     width: 325px;
     height: 61px;
+
+    @media screen and (max-width: 414px) {
+      width: 90%;
+      height: 100%;
+    }
 
     @media screen and (min-width: 1024px) {
       font-size: 16px;
