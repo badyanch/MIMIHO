@@ -170,10 +170,12 @@
      overflow: hidden;
      padding-top: 48px;
      padding-bottom: 32px;
+     transform: translateX(-5%);
 
      @media screen and (min-width: 1024px) {
          padding-top: 40px;
          padding-bottom: 0;
+         transform: translateX(0);
      }
  }
 .about-hotel-slider__swiper{
@@ -187,7 +189,8 @@
 }
 
 .about-hotel-slider__swiper img {
-    height: 270px ;
+    height: 270px;
+    // width: 270px;
 }
 
  .about-hotel-slider__wrapper{
@@ -202,14 +205,14 @@
     display: block;
  }
 
-//  .about-hotel-slider__wrapper img{
-//    width: 274px;
-//    height: 270px;
-//     @media screen and (min-width: 1024px) {
-//             height: 270px;
-//             width: 270px;
-//         }
-//  }
+ .about-hotel-slider__wrapper img{
+   width: 274px;
+   height: 270px;
+    @media screen and (min-width: 1024px) {
+            height: 270px;
+            width: 270px;
+        }
+ }
 
  .about-hotel-slider__button
  {
@@ -254,17 +257,11 @@
 
  }
 
-
-.classniy-maket-stavliu-like {
-    margin-right: -95px;
+.about-hotel-slider__wrapper .about-hotel-slider__swiper--small-photo{
 
     @media screen and (min-width: 1024px) {
-        margin-right: -77px;
-    }
-
-    @media screen and (min-width: 1280px) {
-        margin-right: -26px;
-    }
+            width: 162px !important;
+        }
+   
+   
 }
-
-
