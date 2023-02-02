@@ -5,22 +5,22 @@
 }
 
 .footer-box {
-  margin-left: 44px;
-  // margin-right: 18px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   height: 240px;
+
+  @media screen and (max-width: 413px) {
+    margin-left: 0;
+  }
 
   @media screen and (min-width: 1024px) {
     margin-left: 0;
     justify-content: center;
     height: 304px;
-    // margin-left: 139px;
   }
 
   @media screen and (min-width: 1280px) {
-    // margin-left: 201px;
   }
 }
 
@@ -34,6 +34,11 @@
     line-height: calc(43px / 40px);
     letter-spacing: 0.3em;
     color: $color-brand-text;
+
+    @media screen and (max-width: 414px) {
+      font-size: 36px;
+      line-height: calc(39px / 36px);
+    }
 
     @media screen and (min-width: 1024px) {
       font-size: 64px;
@@ -70,6 +75,11 @@
     line-height: calc(24px / 20px);
     letter-spacing: 0.02em;
     color: $color-brand-text;
+
+    @media screen and (max-width: 414px) {
+      font-size: 16px;
+      line-height: calc(20px / 16px);
+    }
   }
 }
 

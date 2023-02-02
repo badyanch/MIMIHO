@@ -50,11 +50,7 @@
     // transform: translateX(30%);
     height: 270px;
   }
-
-  &__swiper-slide {
-    width: 274px !important;
-  }
-
+  
   &__list {
     list-style: none;
     display: flex;
@@ -183,7 +179,7 @@
     }
     &__text {
       margin-left: 253px;
-      margin-bottom: 200px;
+      // margin-bottom: 200px;
     }
     &__list {
       width: 236px;
