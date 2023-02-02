@@ -200,7 +200,7 @@
 }
 
 
-// 
+
 
 
 .details-restaurant__swiper-buttons{
@@ -229,3 +229,104 @@
 }
 
 }
+
+.homepage-about-restaurant{
+    position: relative;
+
+    padding-top: 48px;
+        padding-bottom: 40px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/pexels-kheng-mobile.jpg');
+    background-color: rgba(0, 0, 0, 0.7);
+    // background-image: url('../images/pexels-kheng-tang-mobile.jpg');
+    background-size: cover;
+    background-position: 50% 50%;
+
+    max-width: 414px;
+    margin: 0 auto;
+    
+    // media mobile
+    
+    @media (min-deavice-pixel-ratio: 2) and (max-width: 1023px),
+    (min-resolution: 192dpi) {
+         background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/pexels-kheng-mobile@2x.jpg');
+    }
+  
+    // media tablet
+
+    @media screen and (min-width: 1024px) {
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/pexels-kheng-tablet.jpg');
+        max-width: 1024px;
+    }
+    @media  (min-deavice-pixel-ratio: 2) and (min-width: 1024px),
+    (min-resolution: 192dpi) {
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/pexels-kheng-tablet@2x.jpg');
+        max-width: 1024px;
+    }
+    
+    // desktop
+
+    @media screen and (min-width: 1280px) {
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/pexels-kheng-desktop.jpg');
+        max-width: 1280px;
+    }
+    @media  (min-deavice-pixel-ratio: 2) and (min-width: 1280px),
+    (min-resolution: 192dpi) {
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/pexels-kheng-desktop@2x.jpg');
+        max-width: 1280px;
+    }
+
+
+  }
+.homepage-about-restaurant__slider-btn-thumb {
+  @media screen and (min-width: 1024px) {
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 32px;
+    }
+}
+
+.homepage-about-hotel__description {
+  max-width: 259px;
+@media screen and (min-width: 1024px) {
+    max-width: 610px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    max-width: 610px;
+  
+  }
+}
+
+.homepage-about-restaurant__box {
+margin-left: 54px;
+
+@media screen and (min-width: 1024px) {
+  margin-left: 192px;
+}
+
+  @media screen and (min-width: 1280px) {
+      margin-left: 252px;
+    }
+}
+
+.about-restaurant-slider__button
+ {
+    // margin-bottom: 32px;
+    margin-top: 16px;
+justify-content: flex-end;
+    display: flex;
+    z-index: 10;
+    fill: white;
+    gap: 32px;
+
+    @media screen and (min-width: 1024px) {
+      justify-content: flex-start;
+    }
+
+    @media screen and (min-width: 1024px) {
+        margin-top: 24px;
+    }
+
+ }
