@@ -227,6 +227,9 @@
       margin-bottom: 58px;
       height: 48px;
       width: 232px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
       @media screen and (min-width: 1024px) {
         margin-bottom: 0;
