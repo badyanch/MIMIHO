@@ -6,7 +6,7 @@
       </svg>
     </button>
 
-    <form action="" name="form-table">
+    <form name="form-table">
       <h2 class="form-table__title">забронювати столик</h2>
       <div class="form-table__box">
         <div class="test">
@@ -16,10 +16,10 @@
                 class="form-table__field"
                 type="text"
                 placeholder="Ваше ім'я"
-                id="name"
+                
                 pattern="[A-Za-zА-Яа-яЁё]{1,}"
               />
-              <label class="form-table__text" for="name"
+              <label class="form-table__text" 
                 >На кого забронювати столик?</label
               >
             </div>
@@ -28,20 +28,15 @@
                 class="form-table__field"
                 type="tel"
                 placeholder="+38 (___) ___-__-__"
-                id="tel"
+                
                 pattern="[0-9]{10,13}"
               />
-              <label class="form-table__text" for="tel">Номер телефону</label>
+              <label class="form-table__text" >Номер телефону</label>
             </div>
           </div>
           <div class="input-box">
             <div class="form-table__input">
-              <select
-                class="form-table__field js-select"
-                type="number"
-                placeholder="2"
-                id="num"
-              >
+              <select class="form-table__field js-select" id="num">
                 <option value="">2</option>
                 <option value="">3</option>
               </select>
@@ -50,12 +45,7 @@
               >
             </div>
             <div class="form-table__input">
-              <select
-                class="form-table__field js-select"
-                name=""
-                id="date"
-                aria-placeholder="Сьогодні"
-              >
+              <select class="form-table__field js-select" id="date">
                 <option class="" value="">Сьогодні</option>
                 <option class="" value="">Завтра</option>
               </select>
@@ -78,7 +68,7 @@
       </svg>
     </button>
 
-    <form action="" name="form-table">
+    <form name="form-table">
       <h2 class="form-table__title">забронювати номер</h2>
       <div class="form-table__box">
         <div class="test">
@@ -88,10 +78,10 @@
               class="form-table__field"
               type="text"
               placeholder="Ваше ім'я"
-              id="name"
+              
               pattern="[A-Za-zА-Яа-яЁё]{1,}"
             />
-            <label class="form-table__text" for="name"
+            <label class="form-table__text" 
               >На кого забронювати номер?</label
             >
           </div>
@@ -100,20 +90,15 @@
               class="form-table__field"
               type="tel"
               placeholder="+38 (___) ___-__-__"
-              id="tel"
+              
               pattern="[0-9]{10,13}"
             />
-            <label class="form-table__text" for="tel">Номер телефону</label>
+            <label class="form-table__text" >Номер телефону</label>
           </div>
           <!-- </div>
 					<div class="input-box"> -->
           <div class="form-table__input">
-            <select
-              class="form-table__field js-select"
-              type="text"
-              placeholder="Двомісний номер"
-              id="room"
-            >
+            <select class="form-table__field js-select"  id="room">
               <option value="">Двомісний номер</option>
               <option value="">Двомісний номер люкс</option>
               <option value="">Трьохмісний</option>
@@ -122,24 +107,14 @@
           </div>
           <div class="input__group">
             <div class="form-table__input">
-              <select
-                class="form-table__field js-select"
-                name=""
-                id="check"
-                aria-placeholder="Сьогодні"
-              >
+              <select class="form-table__field js-select" id="check">
                 <option class="" value="">Сьогодні</option>
                 <option class="" value="">Завтра</option>
               </select>
               <label class="form-table__text" for="check">Дата заїзду</label>
             </div>
             <div class="form-table__input">
-              <select
-                class="form-table__field js-select"
-                name=""
-                id="departure"
-                aria-placeholder="Сьогодні"
-              >
+              <select class="form-table__field js-select" id="departure">
                 <option class="form-table__field" value="">Сьогодні</option>
                 <option class="form-table__field" value="">Завтра</option>
               </select>
@@ -161,23 +136,18 @@
         </svg>
       </button>
 
-      <form action="">
+      <form>
         <h2 class="form-table__title">Ціни на номер</h2>
 
         <div class="form-table__box off-df">
           <div class="form-table__input pd-16">
             <p class="invisible-input" id="priceRoom">Двомісний люкс</p>
-            <label class="form-table__text pd-0" for="priceRoom"
+            <label class="form-table__text pd-0" 
               >Категорія номеру</label
             >
           </div>
           <div class="input__group">
-            <select
-              class="form-table__field js-select"
-              name=""
-              id="cost"
-              aria-placeholder="1"
-            >
+            <select class="form-table__field js-select" id="cost">
               <option class="form-table__field" value="">1</option>
               <option class="form-table__field" value="">2</option>
               <option class="form-table__field" value="">3</option>
@@ -186,10 +156,10 @@
             <div class="form-table__input">
               <input
                 class="form-table__field"
-                type="number"
                 id="price"
                 min="1000"
                 placeholder="1000"
+                type="number"
               />
               <label class="form-table__text" for="price">грн</label>
             </div>
