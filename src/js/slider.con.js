@@ -18,7 +18,7 @@ function swiperSlider() {
       //коментуємо чи видаляемо якщо не потрібно
 
       let swiper = new Swiper(slider.querySelector('.swiper'), {
-        speed: 1500,
+        speed: 500,
         // автоплей
         centeredSlides: false,
         autoplay: {
@@ -105,13 +105,13 @@ function swiperSlider() {
       //коментуємо чи видаляемо якщо не потрібно
 
       let swiper = new Swiper(slider.querySelector('.swiper'), {
-        speed: 1500,
+        speed: 500,
         // автоплей
-        // centeredSlides: false,
-        // autoplay: {
-        // delay: 3000,
-        //     disableOnInteraction: false,
-        // },
+        centeredSlides: false,
+        autoplay: {
+        delay: 3000,
+            disableOnInteraction: false,
+        },
         slidesPerView: 2, // кількість слайдерів для показу
         spaceBetween: 16, // відстань між слайдерами
         // loop: true,
@@ -181,7 +181,7 @@ function swiperSlider() {
 
   //         let pagination = slider.querySelector('.swiper-pagination');
   //         swiper = new Swiper(slider.querySelector('.swiper'), {
-  //             speed: 1500,
+  //             speed: 500,
   //             //centeredSlides: true,
   //             // autoplay: {
   //             //     delay: 3000,
@@ -259,7 +259,7 @@ function swiperSlider() {
       //коментуємо чи видаляемо якщо не потрібно
 
       let swiper = new Swiper(slider.querySelector('.swiper'), {
-        speed: 1500,
+        speed: 500,
         // автоплей
         centeredSlides: false,
         autoplay: {
@@ -349,7 +349,7 @@ function swiperSlider() {
       //коментуємо чи видаляемо якщо не потрібно
 
       let swiper = new Swiper(slider.querySelector('.swiper'), {
-        speed: 1500,
+        speed: 500,
         // автоплей
         // centeredSlides: false,
         // autoplay: {
