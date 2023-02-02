@@ -1,174 +1,136 @@
 <div class="js-backdrop-modal backdrop">
-  <div class="modal modal1" data-modal="1">
-    <button class="close-button js-modal-close" type="button">
-      <svg width="24" height="24">
-        <use href="./images/icons.svg#icon-close"></use>
-      </svg>
-    </button>
+	<div class="modal modal1" data-modal="1">
+		<button class="close-button js-modal-close" type="button">
+			<svg width="24" height="24">
+				<use href="./images/icons.svg#icon-close"></use>
+			</svg>
+		</button>
 
-    <form name="form-table">
-      <h2 class="form-table__title">забронювати столик</h2>
-      <div class="form-table__box">
-        <div class="test">
-          <div class="input-box">
-            <div class="form-table__input">
-              <input
-                class="form-table__field"
-                type="text"
-                placeholder="Ваше ім'я"
-                
-                pattern="[A-Za-zА-Яа-яЁё]{1,}"
-              />
-              <label class="form-table__text" 
-                >На кого забронювати столик?</label
-              >
-            </div>
-            <div class="form-table__input">
-              <input
-                class="form-table__field"
-                type="tel"
-                placeholder="+38 (___) ___-__-__"
-                
-                pattern="[0-9]{10,13}"
-              />
-              <label class="form-table__text" >Номер телефону</label>
-            </div>
-          </div>
-          <div class="input-box">
-            <div class="form-table__input">
-              <select class="form-table__field js-select" id="num">
-                <option value="">2</option>
-                <option value="">3</option>
-              </select>
-              <label class="form-table__text" for="num"
-                >Столик на яку кількість осіб?</label
-              >
-            </div>
-            <div class="form-table__input">
-              <select class="form-table__field js-select" id="date">
-                <option class="" value="">Сьогодні</option>
-                <option class="" value="">Завтра</option>
-              </select>
-              <label class="form-table__text" for="date"
-                >На яку дату бронювати?</label
-              >
-            </div>
-          </div>
-        </div>
-        <button class="form-table__button" type="submit">
-          оформити бронювання
-        </button>
-      </div>
-    </form>
-  </div>
-  <div class="modal modal2" data-modal="2">
-    <button class="close-button js-modal-close" type="button">
-      <svg width="24" height="24">
-        <use href="/src/images/icons.svg#icon-close"></use>
-      </svg>
-    </button>
+		<form name="form-table">
+			<h2 class="form-table__title">забронювати столик</h2>
+			<div class="form-table__box">
+				<div class="test">
+					<div class="input-box">
+						<div class="form-table__input">
+							<input class="form-table__field" type="text" placeholder="Ваше ім'я"
+								pattern="[A-Za-zА-Яа-яЁё]{1,}" />
+							<label class="form-table__text">На кого забронювати столик?</label>
+						</div>
+						<div class="form-table__input">
+							<input class="form-table__field" type="tel" placeholder="+38 (___) ___-__-__"
+								pattern="[0-9]{10,13}" />
+							<label class="form-table__text">Номер телефону</label>
+						</div>
+					</div>
+					<div class="input-box">
+						<div class="form-table__input">
+							<select class="form-table__field js-select" id="num">
+								<option value="">2</option>
+								<option value="">3</option>
+							</select>
+							<label class="form-table__text" for="num">Столик на яку кількість осіб?</label>
+						</div>
+						<div class="form-table__input">
+							<select class="form-table__field js-select" id="date">
+								<option class="" value="">Сьогодні</option>
+								<option class="" value="">Завтра</option>
+							</select>
+							<label class="form-table__text" for="date">На яку дату бронювати?</label>
+						</div>
+					</div>
+				</div>
+				<button class="form-table__button" type="submit">
+					оформити бронювання
+				</button>
+			</div>
+		</form>
+	</div>
+	<div class="modal modal2" data-modal="2">
+		<button class="close-button js-modal-close" type="button">
+			<svg width="24" height="24">
+				<use href="/src/images/icons.svg#icon-close"></use>
+			</svg>
+		</button>
 
-    <form name="form-table">
-      <h2 class="form-table__title">забронювати номер</h2>
-      <div class="form-table__box">
-        <div class="test">
-          <!-- <div class="input-box"> -->
-          <div class="form-table__input">
-            <input
-              class="form-table__field"
-              type="text"
-              placeholder="Ваше ім'я"
-              
-              pattern="[A-Za-zА-Яа-яЁё]{1,}"
-            />
-            <label class="form-table__text" 
-              >На кого забронювати номер?</label
-            >
-          </div>
-          <div class="form-table__input">
-            <input
-              class="form-table__field"
-              type="tel"
-              placeholder="+38 (___) ___-__-__"
-              
-              pattern="[0-9]{10,13}"
-            />
-            <label class="form-table__text" >Номер телефону</label>
-          </div>
-          <!-- </div>
+		<form name="form-table">
+			<h2 class="form-table__title">забронювати номер</h2>
+			<div class="form-table__box">
+				<div class="test">
+					<!-- <div class="input-box"> -->
+					<div class="form-table__input">
+						<input class="form-table__field" type="text" placeholder="Ваше ім'я"
+							pattern="[A-Za-zА-Яа-яЁё]{1,}" />
+						<label class="form-table__text">На кого забронювати номер?</label>
+					</div>
+					<div class="form-table__input">
+						<input class="form-table__field" type="tel" placeholder="+38 (___) ___-__-__"
+							pattern="[0-9]{10,13}" />
+						<label class="form-table__text">Номер телефону</label>
+					</div>
+					<!-- </div>
 					<div class="input-box"> -->
-          <div class="form-table__input">
-            <select class="form-table__field js-select"  id="room">
-              <option value="">Двомісний номер</option>
-              <option value="">Двомісний номер люкс</option>
-              <option value="">Трьохмісний</option>
-            </select>
-            <label class="form-table__text" for="room">Категорія номеру</label>
-          </div>
-          <div class="input__group">
-            <div class="form-table__input">
-              <select class="form-table__field js-select" id="check">
-                <option class="" value="">Сьогодні</option>
-                <option class="" value="">Завтра</option>
-              </select>
-              <label class="form-table__text" for="check">Дата заїзду</label>
-            </div>
-            <div class="form-table__input">
-              <select class="form-table__field js-select" id="departure">
-                <option class="form-table__field" value="">Сьогодні</option>
-                <option class="form-table__field" value="">Завтра</option>
-              </select>
-              <label class="form-table__text" for="departure"
-                >Дата виїзду</label
-              >
-            </div>
-          </div>
-        </div>
-        <button class="form-table__button" type="submit">
-          оформити бронювання
-        </button>
-      </div>
-    </form>
-    <div class="modal modal3" data-modal="3">
-      <button class="close-button js-modal-close" type="button">
-        <svg width="24" height="24">
-          <use href="/src/images/icons.svg#icon-close"></use>
-        </svg>
-      </button>
+					<div class="form-table__input">
+						<select class="form-table__field js-select" id="room">
+							<option value="">Двомісний номер</option>
+							<option value="">Двомісний номер люкс</option>
+							<option value="">Трьохмісний</option>
+						</select>
+						<label class="form-table__text" for="room">Категорія номеру</label>
+					</div>
+					<div class="input__group">
+						<div class="form-table__input">
+							<select class="form-table__field js-select" id="check">
+								<option class="" value="">Сьогодні</option>
+								<option class="" value="">Завтра</option>
+							</select>
+							<label class="form-table__text" for="check">Дата заїзду</label>
+						</div>
+						<div class="form-table__input">
+							<select class="form-table__field js-select" id="departure">
+								<option class="form-table__field" value="">Сьогодні</option>
+								<option class="form-table__field" value="">Завтра</option>
+							</select>
+							<label class="form-table__text" for="departure">Дата виїзду</label>
+						</div>
+					</div>
+				</div>
+				<button class="form-table__button" type="submit">
+					оформити бронювання
+				</button>
+			</div>
+		</form>
+		<div class="modal modal3" data-modal="3">
+			<button class="close-button js-modal-close" type="button">
+				<svg width="24" height="24">
+					<use href="/src/images/icons.svg#icon-close"></use>
+				</svg>
+			</button>
 
-      <form>
-        <h2 class="form-table__title">Ціни на номер</h2>
+			<form>
+				<h2 class="form-table__title">Ціни на номер</h2>
 
-        <div class="form-table__box off-df">
-          <div class="form-table__input pd-16">
-            <p class="invisible-input" id="priceRoom">Двомісний люкс</p>
-            <label class="form-table__text pd-0" 
-              >Категорія номеру</label
-            >
-          </div>
-          <div class="input__group">
-            <select class="form-table__field js-select" id="cost">
-              <option class="form-table__field" value="">1</option>
-              <option class="form-table__field" value="">2</option>
-              <option class="form-table__field" value="">3</option>
-              <option class="form-table__field" value="">4</option>
-            </select>
-            <div class="form-table__input">
-              <input
-                class="form-table__field"
-                id="price"
-                min="1000"
-                placeholder="1000"
-                type="number"
-              />
-              <label class="form-table__text" for="price">грн</label>
-            </div>
-          </div>
-          <button class="form-table__button" type="submit">
-            оформити бронювання
-          </button>
-        </div>
-      </form>
-    </div>
-  </div>
+				<div class="form-table__box off-df">
+					<div class="form-table__input pd-16">
+						<p class="invisible-input" id="priceRoom">Двомісний люкс</p>
+						<label class="form-table__text pd-0">Категорія номеру</label>
+					</div>
+					<div class="input__group">
+						<select class="form-table__field js-select" id="cost">
+							<option class="form-table__field" value="">1</option>
+							<option class="form-table__field" value="">2</option>
+							<option class="form-table__field" value="">3</option>
+							<option class="form-table__field" value="">4</option>
+						</select>
+						<div class="form-table__input">
+							<input class="form-table__field" id="price" min="1000" placeholder="1000" type="number" />
+							<label class="form-table__text" for="price">грн</label>
+						</div>
+					</div>
+					<button class="form-table__button" type="submit">
+						оформити бронювання
+					</button>
+				</div>
+			</form>
+		</div>
+	</div>
 </div>

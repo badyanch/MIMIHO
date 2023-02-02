@@ -48,8 +48,12 @@
   }
 }
 .input__group {
+	display: flex;
+	flex-direction: column;
+	row-gap: 45px;
   @media (min-width: 1024px) {
     display: flex;
+	flex-direction: row;
     column-gap: 16px;
   }
 }
