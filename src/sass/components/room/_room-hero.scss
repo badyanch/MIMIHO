@@ -167,7 +167,7 @@
   }
   &__address {
     z-index: 36;
-    top: -380px;
+    top: -212px;
     right: 15px;
     position: absolute;
     width: 211px;
@@ -175,6 +175,10 @@
     padding: 6px;
     border: 1px solid rgba(243, 198, 83, 0.7);
     border-radius: 2px;
+ @media screen and (min-width: 414px) {
+  top: -400px;
+}
+    
     @media screen and (min-width: 1024px) {
       top: 0;
       right: 0;
