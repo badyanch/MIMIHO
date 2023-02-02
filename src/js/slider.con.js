@@ -114,7 +114,7 @@ function swiperSlider() {
         // },
         slidesPerView: 2, // кількість слайдерів для показу
         spaceBetween: 16, // відстань між слайдерами
-        loop: true,
+        // loop: true,
         // крапки пагінації
         pagination: {
           el: pagination,
