@@ -241,8 +241,6 @@
     background-size: cover;
     background-position: 50% 50%;
 
-    max-width: 414px;
-    margin: 0 auto;
     
     // media mobile
     
@@ -255,24 +253,24 @@
 
     @media screen and (min-width: 1024px) {
         background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/pexels-kheng-tablet.jpg');
-        max-width: 1024px;
+        
     }
     @media  (min-deavice-pixel-ratio: 2) and (min-width: 1024px),
     (min-resolution: 192dpi) {
         background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/pexels-kheng-tablet@2x.jpg');
-        max-width: 1024px;
+        
     }
     
     // desktop
 
     @media screen and (min-width: 1280px) {
         background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/pexels-kheng-desktop.jpg');
-        max-width: 1280px;
+        
     }
     @media  (min-deavice-pixel-ratio: 2) and (min-width: 1280px),
     (min-resolution: 192dpi) {
         background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/pexels-kheng-desktop@2x.jpg');
-        max-width: 1280px;
+        
     }
 
 
