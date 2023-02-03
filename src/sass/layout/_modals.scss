@@ -194,6 +194,10 @@
   padding: 0;
   background-color: inherit;
   cursor: pointer;
+  &:hover,
+  &:focus {
+    fill: $color-primary-active-button;
+  }
 }
 
 .is-hidden {
