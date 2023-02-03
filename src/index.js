@@ -2,4 +2,4 @@ import './js/slick';
 import './js/modal';
 import './js/slider.con';
 import './js/nice-select';
-// import './js/anchor-scroll';
+import './js/anchor-scroll';
