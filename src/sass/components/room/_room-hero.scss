@@ -1,91 +1,20 @@
 .hero-room {
-  // position: relative;
-  // background-image: linear-gradient(
-  //     180deg,
-  //     #000000 0%,
-  //     rgba(0, 0, 0, 0.55) 54.17%,
-  //     rgba(0, 0, 0, 0) 100%
-  //   ),
-  //   url('../images/room-number-mobile.jpg');
-  // background-size: cover;
-  // background-position: center;
-  // background-repeat: no-repeat;
-  // max-width: 414px;
-  // min-height: 740px;
-  // padding: 0;
-  // margin: 0 auto;
-
-  // @media (min-device-pixel-ratio: 2),
-  //   (min-resolution: 192dpi),
-  //   (min-resolution: 2dppx) {
-  //   background-image: linear-gradient(
-  //       180deg,
-  //       #000000 0%,
-  //       rgba(0, 0, 0, 0.55) 54.17%,
-  //       rgba(0, 0, 0, 0) 100%
-  //     ),
-  //     url('../images/room-number-mobile2@2x.jpg');
-  // }
-  // @media screen and (min-width: 1024px) {
-  //   max-width: 1024px;
-  //   min-height: 720px;
-  //   background-image: linear-gradient(
-  //       180deg,
-  //       #000000 0%,
-  //       rgba(0, 0, 0, 0.55) 54.17%,
-  //       rgba(0, 0, 0, 0) 100%
-  //     ),
-  //     url('../images/room-number-tablet.jpg');
-
-  //   @media (min-device-pixel-ratio: 2),
-  //     (min-resolution: 192dpi),
-  //     (min-resolution: 2dppx) {
-  //     background-image: linear-gradient(
-  //         180deg,
-  //         #000000 0%,
-  //         rgba(0, 0, 0, 0.55) 54.17%,
-  //         rgba(0, 0, 0, 0) 100%
-  //       ),
-  //       url('../images/room-number-tablet@2x.jpg');
-  //   }
-  // }
-
-  // @media screen and (min-width: 1280px) {
-  //   max-width: 1280px;
-
-  //   background-image: linear-gradient(
-  //       180deg,
-  //       #000000 0%,
-  //       rgba(0, 0, 0, 0.55) 54.17%,
-  //       rgba(0, 0, 0, 0) 100%
-  //     ),
-  //     url('../images/room-number-desktop.jpg');
-
-  //   @media (min-device-pixel-ratio: 2),
-  //     (min-resolution: 192dpi),
-  //     (min-resolution: 2dppx) {
-  //     background-image: linear-gradient(
-  //         180deg,
-  //         #000000 0%,
-  //         rgba(0, 0, 0, 0.55) 54.17%,
-  //         rgba(0, 0, 0, 0) 100%
-  //       ),
-  //       url('../images/room-number-desktop2@2x.jpg');
-  //   }
-  // }
   &__container {
     position: absolute;
     z-index: 30;
     padding-bottom: 14px;
     transform: translateY(-100%);
 
-    @media screen and (min-width: 1028px) {
-      padding-bottom: 24px;
-
+    @media screen and (min-width: 1024px) {
+      padding-bottom: 0;
+      display: flex;
+      flex-wrap: wrap;
+      transform: translateY(-100%);
     }
     @media screen and (min-width: 1280px) {
       padding: 72px 85px 48px;
       transform: translateY(-100%);
+      flex-wrap: nowrap;
     }
   }
   &__title {
@@ -101,9 +30,9 @@
     margin-bottom: 14px;
 
     @media screen and (max-width: 414px) {
-        font-size: 26px;
-        line-height: calc(28px / 26px);
-      }
+      font-size: 26px;
+      line-height: calc(28px / 26px);
+    }
 
     @media screen and (min-width: 1024px) {
       margin-bottom: 24px;
@@ -135,8 +64,8 @@
 
     @media screen and (max-width: 414px) {
       width: 100%;
-        line-height: calc(11px / 9px);
-      }
+      line-height: calc(11px / 9px);
+    }
 
     // @media screen and (max-width: 414px) {
     //   width: 90%;
@@ -159,15 +88,16 @@
 
     @media screen and (min-width: 1024px) {
       gap: 191px;
-
+      margin-left: auto;
     }
     @media screen and (min-width: 1280px) {
+      margin-left: 0;
       gap: 371px;
     }
   }
   &__address {
     z-index: 36;
-    top: -212px;
+
     right: 15px;
     position: absolute;
     width: 211px;
@@ -175,17 +105,21 @@
     padding: 6px;
     border: 1px solid rgba(243, 198, 83, 0.7);
     border-radius: 2px;
- @media screen and (min-width: 414px) {
-  top: -400px;
-}
-    
+    @media screen and (max-width: 413px) {
+      top: 64px;
+    }
+
+    @media screen and (min-width: 414px) {
+      top: 64px;
+    }
+
     @media screen and (min-width: 1024px) {
-      top: 0;
+      top: 630px;
       right: 0;
-      position: static;
+      // position: static;
       width: 285px;
       height: 56px;
-      bottom: 22px;
+      // bottom: 22px;
       left: 47px;
     }
     @media screen and (min-width: 1280px) {
@@ -248,10 +182,10 @@
 
     @media screen and (max-width: 414px) {
       width: 100%;
-      width: 200px;
-        font-size: 12px;
-        line-height: calc(16px / 12px);
-      }
+      width: 180px;
+      font-size: 12px;
+      line-height: calc(16px / 12px);
+    }
 
     @media screen and (min-width: 1024px) {
       margin-bottom: 40px;
@@ -305,6 +239,14 @@
 
 .text-container {
   display: block;
+  margin-bottom: 0;
+
+  @media screen and (min-width: 1024px) {
+    margin-bottom: 24px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 0;
+  }
 }
 .arrows {
   display: flex;
@@ -313,19 +255,18 @@
   fill: $color-secondary-active-button;
   padding-top: 350px;
 
-  @media screen and (min-width: 1024) {
+  @media screen and (min-width: 1024px) {
     padding-top: 340px;
   }
-  @media screen and (min-width: 1280) {
+  @media screen and (min-width: 1280px) {
     padding-top: 412px;
   }
 }
 
 .gallery-hero-sliders {
- 
   position: relative;
-  top:0;
-  left:0;
+  top: 0;
+  left: 0;
   // transform: translate(-50%, -50%);
 }
 
@@ -340,13 +281,12 @@
     max-width: 1024px;
   }
 
-     @media screen and (min-width: 1280px) {
-       max-width: 1280px;
-     }
+  @media screen and (min-width: 1280px) {
+    max-width: 1280px;
+  }
 }
 
 .slaider-hero-gallery__item {
- 
 }
 
 .container-slider {
@@ -399,8 +339,7 @@
 
 .slick-hero-next {
   right: 15px;
- background:  rgba(0, 0, 0, 0.65);
-
+  background: rgba(0, 0, 0, 0.65);
 
   @media screen and (min-width: 1024px) {
     right: 47px;
@@ -431,14 +370,19 @@
   position: absolute;
   top: 0;
   left: 0;
-  
+
   width: 100%;
   height: 143px;
-  background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0.55) 54.17%, rgba(0, 0, 0, 0) 100%);;
+  background: linear-gradient(
+    180deg,
+    #000000 0%,
+    rgba(0, 0, 0, 0.55) 54.17%,
+    rgba(0, 0, 0, 0) 100%
+  );
   @media screen and (min-width: 1024px) {
     width: 1024px;
   }
-    @media screen and (min-width: 1280px) {
-      width: 1280px;
-    }
+  @media screen and (min-width: 1280px) {
+    width: 1280px;
+  }
 }
