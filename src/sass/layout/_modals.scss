@@ -48,12 +48,12 @@
   }
 }
 .input__group {
-	display: flex;
-	flex-direction: column;
-	row-gap: 45px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 45px;
   @media (min-width: 1024px) {
     display: flex;
-	flex-direction: row;
+    flex-direction: row;
     column-gap: 16px;
   }
 }
@@ -175,6 +175,12 @@
       height: 64px;
       margin-top: 40px;
     }
+
+    &:hover,
+    &:focus {
+      background: $color-primary-active-button;
+      color: $color-button-text;
+    }
   }
 }
 
@@ -211,10 +217,7 @@
   opacity: 1;
   pointer-events: initial;
   @media screen and (min-width: 1280px) {
-
-    
     transform: translate(-50%, calc(-16px - 50%));
-
   }
 }
 
