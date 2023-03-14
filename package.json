@@ -2,20 +2,20 @@
   "name": "parcel-project-template",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://badyanch.github.io/markup-project-2",
+  "homepage": "https://badyanch.github.io/MIMIHO",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /markup-project-2/"
+    "build": "parcel build src/*.html --public-url /MIMIHO/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/badyanch/markup-project-2.git"
+    "url": "git+https://github.com/badyanch/MIMIHO.git"
   },
   "keywords": [],
   "author": "Alexander Repeta <alexander.repeta@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/badyanch/markup-project-2/issues"
+    "url": "https://github.com/badyanch/MIMIHO/issues"
   },
   "dependencies": {
     "jquery": "^3.6.3",
